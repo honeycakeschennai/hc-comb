@@ -1,0 +1,924 @@
+2017-08-31T23:20:57+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:20:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token=''
+2017-08-31T23:20:57+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:20:57+05:30 [Cake] *************************************************
+2017-08-31T23:20:57+05:30 [Cake] getCakesList execution starts
+2017-08-31T23:20:57+05:30 [CakeDao] getCakesList execution starts
+2017-08-31T23:20:57+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:20:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-08-31T23:20:57+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:20:57+05:30 [CakeDao] closeConnection execution starts
+2017-08-31T23:20:57+05:30 [CakeDao] closeConnection execution ends
+2017-08-31T23:20:57+05:30 [CakeDao] getCakesList execution ends
+2017-08-31T23:20:57+05:30 [Cake] getCakesList execution ends
+2017-08-31T23:22:25+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:22:25+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token=''
+2017-08-31T23:22:25+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:22:25+05:30 [User] *************************************************
+2017-08-31T23:22:25+05:30 [User] getUser execution starts
+2017-08-31T23:22:25+05:30 [UserDao] getUser execution starts
+2017-08-31T23:22:25+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:22:25+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='17'
+2017-08-31T23:22:25+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:22:25+05:30 [UserDao] closeConnection execution starts
+2017-08-31T23:22:25+05:30 [UserDao] closeConnection execution ends
+2017-08-31T23:22:25+05:30 [UserDao] getUser execution ends
+2017-08-31T23:22:25+05:30 [User] getUser execution ends
+2017-08-31T23:23:33+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:23:33+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token=''
+2017-08-31T23:23:33+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:23:33+05:30 [User] *************************************************
+2017-08-31T23:23:33+05:30 [User] getUser execution starts
+2017-08-31T23:23:33+05:30 [UserDao] getUser execution starts
+2017-08-31T23:23:33+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:23:33+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='17'
+2017-08-31T23:23:33+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:23:33+05:30 [UserDao] closeConnection execution starts
+2017-08-31T23:23:33+05:30 [UserDao] closeConnection execution ends
+2017-08-31T23:23:33+05:30 [UserDao] getUser execution ends
+2017-08-31T23:23:33+05:30 [User] getUser execution ends
+2017-08-31T23:23:46+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:23:46+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token=''
+2017-08-31T23:23:46+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:23:46+05:30 [User] *************************************************
+2017-08-31T23:23:46+05:30 [User] getUser execution starts
+2017-08-31T23:23:46+05:30 [UserDao] getUser execution starts
+2017-08-31T23:23:46+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:23:46+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='17'
+2017-08-31T23:23:46+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:23:46+05:30 [UserDao] closeConnection execution starts
+2017-08-31T23:23:46+05:30 [UserDao] closeConnection execution ends
+2017-08-31T23:23:46+05:30 [UserDao] getUser execution ends
+2017-08-31T23:23:46+05:30 [User] getUser execution ends
+2017-08-31T23:28:04+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:28:04+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:28:04+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:28:04+05:30 [Cake] *************************************************
+2017-08-31T23:28:04+05:30 [Cake] getCakesList execution starts
+2017-08-31T23:28:04+05:30 [CakeDao] getCakesList execution starts
+2017-08-31T23:28:04+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:28:04+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-08-31T23:28:04+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:28:04+05:30 [CakeDao] closeConnection execution starts
+2017-08-31T23:28:04+05:30 [CakeDao] closeConnection execution ends
+2017-08-31T23:28:04+05:30 [CakeDao] getCakesList execution ends
+2017-08-31T23:28:04+05:30 [Cake] getCakesList execution ends
+2017-08-31T23:28:26+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:28:26+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:28:26+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:28:26+05:30 [User] *************************************************
+2017-08-31T23:28:26+05:30 [User] getUser execution starts
+2017-08-31T23:28:26+05:30 [UserDao] getUser execution starts
+2017-08-31T23:28:26+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:28:26+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='17'
+2017-08-31T23:28:26+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:28:26+05:30 [UserDao] closeConnection execution starts
+2017-08-31T23:28:26+05:30 [UserDao] closeConnection execution ends
+2017-08-31T23:28:26+05:30 [UserDao] getUser execution ends
+2017-08-31T23:28:26+05:30 [User] getUser execution ends
+2017-08-31T23:30:01+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:30:01+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:30:01+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:30:01+05:30 [Cake] *************************************************
+2017-08-31T23:30:01+05:30 [Cake] getCakesList execution starts
+2017-08-31T23:30:01+05:30 [CakeDao] getCakesList execution starts
+2017-08-31T23:30:01+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:30:01+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-08-31T23:30:01+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:30:01+05:30 [CakeDao] closeConnection execution starts
+2017-08-31T23:30:01+05:30 [CakeDao] closeConnection execution ends
+2017-08-31T23:30:01+05:30 [CakeDao] getCakesList execution ends
+2017-08-31T23:30:01+05:30 [Cake] getCakesList execution ends
+2017-08-31T23:30:12+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:30:12+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGW='
+2017-08-31T23:30:12+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:30:12+05:30 [Cake] *************************************************
+2017-08-31T23:30:12+05:30 [Cake] getCakesList execution starts
+2017-08-31T23:30:12+05:30 [CakeDao] getCakesList execution starts
+2017-08-31T23:30:12+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:30:12+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-08-31T23:30:12+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:30:12+05:30 [CakeDao] closeConnection execution starts
+2017-08-31T23:30:12+05:30 [CakeDao] closeConnection execution ends
+2017-08-31T23:30:12+05:30 [CakeDao] getCakesList execution ends
+2017-08-31T23:30:12+05:30 [Cake] getCakesList execution ends
+2017-08-31T23:30:16+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:30:16+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGW='
+2017-08-31T23:30:16+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:30:16+05:30 [Cake] *************************************************
+2017-08-31T23:30:16+05:30 [Cake] getCakesList execution starts
+2017-08-31T23:30:16+05:30 [CakeDao] getCakesList execution starts
+2017-08-31T23:30:16+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:30:16+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-08-31T23:30:16+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:30:16+05:30 [CakeDao] closeConnection execution starts
+2017-08-31T23:30:16+05:30 [CakeDao] closeConnection execution ends
+2017-08-31T23:30:16+05:30 [CakeDao] getCakesList execution ends
+2017-08-31T23:30:16+05:30 [Cake] getCakesList execution ends
+2017-08-31T23:30:28+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:30:28+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGW='
+2017-08-31T23:30:28+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:30:28+05:30 [Cake] *************************************************
+2017-08-31T23:30:28+05:30 [Cake] getCakesList execution starts
+2017-08-31T23:30:28+05:30 [CakeDao] getCakesList execution starts
+2017-08-31T23:30:28+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:30:28+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-08-31T23:30:28+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:30:28+05:30 [CakeDao] closeConnection execution starts
+2017-08-31T23:30:28+05:30 [CakeDao] closeConnection execution ends
+2017-08-31T23:30:28+05:30 [CakeDao] getCakesList execution ends
+2017-08-31T23:30:28+05:30 [Cake] getCakesList execution ends
+2017-08-31T23:33:54+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:33:54+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGW='
+2017-08-31T23:33:54+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:35:37+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:35:37+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGW='
+2017-08-31T23:35:37+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:35:55+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:35:55+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:35:55+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:35:55+05:30 [Cake] *************************************************
+2017-08-31T23:35:55+05:30 [Cake] getCakesList execution starts
+2017-08-31T23:35:55+05:30 [CakeDao] getCakesList execution starts
+2017-08-31T23:35:55+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:35:55+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-08-31T23:35:55+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:35:55+05:30 [CakeDao] closeConnection execution starts
+2017-08-31T23:35:55+05:30 [CakeDao] closeConnection execution ends
+2017-08-31T23:35:55+05:30 [CakeDao] getCakesList execution ends
+2017-08-31T23:35:55+05:30 [Cake] getCakesList execution ends
+2017-08-31T23:36:04+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:36:04+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYtOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:36:04+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:40:48+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:40:48+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYtOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:40:48+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:41:28+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:41:28+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:41:28+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:41:28+05:30 [Cake] *************************************************
+2017-08-31T23:41:28+05:30 [Cake] getCakesList execution starts
+2017-08-31T23:41:28+05:30 [CakeDao] getCakesList execution starts
+2017-08-31T23:41:28+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:41:28+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-08-31T23:41:28+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:41:28+05:30 [CakeDao] closeConnection execution starts
+2017-08-31T23:41:28+05:30 [CakeDao] closeConnection execution ends
+2017-08-31T23:41:28+05:30 [CakeDao] getCakesList execution ends
+2017-08-31T23:41:28+05:30 [Cake] getCakesList execution ends
+2017-08-31T23:41:34+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:41:34+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:41:34+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:41:34+05:30 [User] *************************************************
+2017-08-31T23:41:34+05:30 [User] getUser execution starts
+2017-08-31T23:41:34+05:30 [UserDao] getUser execution starts
+2017-08-31T23:41:34+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:41:34+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='17'
+2017-08-31T23:41:34+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:41:34+05:30 [UserDao] closeConnection execution starts
+2017-08-31T23:41:34+05:30 [UserDao] closeConnection execution ends
+2017-08-31T23:41:34+05:30 [UserDao] getUser execution ends
+2017-08-31T23:41:34+05:30 [User] getUser execution ends
+2017-08-31T23:42:32+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:42:32+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:42:32+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:42:32+05:30 [User] *************************************************
+2017-08-31T23:42:32+05:30 [User] getUser execution starts
+2017-08-31T23:42:32+05:30 [UserDao] getUser execution starts
+2017-08-31T23:42:32+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:42:32+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-08-31T23:42:32+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:42:32+05:30 [UserDao] closeConnection execution starts
+2017-08-31T23:42:32+05:30 [UserDao] closeConnection execution ends
+2017-08-31T23:42:32+05:30 [UserDao] getUser execution ends
+2017-08-31T23:42:32+05:30 [User] getUser execution ends
+2017-08-31T23:51:12+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:51:12+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:51:12+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:51:12+05:30 [User] *************************************************
+2017-08-31T23:51:12+05:30 [User] createUser execution starts
+2017-08-31T23:51:12+05:30 [UserDao] createUser execution starts
+2017-08-31T23:51:12+05:30 [DBWrapper] insertOperation execution starts
+2017-08-31T23:51:12+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'ramu','rama','ramu.rulez@gmail.com','9894130821','1993-09-02')
+2017-08-31T23:51:12+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => failure
+    [error_details] => Duplicate entry '9894130821' for key 'mobile'
+    [affected_rows] => -1
+)
+
+2017-08-31T23:51:12+05:30 [DBWrapper] insertOperation execution ends
+2017-08-31T23:51:12+05:30 [UserDao] closeConnection execution starts
+2017-08-31T23:51:12+05:30 [UserDao] closeConnection execution ends
+2017-08-31T23:51:12+05:30 [UserDao] createUser execution ends
+2017-08-31T23:51:12+05:30 [User] createUser execution ends
+2017-08-31T23:53:17+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:53:17+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:53:17+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:53:17+05:30 [User] *************************************************
+2017-08-31T23:53:17+05:30 [User] createUser execution starts
+2017-08-31T23:53:17+05:30 [UserDao] createUser execution starts
+2017-08-31T23:53:17+05:30 [DBWrapper] insertOperation execution starts
+2017-08-31T23:53:17+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'ramu','rama','ramu.rulez@gmail.com','9894130821','1993-09-02')
+2017-08-31T23:53:17+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => failure
+    [error_details] => Duplicate entry '9894130821' for key 'mobile'
+    [affected_rows] => -1
+)
+
+2017-08-31T23:53:17+05:30 [DBWrapper] insertOperation execution ends
+2017-08-31T23:53:17+05:30 [UserDao] closeConnection execution starts
+2017-08-31T23:53:17+05:30 [UserDao] closeConnection execution ends
+2017-08-31T23:53:17+05:30 [UserDao] createUser execution ends
+2017-08-31T23:53:17+05:30 [User] createUser execution ends
+2017-08-31T23:53:51+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:53:51+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:53:51+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:53:51+05:30 [User] *************************************************
+2017-08-31T23:53:51+05:30 [User] createUser execution starts
+2017-08-31T23:53:51+05:30 [UserDao] createUser execution starts
+2017-08-31T23:53:51+05:30 [DBWrapper] insertOperation execution starts
+2017-08-31T23:53:51+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'ramu','rama','ramu.rulez@gmail.com','9894130822','1993-09-02')
+2017-08-31T23:53:51+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 20
+    [affected_rows] => 1
+)
+
+2017-08-31T23:53:51+05:30 [DBWrapper] insertOperation execution ends
+2017-08-31T23:53:51+05:30 [UserDao] closeConnection execution starts
+2017-08-31T23:53:51+05:30 [UserDao] closeConnection execution ends
+2017-08-31T23:53:51+05:30 [UserDao] createUser execution ends
+2017-08-31T23:53:51+05:30 [User] createUser execution ends
+2017-08-31T23:55:48+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:55:48+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:55:48+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:55:48+05:30 [User] *************************************************
+2017-08-31T23:55:48+05:30 [User] getUser execution starts
+2017-08-31T23:55:48+05:30 [UserDao] getUser execution starts
+2017-08-31T23:55:48+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:55:48+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-08-31T23:55:48+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:55:48+05:30 [UserDao] closeConnection execution starts
+2017-08-31T23:55:48+05:30 [UserDao] closeConnection execution ends
+2017-08-31T23:55:48+05:30 [UserDao] getUser execution ends
+2017-08-31T23:55:48+05:30 [User] getUser execution ends
+2017-08-31T23:57:49+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:57:49+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:57:49+05:30 [DBWrapper] selectOperation execution ends
+2017-08-31T23:58:04+05:30 [DBWrapper] selectOperation execution starts
+2017-08-31T23:58:04+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-08-31T23:58:04+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:08:22+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:08:22+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:08:22+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:08:22+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:08:22+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-09-01T00:08:22+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:08:22+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:08:22+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:08:22+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:08:22+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:08:22+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-09-01T00:08:22+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:08:22+05:30 [DBWrapper] insertOperation execution starts
+2017-09-01T00:08:22+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','NzJhMjQzNWVkZDVlYWYwMWEwMzdiM2M5ZmU2YWVlN2Q=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZGRmZDYyZWEyNTNkOGQwNzhlNjlhYzViZWQxMmQ1YzU=','2017-09-03 00:08:22')
+2017-09-01T00:08:22+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 17
+    [affected_rows] => 1
+)
+
+2017-09-01T00:08:22+05:30 [DBWrapper] insertOperation execution ends
+2017-09-01T00:08:22+05:30 [DBConnector] closeConnection execution starts
+2017-09-01T00:08:22+05:30 [DBConnector] closeConnection execution ends
+2017-09-01T00:09:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:09:30+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:09:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:09:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:09:30+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-09-01T00:09:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:09:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:09:30+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:09:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:09:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:09:30+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-09-01T00:09:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:09:30+05:30 [DBWrapper] insertOperation execution starts
+2017-09-01T00:09:30+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','OTA2YWQyZDkxZGMwNmE4YmRmNmJlMjFkNjY3OTgzNGI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=NWU1NThmN2RlZjdkOWEyZGIwMWUyOTQ3ZmY1ZjEyMjU=','2017-09-03 00:09:30')
+2017-09-01T00:09:30+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 18
+    [affected_rows] => 1
+)
+
+2017-09-01T00:09:30+05:30 [DBWrapper] insertOperation execution ends
+2017-09-01T00:09:30+05:30 [DBConnector] closeConnection execution starts
+2017-09-01T00:09:30+05:30 [DBConnector] closeConnection execution ends
+2017-09-01T00:10:10+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:10:10+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:10:10+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:10:10+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:10:10+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-09-01T00:10:10+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:10:10+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:10:10+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:10:10+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:10:10+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:10:10+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-09-01T00:10:10+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:10:10+05:30 [DBWrapper] insertOperation execution starts
+2017-09-01T00:10:10+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','NzAwMGUyNjAyYzI0OTZiMGNkMTViYTE4MTA5Y2QyOGI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MDY0NTI1YjBlNjMwMTY4NWJiZGFiMWY2NjE0NWYxNmI=','2017-09-03 00:10:10')
+2017-09-01T00:10:10+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 19
+    [affected_rows] => 1
+)
+
+2017-09-01T00:10:10+05:30 [DBWrapper] insertOperation execution ends
+2017-09-01T00:10:10+05:30 [DBConnector] closeConnection execution starts
+2017-09-01T00:10:10+05:30 [DBConnector] closeConnection execution ends
+2017-09-01T00:11:00+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:11:00+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:11:00+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:11:00+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:11:00+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-09-01T00:11:00+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:11:00+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:11:00+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:11:00+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:11:00+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:11:00+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-09-01T00:11:00+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:11:00+05:30 [DBWrapper] insertOperation execution starts
+2017-09-01T00:11:00+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','ZjI0ZWFiODg1MzI1ZTVkZDViNjE3MThhYTU2YzUxMDU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTdmYjUyNjIxZWVkNTI1N2Y4Mjk5YjE0NzI0NDZkZTY=','2017-09-03 00:11:00')
+2017-09-01T00:11:00+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 20
+    [affected_rows] => 1
+)
+
+2017-09-01T00:11:00+05:30 [DBWrapper] insertOperation execution ends
+2017-09-01T00:11:00+05:30 [DBConnector] closeConnection execution starts
+2017-09-01T00:11:00+05:30 [DBConnector] closeConnection execution ends
+2017-09-01T00:11:06+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:11:06+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-09-01T00:11:06+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:11:27+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:11:27+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjI0ZWFiODg1MzI1ZTVkZDViNjE3MThhYTU2YzUxMDU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTdmYjUyNjIxZWVkNTI1N2Y4Mjk5YjE0NzI0NDZkZTY='
+2017-09-01T00:11:27+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:11:27+05:30 [Cake] *************************************************
+2017-09-01T00:11:27+05:30 [Cake] getCakesList execution starts
+2017-09-01T00:11:27+05:30 [CakeDao] getCakesList execution starts
+2017-09-01T00:11:27+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:11:27+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-09-01T00:11:27+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:11:27+05:30 [CakeDao] closeConnection execution starts
+2017-09-01T00:11:27+05:30 [CakeDao] closeConnection execution ends
+2017-09-01T00:11:27+05:30 [CakeDao] getCakesList execution ends
+2017-09-01T00:11:27+05:30 [Cake] getCakesList execution ends
+2017-09-01T00:11:43+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:11:43+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NmYyYmVlMzgxMjQ3NmY3NDUyMDk1YTA1OTA5N2Y5YzU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZTdiNDFiOGY0MDZiMjkxOTJjMjc4NDE3NjEyNTg2ZGQ='
+2017-09-01T00:11:43+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:22:44+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:22:44+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:22:44+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:22:44+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:22:44+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-09-01T00:22:44+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:22:44+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:22:44+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:22:44+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:22:44+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:22:44+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-09-01T00:22:44+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:22:44+05:30 [DBWrapper] insertOperation execution starts
+2017-09-01T00:22:44+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNzA=','2017-09-03 00:22:44')
+2017-09-01T00:22:44+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 21
+    [affected_rows] => 1
+)
+
+2017-09-01T00:22:44+05:30 [DBWrapper] insertOperation execution ends
+2017-09-01T00:22:44+05:30 [DBConnector] closeConnection execution starts
+2017-09-01T00:22:44+05:30 [DBConnector] closeConnection execution ends
+2017-09-01T00:23:12+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:23:12+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNzA='
+2017-09-01T00:23:12+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:23:12+05:30 [Cake] *************************************************
+2017-09-01T00:23:12+05:30 [Cake] getCakesList execution starts
+2017-09-01T00:23:12+05:30 [CakeDao] getCakesList execution starts
+2017-09-01T00:23:12+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:23:12+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-09-01T00:23:12+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:23:12+05:30 [CakeDao] closeConnection execution starts
+2017-09-01T00:23:12+05:30 [CakeDao] closeConnection execution ends
+2017-09-01T00:23:12+05:30 [CakeDao] getCakesList execution ends
+2017-09-01T00:23:12+05:30 [Cake] getCakesList execution ends
+2017-09-01T00:24:10+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:24:10+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNzA='
+2017-09-01T00:24:10+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:29:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:29:30+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:29:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:29:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:29:30+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-09-01T00:29:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:29:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:29:30+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-01T00:29:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:29:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:29:30+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-09-01T00:29:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:29:30+05:30 [DBWrapper] insertOperation execution starts
+2017-09-01T00:29:30+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg=','2017-09-03 00:29:30')
+2017-09-01T00:29:30+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 22
+    [affected_rows] => 1
+)
+
+2017-09-01T00:29:30+05:30 [DBWrapper] insertOperation execution ends
+2017-09-01T00:29:30+05:30 [DBConnector] closeConnection execution starts
+2017-09-01T00:29:30+05:30 [DBConnector] closeConnection execution ends
+2017-09-01T00:29:48+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:29:48+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T00:29:48+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:29:48+05:30 [Cake] *************************************************
+2017-09-01T00:29:48+05:30 [Cake] getCakesList execution starts
+2017-09-01T00:29:48+05:30 [CakeDao] getCakesList execution starts
+2017-09-01T00:29:48+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:29:48+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-09-01T00:29:48+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:29:48+05:30 [CakeDao] closeConnection execution starts
+2017-09-01T00:29:48+05:30 [CakeDao] closeConnection execution ends
+2017-09-01T00:29:48+05:30 [CakeDao] getCakesList execution ends
+2017-09-01T00:29:48+05:30 [Cake] getCakesList execution ends
+2017-09-01T00:30:07+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:30:07+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=abcdjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T00:30:07+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:37:18+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:37:18+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T00:37:18+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:37:18+05:30 [Cake] *************************************************
+2017-09-01T00:37:18+05:30 [Cake] getCakesList execution starts
+2017-09-01T00:37:18+05:30 [CakeDao] getCakesList execution starts
+2017-09-01T00:37:18+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:37:18+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-09-01T00:37:18+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T00:37:18+05:30 [CakeDao] closeConnection execution starts
+2017-09-01T00:37:18+05:30 [CakeDao] closeConnection execution ends
+2017-09-01T00:37:18+05:30 [CakeDao] getCakesList execution ends
+2017-09-01T00:37:18+05:30 [Cake] getCakesList execution ends
+2017-09-01T00:37:28+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T00:37:28+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=iGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T00:37:28+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:02:27+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:02:27+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=iGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T01:02:27+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:02:27+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:02:27+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=iGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T01:02:27+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:02:47+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:02:47+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=iGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T01:02:47+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:02:47+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:02:47+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=iGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T01:02:47+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:03:11+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:03:11+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=iGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T01:03:11+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:03:11+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:03:11+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=iGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T01:03:11+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:03:26+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:03:26+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token=''
+2017-09-01T01:03:26+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:03:48+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:03:48+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T01:03:48+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:03:48+05:30 [Cake] *************************************************
+2017-09-01T01:03:48+05:30 [Cake] getCakesList execution starts
+2017-09-01T01:03:48+05:30 [CakeDao] getCakesList execution starts
+2017-09-01T01:03:48+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:03:48+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-09-01T01:03:48+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:03:48+05:30 [CakeDao] closeConnection execution starts
+2017-09-01T01:03:48+05:30 [CakeDao] closeConnection execution ends
+2017-09-01T01:03:48+05:30 [CakeDao] getCakesList execution ends
+2017-09-01T01:03:48+05:30 [Cake] getCakesList execution ends
+2017-09-01T01:03:55+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:03:55+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmlDhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T01:03:55+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:03:55+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:03:55+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmlDhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg='
+2017-09-01T01:03:55+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:04:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:04:30+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNzA='
+2017-09-01T01:04:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:04:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:04:30+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNzA='
+2017-09-01T01:04:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:04:50+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:04:50+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNza='
+2017-09-01T01:04:50+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:04:50+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:04:50+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNza='
+2017-09-01T01:04:50+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:04:52+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:04:52+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNza='
+2017-09-01T01:04:52+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:04:52+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:04:52+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNza='
+2017-09-01T01:04:52+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:04:53+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:04:53+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNza='
+2017-09-01T01:04:53+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:04:53+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:04:53+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNza='
+2017-09-01T01:04:53+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:05:02+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:05:02+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNzb='
+2017-09-01T01:05:02+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:05:02+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:05:02+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNzb='
+2017-09-01T01:05:02+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:05:12+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:05:12+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNzA='
+2017-09-01T01:05:12+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:05:12+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:05:12+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNzA='
+2017-09-01T01:05:12+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:05:36+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:05:36+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:05:36+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:05:36+05:30 [Cake] *************************************************
+2017-09-01T01:05:36+05:30 [Cake] getCakesList execution starts
+2017-09-01T01:05:36+05:30 [CakeDao] getCakesList execution starts
+2017-09-01T01:05:36+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:05:36+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-09-01T01:05:36+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:05:36+05:30 [CakeDao] closeConnection execution starts
+2017-09-01T01:05:36+05:30 [CakeDao] closeConnection execution ends
+2017-09-01T01:05:36+05:30 [CakeDao] getCakesList execution ends
+2017-09-01T01:05:36+05:30 [Cake] getCakesList execution ends
+2017-09-01T01:05:46+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:05:46+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:05:46+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:05:46+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:05:46+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:05:46+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:13+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:13+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:06:13+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:13+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:13+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:06:13+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:16+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:16+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:06:16+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:16+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:16+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:06:16+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:17+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:17+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:06:17+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:17+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:17+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:06:17+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:33+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:33+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:06:33+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:33+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:33+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:06:33+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:35+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:35+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:06:35+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:35+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:35+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:06:35+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:45+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:45+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:06:45+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:45+05:30 [Cake] *************************************************
+2017-09-01T01:06:45+05:30 [Cake] getCakesList execution starts
+2017-09-01T01:06:45+05:30 [CakeDao] getCakesList execution starts
+2017-09-01T01:06:45+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:06:45+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-09-01T01:06:45+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:06:45+05:30 [CakeDao] closeConnection execution starts
+2017-09-01T01:06:45+05:30 [CakeDao] closeConnection execution ends
+2017-09-01T01:06:45+05:30 [CakeDao] getCakesList execution ends
+2017-09-01T01:06:45+05:30 [Cake] getCakesList execution ends
+2017-09-01T01:07:24+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:07:24+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:07:24+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:07:24+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:07:24+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:07:24+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:09:22+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:09:22+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:09:22+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:09:22+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:09:22+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:09:22+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:09:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:09:30+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:09:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:09:30+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:09:30+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:09:30+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:09:42+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:09:42+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:09:42+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:09:42+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:09:42+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:09:42+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:10:09+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:10:09+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:10:09+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:10:09+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:10:09+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:10:09+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:10:18+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:10:18+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:10:18+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:10:18+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:10:18+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:10:18+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:36:42+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:36:42+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:36:42+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T01:36:42+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T01:36:42+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T01:36:42+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T21:30:04+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T21:30:04+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T21:30:04+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T21:30:04+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T21:30:04+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T21:30:04+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T22:37:27+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T22:37:27+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T22:37:27+05:30 [DBWrapper] selectOperation execution ends
+2017-09-01T22:37:27+05:30 [DBWrapper] selectOperation execution starts
+2017-09-01T22:37:27+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-01T22:37:27+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T00:27:11+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T00:27:11+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-02T00:27:11+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T00:27:11+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T00:27:11+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-02T00:27:11+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T00:27:29+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T00:27:29+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='nTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-02T00:27:29+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T00:27:29+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T00:27:29+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='nTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-02T00:27:29+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T00:27:42+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T00:27:42+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-02T00:27:42+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T00:27:42+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T00:27:42+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-02T00:27:42+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T00:29:54+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T00:29:54+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-02T00:29:54+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T00:29:54+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T00:29:54+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MTFkY2Y1NGU0MWQ5ODQ1NjE1NzdkM2ExNjQxYmIyOWM=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MjUyNmRlMzNkZTBjZjMxOTdiYWJhMWZhNTcyZjViYzc='
+2017-09-02T00:29:54+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T08:45:55+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T08:45:55+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-02T08:45:55+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T08:45:55+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T08:45:55+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-09-02T08:45:55+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T08:45:55+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T08:45:55+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-09-02T08:45:55+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T08:45:55+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T08:45:55+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-09-02T08:45:55+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T08:45:55+05:30 [DBWrapper] insertOperation execution starts
+2017-09-02T08:45:55+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','NTA4NWNjMDI4MDEzOWMyNTE1NzQ2OGFkYmYyZTMxNzE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=NWQ1MjNhOWZkZjI3NDRmOGIwNDI4NTVjODc0ODk1ZjE=','2017-09-04 08:45:55')
+2017-09-02T08:45:55+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 23
+    [affected_rows] => 1
+)
+
+2017-09-02T08:45:55+05:30 [DBWrapper] insertOperation execution ends
+2017-09-02T08:45:55+05:30 [DBConnector] closeConnection execution starts
+2017-09-02T08:45:55+05:30 [DBConnector] closeConnection execution ends
+2017-09-02T08:46:35+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T08:46:35+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NTA4NWNjMDI4MDEzOWMyNTE1NzQ2OGFkYmYyZTMxNzE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=NWQ1MjNhOWZkZjI3NDRmOGIwNDI4NTVjODc0ODk1ZjE='
+2017-09-02T08:46:35+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T08:46:35+05:30 [Cake] *************************************************
+2017-09-02T08:46:35+05:30 [Cake] getCakesList execution starts
+2017-09-02T08:46:35+05:30 [CakeDao] getCakesList execution starts
+2017-09-02T08:46:35+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T08:46:35+05:30 [DBWrapper] QUERY: 
+SELECT * FROM cakes
+2017-09-02T08:46:35+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T08:46:35+05:30 [CakeDao] closeConnection execution starts
+2017-09-02T08:46:35+05:30 [CakeDao] closeConnection execution ends
+2017-09-02T08:46:35+05:30 [CakeDao] getCakesList execution ends
+2017-09-02T08:46:35+05:30 [Cake] getCakesList execution ends
+2017-09-02T08:48:49+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T08:48:49+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='ramu.rulez@gmail.com' OR mobile='ramu.rulez@gmail.com'
+2017-09-02T08:48:49+05:30 [DBWrapper] selectOperation execution ends
+2017-09-02T08:48:49+05:30 [DBWrapper] selectOperation execution starts
+2017-09-02T08:48:49+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='ramu.rulez@gmail.com' OR u.mobile='ramu.rulez@gmail.com') AND u.user_id=uc.user_id
+2017-09-02T08:48:49+05:30 [DBWrapper] selectOperation execution ends
+2017-09-03T13:35:46+05:30 [DBWrapper] selectOperation execution starts
+2017-09-03T13:35:46+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM {USERS} WHERE email='ramu.rulez@gmail.com' OR mobile='ramu.rulez@gmail.com'
+2017-09-03T13:35:46+05:30 [DBWrapper] selectOperation execution ends
+2017-09-03T13:36:07+05:30 [DBWrapper] selectOperation execution starts
+2017-09-03T13:36:07+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='ramu.rulez@gmail.com' OR mobile='ramu.rulez@gmail.com'
+2017-09-03T13:36:07+05:30 [DBWrapper] selectOperation execution ends
+2017-09-03T13:36:07+05:30 [DBWrapper] selectOperation execution starts
+2017-09-03T13:36:07+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='ramu.rulez@gmail.com' OR u.mobile='ramu.rulez@gmail.com') AND u.user_id=uc.user_id
+2017-09-03T13:36:07+05:30 [DBWrapper] selectOperation execution ends
