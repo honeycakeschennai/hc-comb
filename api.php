@@ -6,7 +6,6 @@
 	require_once 'utils/CaseConstants.php';
 
 	require_once 'biz/User.php';
-	require_once 'biz/Cake.php';
 	require_once 'biz/Location.php';
 	
 	/**
@@ -172,18 +171,10 @@
 	}
 
 	/** 
-	 * executeCakeCase method instantiates Cake object and executes the action. 
+	 * executeLocationCase method instantiates Location object and executes the action. 
 	 * 
 	 * @return $response
 	 */
-	function executeCakeCase(){
-		global $method, $data, $caseId;
-		$cake = new Cake($caseId, $method, $data);
-		$response = $cake->executeAction();
-		// file_put_contents("testlog.log", "\n".print_r($response, true), FILE_APPEND | LOCK_EX);
-		return $response;
-	}
-
 	function executeLocationCase(){
 		global $method, $data, $caseId;
 		$location = new Location($caseId, $method, $data);
