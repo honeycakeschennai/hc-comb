@@ -7,6 +7,7 @@
 
 	require_once 'biz/User.php';
 	require_once 'biz/Cake.php';
+	require_once 'biz/Location.php';
 	
 	/**
 	 * Honeycakes REST API - handles all HTTP requests and responses.
@@ -57,6 +58,9 @@
 		  	case CASE_CAKES:
 			  	$response = executeCakeCase();
 			  	break;
+			case CASE_LOCATION:
+				$response = executeLocationCase();
+				break;
 		}
 	} else if($case != CASE_LOGIN){
 		$response = array();
@@ -73,6 +77,7 @@
 	}
 
 	/** API Response - JSON */
+	header("Access-Control-Allow-Origin: *");
 	header('Content-Type: application/json');
 	echo json_encode($response);
 
@@ -176,6 +181,13 @@
 		$cake = new Cake($caseId, $method, $data);
 		$response = $cake->executeAction();
 		// file_put_contents("testlog.log", "\n".print_r($response, true), FILE_APPEND | LOCK_EX);
+		return $response;
+	}
+
+	function executeLocationCase(){
+		global $method, $data, $caseId;
+		$location = new Location($caseId, $method, $data);
+		$response = $location->executeAction();
 		return $response;
 	}
 	 
