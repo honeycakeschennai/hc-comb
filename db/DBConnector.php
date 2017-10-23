@@ -16,7 +16,7 @@
 		private $dbServername = 'localhost';
 		private $dbUsername = 'root';
 		private $dbPassword = 'root';
-		private $dbName = 'test_honeycakes';
+		private $dbName = 'honeycakes';
 
 		protected $dbc; 
 		protected $log;
