@@ -1368,3 +1368,78 @@ SELECT * FROM locations
 2017-10-23T08:22:28+05:30 [LocationDao] closeConnection execution ends
 2017-10-23T08:22:28+05:30 [LocationDao] getLocationsList execution ends
 2017-10-23T08:22:28+05:30 [Location] getLocationsList execution ends
+2017-10-23T22:28:07+05:30 [DBWrapper] selectOperation execution starts
+2017-10-23T22:28:07+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-10-23T22:28:07+05:30 [DBWrapper] selectOperation execution ends
+2017-10-23T22:28:07+05:30 [Location] *************************************************
+2017-10-23T22:28:07+05:30 [Location] getLocationsList execution starts
+2017-10-23T22:28:07+05:30 [LocationDao] getLocationsList execution starts
+2017-10-23T22:28:07+05:30 [DBWrapper] selectOperation execution starts
+2017-10-23T22:28:07+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-10-23T22:28:07+05:30 [DBWrapper] selectOperation execution ends
+2017-10-23T22:28:07+05:30 [LocationDao] closeConnection execution starts
+2017-10-23T22:28:07+05:30 [LocationDao] closeConnection execution ends
+2017-10-23T22:28:07+05:30 [LocationDao] getLocationsList execution ends
+2017-10-23T22:28:07+05:30 [Location] getLocationsList execution ends
+2017-10-23T22:40:38+05:30 [DBWrapper] selectOperation execution starts
+2017-10-23T22:40:38+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-10-23T22:40:38+05:30 [DBWrapper] selectOperation execution ends
+2017-10-23T22:40:38+05:30 [Location] *************************************************
+2017-10-23T22:40:38+05:30 [Location] getLocationsList execution starts
+2017-10-23T22:40:38+05:30 [LocationDao] getLocationsList execution starts
+2017-10-23T22:40:38+05:30 [DBWrapper] selectOperation execution starts
+2017-10-23T22:40:38+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-10-23T22:40:38+05:30 [DBWrapper] selectOperation execution ends
+2017-10-23T22:40:38+05:30 [LocationDao] closeConnection execution starts
+2017-10-23T22:40:38+05:30 [LocationDao] closeConnection execution ends
+2017-10-23T22:40:38+05:30 [LocationDao] getLocationsList execution ends
+2017-10-23T22:40:38+05:30 [Location] getLocationsList execution ends
+2017-10-23T22:58:56+05:30 [DBWrapper] selectOperation execution starts
+2017-10-23T22:58:56+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-10-23T22:58:56+05:30 [DBWrapper] selectOperation execution ends
+2017-10-23T22:58:56+05:30 [Location] *************************************************
+2017-10-23T22:58:56+05:30 [Location] getLocationsList execution starts
+2017-10-23T22:58:56+05:30 [LocationDao] getLocationsList execution starts
+2017-10-23T22:58:56+05:30 [DBWrapper] selectOperation execution starts
+2017-10-23T22:58:56+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-10-23T22:58:56+05:30 [DBWrapper] selectOperation execution ends
+2017-10-23T22:58:56+05:30 [LocationDao] closeConnection execution starts
+2017-10-23T22:58:56+05:30 [LocationDao] closeConnection execution ends
+2017-10-23T22:58:56+05:30 [LocationDao] getLocationsList execution ends
+2017-10-23T22:58:56+05:30 [Location] getLocationsList execution ends
+2017-10-23T22:59:00+05:30 [DBWrapper] selectOperation execution starts
+2017-10-23T22:59:00+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-10-23T22:59:00+05:30 [DBWrapper] selectOperation execution ends
+2017-10-23T22:59:00+05:30 [Location] *************************************************
+2017-10-23T22:59:00+05:30 [Location] getLocationsList execution starts
+2017-10-23T22:59:00+05:30 [LocationDao] getLocationsList execution starts
+2017-10-23T22:59:00+05:30 [DBWrapper] selectOperation execution starts
+2017-10-23T22:59:00+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-10-23T22:59:00+05:30 [DBWrapper] selectOperation execution ends
+2017-10-23T22:59:00+05:30 [LocationDao] closeConnection execution starts
+2017-10-23T22:59:00+05:30 [LocationDao] closeConnection execution ends
+2017-10-23T22:59:00+05:30 [LocationDao] getLocationsList execution ends
+2017-10-23T22:59:00+05:30 [Location] getLocationsList execution ends
+2017-10-24T07:49:04+05:30 [DBWrapper] selectOperation execution starts
+2017-10-24T07:49:04+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-10-24T07:49:04+05:30 [DBWrapper] selectOperation execution ends
+2017-10-24T07:49:04+05:30 [Location] *************************************************
+2017-10-24T07:49:04+05:30 [Location] getLocationsList execution starts
+2017-10-24T07:49:04+05:30 [LocationDao] getLocationsList execution starts
+2017-10-24T07:49:04+05:30 [DBWrapper] selectOperation execution starts
+2017-10-24T07:49:04+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-10-24T07:49:04+05:30 [DBWrapper] selectOperation execution ends
+2017-10-24T07:49:04+05:30 [LocationDao] closeConnection execution starts
+2017-10-24T07:49:04+05:30 [LocationDao] closeConnection execution ends
+2017-10-24T07:49:04+05:30 [LocationDao] getLocationsList execution ends
+2017-10-24T07:49:04+05:30 [Location] getLocationsList execution ends
