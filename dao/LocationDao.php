@@ -20,7 +20,7 @@
 		}
 
 		/**
-		 * getLocationsList method is used to fetch all the cakes list.
+		 * getLocationsList method is used to fetch all the locations.
 		 * 
 		 * @return $response;
 		 */
