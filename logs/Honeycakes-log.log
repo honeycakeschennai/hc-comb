@@ -1611,3 +1611,101 @@ SELECT * FROM users WHERE user_id='-1'
 2017-10-24T23:12:08+05:30 [UserDao] closeConnection execution ends
 2017-10-24T23:12:08+05:30 [UserDao] getUser execution ends
 2017-10-24T23:12:08+05:30 [User] getUser execution ends
+2017-10-25T08:06:52+05:30 [DBWrapper] selectOperation execution starts
+2017-10-25T08:06:52+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token=''
+2017-10-25T08:06:52+05:30 [DBWrapper] selectOperation execution ends
+2017-10-25T08:08:22+05:30 [DBWrapper] selectOperation execution starts
+2017-10-25T08:08:22+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token=''
+2017-10-25T08:08:22+05:30 [DBWrapper] selectOperation execution ends
+2017-10-25T08:09:03+05:30 [DBWrapper] selectOperation execution starts
+2017-10-25T08:09:03+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-10-25T08:09:03+05:30 [DBWrapper] selectOperation execution ends
+2017-10-25T08:09:03+05:30 [DBWrapper] selectOperation execution starts
+2017-10-25T08:09:03+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-10-25T08:09:03+05:30 [DBWrapper] selectOperation execution ends
+2017-10-25T08:09:03+05:30 [DBWrapper] selectOperation execution starts
+2017-10-25T08:09:03+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-10-25T08:09:03+05:30 [DBWrapper] selectOperation execution ends
+2017-10-25T08:09:03+05:30 [DBWrapper] selectOperation execution starts
+2017-10-25T08:09:03+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-10-25T08:09:03+05:30 [DBWrapper] selectOperation execution ends
+2017-10-25T08:09:03+05:30 [DBWrapper] insertOperation execution starts
+2017-10-25T08:09:03+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','YTlkYWU1N2EzODRmMjU3Yzk3ZTBlNDFmOWRkOTg3NmE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=NWRmMDQyYmNjM2IwMTA5NWY1MDcwMjZkOTQ5ZTk2NjY=','2017-10-27 08:09:03')
+2017-10-25T08:09:03+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 26
+    [affected_rows] => 1
+)
+
+2017-10-25T08:09:03+05:30 [DBWrapper] insertOperation execution ends
+2017-10-25T08:09:03+05:30 [DBConnector] closeConnection execution starts
+2017-10-25T08:09:03+05:30 [DBConnector] closeConnection execution ends
+2017-11-03T13:05:52+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T13:05:52+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-03T13:05:52+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T13:05:52+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T13:05:52+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-11-03T13:05:52+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T13:05:52+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T13:05:52+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-03T13:05:52+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T13:05:52+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T13:05:52+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-11-03T13:05:52+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T13:05:52+05:30 [DBWrapper] insertOperation execution starts
+2017-11-03T13:05:52+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','NmQ0M2YzZTg2YjkyZmI1ZGI5ODc3NzdlN2MwMzExNDk=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=NjQ5MGZmN2Q3ZjJjYjljZGE0ODExOWMzMDljNmE3NTI=','2017-11-05 13:05:52')
+2017-11-03T13:05:52+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 27
+    [affected_rows] => 1
+)
+
+2017-11-03T13:05:52+05:30 [DBWrapper] insertOperation execution ends
+2017-11-03T13:05:52+05:30 [DBConnector] closeConnection execution starts
+2017-11-03T13:05:52+05:30 [DBConnector] closeConnection execution ends
+2017-11-03T13:07:43+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T13:07:43+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-03T13:07:43+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T13:07:43+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T13:07:43+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-11-03T13:07:43+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T13:07:43+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T13:07:43+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-03T13:07:43+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T13:07:43+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T13:07:43+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-11-03T13:07:43+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T13:07:43+05:30 [DBWrapper] insertOperation execution starts
+2017-11-03T13:07:43+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','YzZhODVhNjk0YTZmMGRjNTc2NjYxNmUzNGFmNDY5MDA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_Y2ExNTFjZTkxMGViZWY5OWE4OTYwOWY3MmM3ZDZiOTk_','2017-11-05 13:07:43')
+2017-11-03T13:07:43+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 28
+    [affected_rows] => 1
+)
+
+2017-11-03T13:07:43+05:30 [DBWrapper] insertOperation execution ends
+2017-11-03T13:07:43+05:30 [DBConnector] closeConnection execution starts
+2017-11-03T13:07:43+05:30 [DBConnector] closeConnection execution ends
