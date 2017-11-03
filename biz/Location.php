@@ -1,13 +1,13 @@
 <?php
 
 	require_once 'Honey.php';
-	require_once __DIR__ . '/../dao/CakeDao.php';
+	require_once __DIR__ . '/../dao/LocationDao.php';
 
 	/**
 	 * @author Ramu Ramasamy
 	 * @version 1.0
 	 */
-	class Cake extends Honey{
+	class Location extends Honey{
 
 		private $caseId;
 		private $method;
@@ -37,7 +37,7 @@
 			$result = array();
 			switch($this->method){
 				case 'GET':
-					$result = $this->getCakesList();
+					$result = $this->getLocationsList();
 					break;
 				default:
 					break;
@@ -46,15 +46,15 @@
 		}
 
 		/**
-		 * getCakesList method is used to fetch all the cakes list by using DAO.
+		 * getLocationsList method is used to fetch all the cakes list by using DAO.
 		 * 
 		 * @return $response;
 		 */
-		private function getCakesList(){
+		private function getLocationsList(){
 			$this->log->info(H_LINE);
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
-			$userDao = new CakeDao();
-			$response = $userDao->getCakesList();
+			$locationDao = new LocationDao();
+			$response = $locationDao->getLocationsList();
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
 			return $response;
 		}

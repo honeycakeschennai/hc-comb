@@ -2,15 +2,16 @@
 	
 	require_once __DIR__ . '/../db/DBConnector.php';
 	require_once __DIR__ . '/../db/DBWrapper.php';
+	require_once __DIR__ . '/../utils/TableNameConstants.php';
 
 	/**
 	 * @author Ramu Ramasamy
 	 * @version 1.0
 	 */
-	class CakeDao extends DBConnector {
+	class LocationDao extends DBConnector {
 
 		private $db;
-		private $tableName = 'cakes';
+		private $tableName = LOCATIONS;
 
 		function __construct(){
 			parent::__construct();
@@ -19,11 +20,11 @@
 		}
 
 		/**
-		 * getCakesList method is used to fetch all the cakes list.
+		 * getLocationsList method is used to fetch all the cakes list.
 		 * 
 		 * @return $response;
 		 */
-		public function getCakesList(){
+		public function getLocationsList(){
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
 			$query = "SELECT * FROM $this->tableName";
 			$db = $this->db;
@@ -31,9 +32,8 @@
 			$this->closeConnection();		
 			$result['rowCount'] = $resultMap['rowCount'];
 			for($iterator = 0; $iterator < $resultMap['rowCount']; $iterator++){
-				$result['resultData'][$iterator]['cakeId'] = $resultMap['result_data'][$iterator]['cake_id'];
-				$result['resultData'][$iterator]['cakeName'] = $resultMap['result_data'][$iterator]['cake_name'];
-				$result['resultData'][$iterator]['cakeStatus'] = $resultMap['result_data'][$iterator]['cake_status'];
+				$result['resultData'][$iterator]['locationCode'] = $resultMap['result_data'][$iterator]['location_code'];
+				$result['resultData'][$iterator]['locationName'] = $resultMap['result_data'][$iterator]['location_name'];
 			}
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
 			return $result;

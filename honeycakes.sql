@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
+<<<<<<< HEAD
 -- Generation Time: Oct 23, 2017 at 06:53 PM
+=======
+-- Generation Time: Oct 25, 2017 at 04:35 AM
+>>>>>>> order
 -- Server version: 5.6.35
 -- PHP Version: 7.1.1
 
@@ -23,6 +27,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Table structure for table `cakes`
 --
 
@@ -41,6 +46,20 @@ INSERT INTO `cakes` (`cake_id`, `cake_name`, `cake_status`, `created_time`) VALU
 (1, 'Black Forest', 'READY', '2017-08-31 15:34:14'),
 (2, 'White Forest', 'READY', '2017-08-31 15:34:14');
 
+=======
+-- Table structure for table `Items`
+--
+
+CREATE TABLE `Items` (
+  `item_id` int(11) NOT NULL,
+  `item_code` varchar(10) NOT NULL,
+  `item_name` varchar(50) NOT NULL,
+  `item_category` varchar(50) NOT NULL,
+  `item_price` varchar(10) NOT NULL,
+  `vendor_code` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+>>>>>>> order
 -- --------------------------------------------------------
 
 --
@@ -64,6 +83,53 @@ INSERT INTO `locations` (`location_id`, `location_code`, `location_name`) VALUES
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
+=======
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `order_number` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `vendor_code` varchar(10) NOT NULL,
+  `deliver_to` varchar(200) NOT NULL COMMENT 'complete delivery address will be added up here for all historical references',
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `total_amount` varchar(10) NOT NULL,
+  `status` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order_feedback`
+--
+
+CREATE TABLE `order_feedback` (
+  `order_feedback_id` int(11) NOT NULL,
+  `order_number` int(11) NOT NULL,
+  `rating` int(1) NOT NULL,
+  `remarks` varchar(500) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order_items`
+--
+
+CREATE TABLE `order_items` (
+  `order_item_id` int(11) NOT NULL,
+  `order_number` int(11) NOT NULL,
+  `item_code` varchar(10) NOT NULL,
+  `qty` varchar(10) NOT NULL,
+  `price` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+>>>>>>> order
 -- Table structure for table `tokens`
 --
 
@@ -103,7 +169,12 @@ INSERT INTO `tokens` (`token_id`, `user_id`, `generated_time`, `token`, `valid_t
 (21, 1, '2017-08-31 18:53:58', 'ZjAxMGQ2YTc2OTJjZDg2Y2FjM2YyNDM5NzQ0ZjY1NGE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MTQyMGM4ZWRhM2Y3ZDg3OTEwMDcwZWVmYzBlMDQyNzA=', '2017-09-01 00:22:44'),
 (22, 1, '2017-08-31 18:59:30', 'Y2E1OTczOTE0MmFhYzYxZTU3ZjEzZDFiYjU4MjkwZDU=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=MzMwOWQ3Y2U1YTk4YTg4M2RjZTY5ZDQ2NjNiY2Y1ODg=', '2017-09-03 00:29:30'),
 (23, 1, '2017-09-02 03:15:55', 'NTA4NWNjMDI4MDEzOWMyNTE1NzQ2OGFkYmYyZTMxNzE=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=NWQ1MjNhOWZkZjI3NDRmOGIwNDI4NTVjODc0ODk1ZjE=', '2017-09-04 08:45:55'),
+<<<<<<< HEAD
 (24, 1, '2017-10-22 17:34:18', 'NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA=', '2017-10-24 23:04:18');
+=======
+(24, 1, '2017-10-22 17:34:18', 'NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA=', '2017-10-24 23:04:18'),
+(25, 1, '2017-10-24 17:41:29', 'ZjJmZGFhODg2MDE4ODUwZDI2YjI4M2RkMzAwZjA4MDQ=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=NWIxMjkwMjY1NzRlYzlmZTZkNjg3YzEwYzE1YzY2N2U=', '2017-10-26 23:11:29');
+>>>>>>> order
 
 -- --------------------------------------------------------
 
@@ -135,6 +206,23 @@ INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `email`, `mobile`, `d
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
+=======
+-- Table structure for table `user_address`
+--
+
+CREATE TABLE `user_address` (
+  `user_address_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `home` varchar(200) DEFAULT NULL,
+  `office` varchar(200) DEFAULT NULL,
+  `other` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+>>>>>>> order
 -- Table structure for table `user_credentials`
 --
 
@@ -152,15 +240,56 @@ INSERT INTO `user_credentials` (`user_login_id`, `user_id`, `password`) VALUES
 (1, 1, 'ODFkYzliZGI1MmQwNGRjMjAwMzZkYmQ4MzEzZWQwNTU='),
 (2, 2, 'ODFkYzliZGI1MmQwNGRjMjAwMzZkYmQ4MzEzZWQwNTU=');
 
+<<<<<<< HEAD
+=======
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `vendors`
+--
+
+CREATE TABLE `vendors` (
+  `vendor_id` int(11) NOT NULL,
+  `vendor_code` varchar(10) NOT NULL,
+  `vendor_name` varchar(100) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `contact_mobile` varchar(10) NOT NULL,
+  `contact_email` varchar(50) NOT NULL,
+  `location_code` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `vendor_items`
+--
+
+CREATE TABLE `vendor_items` (
+  `vendor_item_id` int(11) NOT NULL,
+  `vendor_code` varchar(10) NOT NULL,
+  `item_code` varchar(10) NOT NULL,
+  `status` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+>>>>>>> order
 --
 -- Indexes for dumped tables
 --
 
 --
+<<<<<<< HEAD
 -- Indexes for table `cakes`
 --
 ALTER TABLE `cakes`
   ADD PRIMARY KEY (`cake_id`);
+=======
+-- Indexes for table `Items`
+--
+ALTER TABLE `Items`
+  ADD PRIMARY KEY (`item_id`),
+  ADD UNIQUE KEY `item_code` (`item_code`),
+  ADD KEY `item_vendor` (`vendor_code`);
+>>>>>>> order
 
 --
 -- Indexes for table `locations`
@@ -170,6 +299,32 @@ ALTER TABLE `locations`
   ADD UNIQUE KEY `location_code` (`location_code`);
 
 --
+<<<<<<< HEAD
+=======
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`order_number`),
+  ADD KEY `orders_users` (`user_id`),
+  ADD KEY `orders_vendors` (`vendor_code`);
+
+--
+-- Indexes for table `order_feedback`
+--
+ALTER TABLE `order_feedback`
+  ADD PRIMARY KEY (`order_feedback_id`),
+  ADD KEY `order_num_feedback` (`order_number`);
+
+--
+-- Indexes for table `order_items`
+--
+ALTER TABLE `order_items`
+  ADD PRIMARY KEY (`order_item_id`),
+  ADD KEY `order_num_items` (`order_number`),
+  ADD KEY `order_item_code` (`item_code`);
+
+--
+>>>>>>> order
 -- Indexes for table `tokens`
 --
 ALTER TABLE `tokens`
@@ -186,6 +341,15 @@ ALTER TABLE `users`
   ADD UNIQUE KEY `mobile` (`mobile`);
 
 --
+<<<<<<< HEAD
+=======
+-- Indexes for table `user_address`
+--
+ALTER TABLE `user_address`
+  ADD PRIMARY KEY (`user_address_id`);
+
+--
+>>>>>>> order
 -- Indexes for table `user_credentials`
 --
 ALTER TABLE `user_credentials`
@@ -193,39 +357,138 @@ ALTER TABLE `user_credentials`
   ADD KEY `user_id` (`user_id`);
 
 --
+<<<<<<< HEAD
+=======
+-- Indexes for table `vendors`
+--
+ALTER TABLE `vendors`
+  ADD PRIMARY KEY (`vendor_id`),
+  ADD UNIQUE KEY `vendor_code` (`vendor_code`),
+  ADD KEY `vendor_location_1` (`location_code`);
+
+--
+-- Indexes for table `vendor_items`
+--
+ALTER TABLE `vendor_items`
+  ADD PRIMARY KEY (`vendor_item_id`),
+  ADD KEY `vendor_item_status_1` (`vendor_code`),
+  ADD KEY `vendor_item_status_2` (`item_code`);
+
+--
+>>>>>>> order
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT for table `cakes`
 --
 ALTER TABLE `cakes`
   MODIFY `cake_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+=======
+-- AUTO_INCREMENT for table `Items`
+--
+ALTER TABLE `Items`
+  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT;
+>>>>>>> order
 --
 -- AUTO_INCREMENT for table `locations`
 --
 ALTER TABLE `locations`
   MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT for table `tokens`
 --
 ALTER TABLE `tokens`
   MODIFY `token_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+=======
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `order_number` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `order_feedback`
+--
+ALTER TABLE `order_feedback`
+  MODIFY `order_feedback_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `order_items`
+--
+ALTER TABLE `order_items`
+  MODIFY `order_item_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tokens`
+--
+ALTER TABLE `tokens`
+  MODIFY `token_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+>>>>>>> order
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
+<<<<<<< HEAD
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+=======
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+--
+-- AUTO_INCREMENT for table `user_address`
+--
+ALTER TABLE `user_address`
+  MODIFY `user_address_id` int(11) NOT NULL AUTO_INCREMENT;
+>>>>>>> order
 --
 -- AUTO_INCREMENT for table `user_credentials`
 --
 ALTER TABLE `user_credentials`
   MODIFY `user_login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
+<<<<<<< HEAD
+=======
+-- AUTO_INCREMENT for table `vendors`
+--
+ALTER TABLE `vendors`
+  MODIFY `vendor_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `vendor_items`
+--
+ALTER TABLE `vendor_items`
+  MODIFY `vendor_item_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+>>>>>>> order
 -- Constraints for dumped tables
 --
 
 --
+<<<<<<< HEAD
+=======
+-- Constraints for table `Items`
+--
+ALTER TABLE `Items`
+  ADD CONSTRAINT `item_vendor` FOREIGN KEY (`vendor_code`) REFERENCES `vendors` (`vendor_code`);
+
+--
+-- Constraints for table `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `orders_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`),
+  ADD CONSTRAINT `orders_vendors` FOREIGN KEY (`vendor_code`) REFERENCES `vendors` (`vendor_code`);
+
+--
+-- Constraints for table `order_feedback`
+--
+ALTER TABLE `order_feedback`
+  ADD CONSTRAINT `order_num_feedback` FOREIGN KEY (`order_number`) REFERENCES `orders` (`order_number`);
+
+--
+-- Constraints for table `order_items`
+--
+ALTER TABLE `order_items`
+  ADD CONSTRAINT `order_item_code` FOREIGN KEY (`item_code`) REFERENCES `Items` (`item_code`),
+  ADD CONSTRAINT `order_num_items` FOREIGN KEY (`order_number`) REFERENCES `orders` (`order_number`);
+
+--
+>>>>>>> order
 -- Constraints for table `tokens`
 --
 ALTER TABLE `tokens`
@@ -237,6 +500,22 @@ ALTER TABLE `tokens`
 ALTER TABLE `user_credentials`
   ADD CONSTRAINT `user_credentials_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
 
+<<<<<<< HEAD
+=======
+--
+-- Constraints for table `vendors`
+--
+ALTER TABLE `vendors`
+  ADD CONSTRAINT `vendor_location_1` FOREIGN KEY (`location_code`) REFERENCES `locations` (`location_code`);
+
+--
+-- Constraints for table `vendor_items`
+--
+ALTER TABLE `vendor_items`
+  ADD CONSTRAINT `vendor_item_status_1` FOREIGN KEY (`vendor_code`) REFERENCES `vendors` (`vendor_code`),
+  ADD CONSTRAINT `vendor_item_status_2` FOREIGN KEY (`item_code`) REFERENCES `Items` (`item_code`);
+
+>>>>>>> order
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
