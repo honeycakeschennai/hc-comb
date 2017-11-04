@@ -4,5 +4,6 @@
 	define('CASE_USER', 'user');
 	define('CASE_CAKES', 'cakes');
 	define('CASE_LOCATION', 'location');
+	define('CASE_ITEMS', 'items');
 
 ?>
