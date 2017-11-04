@@ -27,7 +27,7 @@
 		 */
 		public function getItems($data){
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
-			$query = 'SELECT * FROM ' . VENDOR_ITEMS . ' WHERE location_code="' . $data['locationCode'] . '" ORDER BY ' . ITEM_CODE;
+			$query = 'SELECT * FROM ' . VENDOR_ITEMS . ' WHERE location_code="' . $data['locationCode'] . '"';
 			$db = $this->db;
 			$resultMap = $db->selectOperation($query);
 			$this->closeConnection();		
@@ -38,6 +38,7 @@
 				$result['resultData'][$iterator]['itemCategory'] = $resultMap['result_data'][$iterator]['item_category'];
 				$result['resultData'][$iterator]['itemPrice'] = $resultMap['result_data'][$iterator]['item_price'];
 				$result['resultData'][$iterator]['qtySlab'] = $resultMap['result_data'][$iterator]['qty_slab'];
+				$result['resultData'][$iterator]['status'] = $resultMap['result_data'][$iterator]['status'];
 			}
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
 			return $result;
