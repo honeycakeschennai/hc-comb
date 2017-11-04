@@ -20,5 +20,7 @@
 	define('UNAUTH_CAUSE_1', 'Unauthorized access. Please login.');
 	define('UNAUTH_CAUSE_2', 'Session expired. Please login again.');
 	define('H_LINE', '*************************************************');
+	define('EQUALS', '=');
+	define('UNDERSCORE', '_');
 
 ?>

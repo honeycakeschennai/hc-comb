@@ -37,7 +37,7 @@
 			$safeEmailMobileStr = $utils->generateSafeString($emailMobileStr);
 			$safeTimeStamp = $utils->generateSafeString($currentTimeStamp);
 			$token = $safeRandomNumber . $safeEmailMobileStr . $safeTimeStamp;
-			$token = str_replace('=', '_', $token);
+			$token = str_replace(EQUALS, UNDERSCORE, $token);
 			$validTillTime = date("Y-m-d H:i:s", strtotime('+48 hours'));
 			$dbDataMap['user_id'] = $userId;
 			$dbDataMap['token'] = $token;
