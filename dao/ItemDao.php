@@ -34,11 +34,11 @@
 			$result['rowCount'] = $resultMap['rowCount'];
 			for($iterator = 0; $iterator < $resultMap['rowCount']; $iterator++){
 				$result['resultData'][$iterator]['itemCode'] = $resultMap['result_data'][$iterator]['item_code'];
+				$result['resultData'][$iterator]['status'] = $resultMap['result_data'][$iterator]['status'];
 				$result['resultData'][$iterator]['itemName'] = $resultMap['result_data'][$iterator]['item_name'];
 				$result['resultData'][$iterator]['itemCategory'] = $resultMap['result_data'][$iterator]['item_category'];
 				$result['resultData'][$iterator]['itemPrice'] = $resultMap['result_data'][$iterator]['item_price'];
 				$result['resultData'][$iterator]['qtySlab'] = $resultMap['result_data'][$iterator]['qty_slab'];
-				$result['resultData'][$iterator]['status'] = $resultMap['result_data'][$iterator]['status'];
 			}
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
 			return $result;
