@@ -7,6 +7,7 @@
 
 	require_once 'biz/User.php';
 	require_once 'biz/Location.php';
+	require_once 'biz/Item.php';
 	
 	/**
 	 * Honeycakes REST API - handles all HTTP requests and responses.
@@ -59,6 +60,9 @@
 			  	break;
 			case CASE_LOCATION:
 				$response = executeLocationCase();
+				break;
+			case CASE_ITEMS:
+				$response = executeItemCase();
 				break;
 		}
 	} else if($case != CASE_LOGIN){
@@ -179,6 +183,21 @@
 		global $method, $data, $caseId;
 		$location = new Location($caseId, $method, $data);
 		$response = $location->executeAction();
+		return $response;
+	}
+
+	/** 
+	 * executeItemCase method instantiates Item object and executes the action. 
+	 * This method gets the location data from the request params. List of items will be 
+	 * fetched based on the location. 
+	 * 
+	 * @return $response
+	 */
+	function executeItemCase(){
+		global $method, $data, $caseId;
+		$data['locationCode'] = $_GET['lnCode'];
+		$item = new Item($caseId, $method, $data);
+		$response = $item->executeAction();
 		return $response;
 	}
 	 

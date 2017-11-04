@@ -2,6 +2,7 @@
 
 	require_once __DIR__ . '/../utils/Constants.php';
 	require_once __DIR__ . '/../lib/log4php/Logger.php';
+	require_once 'DBConstants.php';
 	Logger::configure(__DIR__ . '/../config/logger-config.xml');
 
 	/**
@@ -13,10 +14,10 @@
 	 */
 	class DBConnector {
 		//Set the configuration of MySQL server
-		private $dbServername = 'localhost';
-		private $dbUsername = 'root';
-		private $dbPassword = 'root';
-		private $dbName = 'honeycakes';
+		private $dbServername = SERVERNAME;
+		private $dbUsername = USERNAME;
+		private $dbPassword = PASSWORD;
+		private $dbName = DBNAME;
 
 		protected $dbc; 
 		protected $log;

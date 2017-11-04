@@ -1709,3 +1709,417 @@ Array
 2017-11-03T13:07:43+05:30 [DBWrapper] insertOperation execution ends
 2017-11-03T13:07:43+05:30 [DBConnector] closeConnection execution starts
 2017-11-03T13:07:43+05:30 [DBConnector] closeConnection execution ends
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:54:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:54:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:54:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:54:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:54:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:54:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:54:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:54:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:54:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:54:57+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NWYxMzA2ZmYzYzNkODExYmY3MjgwOTQyN2QwYTZjNjI=MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI=ZmU0MzQzOTliMzhhNTY5Y2M0MDBlZGE2YWM1YjVmNzA='
+2017-11-03T18:54:57+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:56:12+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:56:12+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-03T18:56:12+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:56:12+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:56:12+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-11-03T18:56:12+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:56:12+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:56:12+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-03T18:56:12+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:56:12+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:56:12+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-11-03T18:56:12+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:56:12+05:30 [DBWrapper] insertOperation execution starts
+2017-11-03T18:56:12+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_','2017-11-05 18:56:12')
+2017-11-03T18:56:12+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 29
+    [affected_rows] => 1
+)
+
+2017-11-03T18:56:12+05:30 [DBWrapper] insertOperation execution ends
+2017-11-03T18:56:12+05:30 [DBConnector] closeConnection execution starts
+2017-11-03T18:56:12+05:30 [DBConnector] closeConnection execution ends
+2017-11-03T18:56:40+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:56:40+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T18:56:40+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:56:40+05:30 [Location] *************************************************
+2017-11-03T18:56:40+05:30 [Location] getLocationsList execution starts
+2017-11-03T18:56:40+05:30 [LocationDao] getLocationsList execution starts
+2017-11-03T18:56:40+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T18:56:40+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-03T18:56:40+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T18:56:40+05:30 [LocationDao] closeConnection execution starts
+2017-11-03T18:56:40+05:30 [LocationDao] closeConnection execution ends
+2017-11-03T18:56:40+05:30 [LocationDao] getLocationsList execution ends
+2017-11-03T18:56:40+05:30 [Location] getLocationsList execution ends
+2017-11-03T19:34:22+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T19:34:22+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T19:34:22+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T19:36:25+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T19:36:25+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T19:36:25+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T19:36:47+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T19:36:47+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T19:36:47+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T19:36:47+05:30 [Item] *************************************************
+2017-11-03T19:36:47+05:30 [Item] getItems execution starts
+2017-11-03T19:36:47+05:30 [ItemDao] getItems execution starts
+2017-11-03T19:36:47+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T19:36:47+05:30 [DBWrapper] QUERY: 
+SELECT * FROM items
+2017-11-03T19:36:47+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T19:36:47+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T19:36:47+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T19:36:47+05:30 [ItemDao] getItems execution ends
+2017-11-03T19:36:47+05:30 [Item] getItems execution ends
+2017-11-03T19:51:24+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T19:51:24+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T19:51:24+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T19:51:24+05:30 [Item] *************************************************
+2017-11-03T19:51:24+05:30 [Item] getItems execution starts
+2017-11-03T19:51:24+05:30 [ItemDao] getItems execution starts
+2017-11-03T19:51:24+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T19:51:24+05:30 [DBWrapper] QUERY: 
+SELECT * FROM items
+2017-11-03T19:51:24+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T19:51:24+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T19:51:24+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T19:51:24+05:30 [ItemDao] getItems execution ends
+2017-11-03T19:51:24+05:30 [Item] getItems execution ends
+2017-11-03T19:51:35+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T19:51:35+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T19:51:35+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T19:51:35+05:30 [Item] *************************************************
+2017-11-03T19:51:35+05:30 [Item] getItems execution starts
+2017-11-03T19:51:35+05:30 [ItemDao] getItems execution starts
+2017-11-03T19:51:35+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T19:51:35+05:30 [DBWrapper] QUERY: 
+SELECT * FROM items
+2017-11-03T19:51:35+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T19:51:35+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T19:51:35+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T19:51:35+05:30 [ItemDao] getItems execution ends
+2017-11-03T19:51:35+05:30 [Item] getItems execution ends
+2017-11-03T20:07:52+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:07:52+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:07:52+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:07:52+05:30 [Item] *************************************************
+2017-11-03T20:07:52+05:30 [Item] getItems execution starts
+2017-11-03T20:07:52+05:30 [ItemDao] getItems execution starts
+2017-11-03T20:07:52+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:07:52+05:30 [DBWrapper] QUERY: 
+SELECT * FROM items
+2017-11-03T20:07:52+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:07:52+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T20:07:52+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T20:07:52+05:30 [ItemDao] getItems execution ends
+2017-11-03T20:07:52+05:30 [Item] getItems execution ends
+2017-11-03T20:07:59+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:07:59+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:07:59+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:07:59+05:30 [Item] *************************************************
+2017-11-03T20:07:59+05:30 [Item] getItems execution starts
+2017-11-03T20:07:59+05:30 [ItemDao] getItems execution starts
+2017-11-03T20:07:59+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:07:59+05:30 [DBWrapper] QUERY: 
+SELECT * FROM items
+2017-11-03T20:07:59+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:07:59+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T20:07:59+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T20:07:59+05:30 [ItemDao] getItems execution ends
+2017-11-03T20:07:59+05:30 [Item] getItems execution ends
+2017-11-03T20:08:38+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:08:38+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:08:38+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:08:38+05:30 [Item] *************************************************
+2017-11-03T20:08:38+05:30 [Item] getItems execution starts
+2017-11-03T20:08:38+05:30 [ItemDao] getItems execution starts
+2017-11-03T20:08:38+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:08:38+05:30 [DBWrapper] QUERY: 
+SELECT * FROM items
+2017-11-03T20:08:38+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:08:38+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T20:08:38+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T20:08:38+05:30 [ItemDao] getItems execution ends
+2017-11-03T20:08:38+05:30 [Item] getItems execution ends
+2017-11-03T20:12:33+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:12:33+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:12:33+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:12:33+05:30 [Item] *************************************************
+2017-11-03T20:12:33+05:30 [Item] getItems execution starts
+2017-11-03T20:12:33+05:30 [ItemDao] getItems execution starts
+2017-11-03T20:12:33+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:12:33+05:30 [DBWrapper] QUERY: 
+SELECT * FROM items
+2017-11-03T20:12:33+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:12:33+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T20:12:33+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T20:12:33+05:30 [ItemDao] getItems execution ends
+2017-11-03T20:12:33+05:30 [Item] getItems execution ends
+2017-11-03T20:13:46+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:13:46+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token=''
+2017-11-03T20:13:46+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:14:13+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:14:13+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:14:13+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:14:13+05:30 [Item] *************************************************
+2017-11-03T20:14:13+05:30 [Item] getItems execution starts
+2017-11-03T20:14:13+05:30 [ItemDao] getItems execution starts
+2017-11-03T20:14:13+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:14:13+05:30 [DBWrapper] QUERY: 
+SELECT * FROM items
+2017-11-03T20:14:13+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:14:13+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T20:14:13+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T20:14:13+05:30 [ItemDao] getItems execution ends
+2017-11-03T20:14:13+05:30 [Item] getItems execution ends
+2017-11-03T20:16:06+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:16:06+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token=''
+2017-11-03T20:16:06+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:26:00+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:26:00+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:26:00+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:26:14+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:26:14+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:26:14+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:26:22+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:26:22+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:26:22+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:26:43+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:26:43+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:26:43+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:27:58+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:27:58+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:27:58+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:30:04+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:30:04+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:30:04+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:30:32+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:30:32+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:30:32+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:31:02+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:31:02+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:31:02+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:31:02+05:30 [Item] *************************************************
+2017-11-03T20:31:02+05:30 [Item] getItems execution starts
+2017-11-03T20:31:02+05:30 [ItemDao] getItems execution starts
+2017-11-03T20:31:02+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:31:02+05:30 [DBWrapper] QUERY: 
+SELECT * FROM items
+2017-11-03T20:31:02+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:31:02+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T20:31:02+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T20:31:02+05:30 [ItemDao] getItems execution ends
+2017-11-03T20:31:02+05:30 [Item] getItems execution ends
+2017-11-03T20:31:11+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:31:11+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:31:11+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:31:11+05:30 [Item] *************************************************
+2017-11-03T20:31:11+05:30 [Item] getItems execution starts
+2017-11-03T20:31:11+05:30 [ItemDao] getItems execution starts
+2017-11-03T20:31:11+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:31:11+05:30 [DBWrapper] QUERY: 
+SELECT * FROM items
+2017-11-03T20:31:11+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:31:11+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T20:31:11+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T20:31:11+05:30 [ItemDao] getItems execution ends
+2017-11-03T20:31:11+05:30 [Item] getItems execution ends
+2017-11-03T20:31:36+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:31:36+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T20:31:36+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:31:36+05:30 [Item] *************************************************
+2017-11-03T20:31:36+05:30 [Item] getItems execution starts
+2017-11-03T20:31:36+05:30 [ItemDao] getItems execution starts
+2017-11-03T20:31:36+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T20:31:36+05:30 [DBWrapper] QUERY: 
+SELECT * FROM items
+2017-11-03T20:31:36+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T20:31:36+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T20:31:36+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T20:31:36+05:30 [ItemDao] getItems execution ends
+2017-11-03T20:31:36+05:30 [Item] getItems execution ends
+2017-11-03T23:11:26+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T23:11:26+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T23:11:26+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T23:11:26+05:30 [Item] *************************************************
+2017-11-03T23:11:26+05:30 [Item] getItems execution starts
+2017-11-03T23:11:26+05:30 [ItemDao] getItems execution starts
+2017-11-03T23:11:26+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T23:11:26+05:30 [DBWrapper] QUERY: 
+SELECT * FROM vendor_items_view WHERE location_code="LN001"
+2017-11-03T23:11:26+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T23:11:26+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T23:11:26+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T23:11:26+05:30 [ItemDao] getItems execution ends
+2017-11-03T23:11:26+05:30 [Item] getItems execution ends
+2017-11-03T23:15:16+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T23:15:16+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T23:15:16+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T23:15:16+05:30 [Item] *************************************************
+2017-11-03T23:15:16+05:30 [Item] getItems execution starts
+2017-11-03T23:15:16+05:30 [ItemDao] getItems execution starts
+2017-11-03T23:15:16+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T23:15:16+05:30 [DBWrapper] QUERY: 
+SELECT * FROM vendor_items_view WHERE location_code="LN002"
+2017-11-03T23:15:16+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T23:15:16+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T23:15:16+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T23:15:16+05:30 [ItemDao] getItems execution ends
+2017-11-03T23:15:16+05:30 [Item] getItems execution ends
+2017-11-03T23:15:29+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T23:15:29+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T23:15:29+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T23:15:29+05:30 [Item] *************************************************
+2017-11-03T23:15:29+05:30 [Item] getItems execution starts
+2017-11-03T23:15:29+05:30 [ItemDao] getItems execution starts
+2017-11-03T23:15:29+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T23:15:29+05:30 [DBWrapper] QUERY: 
+SELECT * FROM vendor_items_view WHERE location_code="LN004"
+2017-11-03T23:15:29+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T23:15:29+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T23:15:29+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T23:15:29+05:30 [ItemDao] getItems execution ends
+2017-11-03T23:15:29+05:30 [Item] getItems execution ends
+2017-11-03T23:15:40+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T23:15:40+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-03T23:15:40+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T23:15:40+05:30 [Item] *************************************************
+2017-11-03T23:15:40+05:30 [Item] getItems execution starts
+2017-11-03T23:15:40+05:30 [ItemDao] getItems execution starts
+2017-11-03T23:15:40+05:30 [DBWrapper] selectOperation execution starts
+2017-11-03T23:15:40+05:30 [DBWrapper] QUERY: 
+SELECT * FROM vendor_items_view WHERE location_code="LN001"
+2017-11-03T23:15:40+05:30 [DBWrapper] selectOperation execution ends
+2017-11-03T23:15:40+05:30 [ItemDao] closeConnection execution starts
+2017-11-03T23:15:40+05:30 [ItemDao] closeConnection execution ends
+2017-11-03T23:15:40+05:30 [ItemDao] getItems execution ends
+2017-11-03T23:15:40+05:30 [Item] getItems execution ends
+2017-11-04T08:41:39+05:30 [DBWrapper] selectOperation execution starts
+2017-11-04T08:41:39+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-04T08:41:39+05:30 [DBWrapper] selectOperation execution ends
+2017-11-04T08:41:39+05:30 [Location] *************************************************
+2017-11-04T08:41:39+05:30 [Location] getLocationsList execution starts
+2017-11-04T08:41:39+05:30 [LocationDao] getLocationsList execution starts
+2017-11-04T08:41:39+05:30 [DBWrapper] selectOperation execution starts
+2017-11-04T08:41:39+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-04T08:41:39+05:30 [DBWrapper] selectOperation execution ends
+2017-11-04T08:41:39+05:30 [LocationDao] closeConnection execution starts
+2017-11-04T08:41:39+05:30 [LocationDao] closeConnection execution ends
+2017-11-04T08:41:39+05:30 [LocationDao] getLocationsList execution ends
+2017-11-04T08:41:39+05:30 [Location] getLocationsList execution ends
+2017-11-04T08:42:28+05:30 [DBWrapper] selectOperation execution starts
+2017-11-04T08:42:28+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-04T08:42:28+05:30 [DBWrapper] selectOperation execution ends
+2017-11-04T08:42:28+05:30 [Location] *************************************************
+2017-11-04T08:42:28+05:30 [Location] getLocationsList execution starts
+2017-11-04T08:42:28+05:30 [LocationDao] getLocationsList execution starts
+2017-11-04T08:42:28+05:30 [DBWrapper] selectOperation execution starts
+2017-11-04T08:42:28+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-04T08:42:28+05:30 [DBWrapper] selectOperation execution ends
+2017-11-04T08:42:28+05:30 [LocationDao] closeConnection execution starts
+2017-11-04T08:42:28+05:30 [LocationDao] closeConnection execution ends
+2017-11-04T08:42:28+05:30 [LocationDao] getLocationsList execution ends
+2017-11-04T08:42:28+05:30 [Location] getLocationsList execution ends
+2017-11-04T08:47:39+05:30 [DBWrapper] selectOperation execution starts
+2017-11-04T08:47:39+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-04T08:47:39+05:30 [DBWrapper] selectOperation execution ends
+2017-11-04T08:47:39+05:30 [Item] *************************************************
+2017-11-04T08:47:39+05:30 [Item] getItems execution starts
+2017-11-04T08:47:39+05:30 [ItemDao] getItems execution starts
+2017-11-04T08:47:39+05:30 [DBWrapper] selectOperation execution starts
+2017-11-04T08:47:39+05:30 [DBWrapper] QUERY: 
+SELECT * FROM vendor_items_view WHERE location_code="LN001" ORDER BY item_code
+2017-11-04T08:47:39+05:30 [DBWrapper] selectOperation execution ends
+2017-11-04T08:47:39+05:30 [ItemDao] closeConnection execution starts
+2017-11-04T08:47:39+05:30 [ItemDao] closeConnection execution ends
+2017-11-04T08:47:39+05:30 [ItemDao] getItems execution ends
+2017-11-04T08:47:39+05:30 [Item] getItems execution ends
+2017-11-04T08:59:50+05:30 [DBWrapper] selectOperation execution starts
+2017-11-04T08:59:50+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='MThmYWYyYjVmNmRkMTI4NGIxMGU4ZDI0MzgyNGZkNTA_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YTYzOTNlYjExYTE5M2RmYzFjYmEwM2EwMjI1YmNjMmQ_'
+2017-11-04T08:59:50+05:30 [DBWrapper] selectOperation execution ends
+2017-11-04T08:59:50+05:30 [Item] *************************************************
+2017-11-04T08:59:50+05:30 [Item] getItems execution starts
+2017-11-04T08:59:50+05:30 [ItemDao] getItems execution starts
+2017-11-04T08:59:50+05:30 [DBWrapper] selectOperation execution starts
+2017-11-04T08:59:50+05:30 [DBWrapper] QUERY: 
+SELECT * FROM vendor_items_view WHERE location_code="LN001" ORDER BY item_code
+2017-11-04T08:59:50+05:30 [DBWrapper] selectOperation execution ends
+2017-11-04T08:59:50+05:30 [ItemDao] closeConnection execution starts
+2017-11-04T08:59:50+05:30 [ItemDao] closeConnection execution ends
+2017-11-04T08:59:50+05:30 [ItemDao] getItems execution ends
+2017-11-04T08:59:50+05:30 [Item] getItems execution ends
