@@ -26,6 +26,7 @@
 		 */
 		public function getLocationsList(){
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
+			//SELECT * FROM locations
 			$query = "SELECT * FROM $this->tableName";
 			$db = $this->db;
 			$resultMap = $db->selectOperation($query);
