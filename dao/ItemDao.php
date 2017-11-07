@@ -12,7 +12,6 @@
 	class ItemDao extends DBConnector {
 
 		private $db;
-		private $tableName = ITEMS;
 
 		function __construct(){
 			parent::__construct();
