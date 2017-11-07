@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 04, 2017 at 06:14 PM
+-- Generation Time: Nov 07, 2017 at 07:03 PM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.1
 
@@ -46,7 +46,11 @@ INSERT INTO `items` (`item_id`, `item_code`, `item_name`, `item_category`, `item
 (4, 'IT004', 'Jelly Cake', '1', '900', 1),
 (5, 'IT005', 'Strawberry', '1', '750', 1),
 (6, 'IT006', 'Butterscotch', '1', '750', 1),
-(7, 'IT007', 'Vanilla', '1', '700', 1);
+(7, 'IT007', 'Vanilla', '1', '700', 1),
+(8, 'PARTY01', 'Party Hat', '2', '10', 1),
+(9, 'PARTY02', 'Snow Spray', '2', '60', 1),
+(10, 'PARTY03', 'Poppers', '2', '100', 1),
+(11, 'PARTY04', 'Fancy Candle', '2', '5', 1);
 
 -- --------------------------------------------------------
 
@@ -57,21 +61,23 @@ INSERT INTO `items` (`item_id`, `item_code`, `item_name`, `item_category`, `item
 CREATE TABLE `locations` (
   `location_id` int(11) NOT NULL,
   `location_code` varchar(10) NOT NULL,
-  `location_name` varchar(100) NOT NULL
+  `location_name` varchar(100) NOT NULL,
+  `delivery_vendor` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `locations`
 --
 
-INSERT INTO `locations` (`location_id`, `location_code`, `location_name`) VALUES
-(1, 'LN001', 'Thiruvanmiyur'),
-(2, 'LN002', 'Perungudi'),
-(3, 'LN003', 'Thoraipakkam'),
-(4, 'LN004', 'Karapakkam'),
-(5, 'LN005', 'Sholinganallur'),
-(6, 'LN006', 'Chemmancherry'),
-(7, 'LN007', 'Navallur');
+INSERT INTO `locations` (`location_id`, `location_code`, `location_name`, `delivery_vendor`) VALUES
+(1, 'LN001', 'Thiruvanmiyur', 'VN004'),
+(2, 'LN002', 'Perungudi', 'VN003'),
+(3, 'LN003', 'Thoraipakkam', 'VN003'),
+(4, 'LN004', 'Karapakkam', 'VN001'),
+(5, 'LN005', 'Sholinganallur', 'VN001'),
+(6, 'LN006', 'Chemmancherry', 'VN002'),
+(7, 'LN007', 'Navallur', 'VN002'),
+(8, 'LN008', 'SRP Tools', 'VN004');
 
 -- --------------------------------------------------------
 
@@ -172,6 +178,13 @@ CREATE TABLE `user_address` (
   `other` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `user_address`
+--
+
+INSERT INTO `user_address` (`user_address_id`, `user_id`, `home`, `office`, `other`) VALUES
+(1, 1, 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 'ccccccccccccccccccccccccccccccccccccccc');
+
 -- --------------------------------------------------------
 
 --
@@ -214,9 +227,9 @@ CREATE TABLE `vendors` (
 
 INSERT INTO `vendors` (`vendor_id`, `vendor_code`, `vendor_name`, `address`, `contact_mobile`, `contact_email`, `location_code`) VALUES
 (1, 'VN001', 'FB Cakes', 'Karapakkam', '9876543210', '123@gmail.com', 'LN004'),
-(2, 'VN002', 'Cake House', 'Thiruvanmiyur', '1234567890', '234@gmail.com', 'LN001'),
+(2, 'VN002', 'Cake House', 'Navallur', '1234567890', '234@gmail.com', 'LN007'),
 (3, 'VN003', 'Yum Cakes', 'Thoraipakkam', '8765432190', '789@gmail.com', 'LN003'),
-(4, 'VN004', 'Bakers Code', 'Perungudi', '765421098', '667@gmail.com', 'LN002');
+(4, 'VN004', 'Bakers Code', 'Thiruvanmyur', '765421098', '667@gmail.com', 'LN002');
 
 -- --------------------------------------------------------
 
@@ -263,7 +276,23 @@ INSERT INTO `vendor_items` (`vendor_item_id`, `vendor_code`, `item_code`, `statu
 (25, 'VN004', 'IT004', 1),
 (26, 'VN004', 'IT005', 0),
 (27, 'VN004', 'IT006', 1),
-(28, 'VN004', 'IT007', 1);
+(28, 'VN004', 'IT007', 1),
+(29, 'VN001', 'PARTY01', 1),
+(30, 'VN001', 'PARTY02', 1),
+(31, 'VN001', 'PARTY03', 1),
+(32, 'VN001', 'PARTY04', 0),
+(33, 'VN002', 'PARTY01', 1),
+(34, 'VN002', 'PARTY02', 1),
+(35, 'VN002', 'PARTY03', 1),
+(36, 'VN002', 'PARTY04', 1),
+(37, 'VN003', 'PARTY01', 1),
+(38, 'VN003', 'PARTY02', 1),
+(39, 'VN003', 'PARTY03', 1),
+(40, 'VN003', 'PARTY04', 1),
+(41, 'VN004', 'PARTY01', 0),
+(42, 'VN004', 'PARTY02', 1),
+(43, 'VN004', 'PARTY03', 1),
+(44, 'VN004', 'PARTY04', 1);
 
 -- --------------------------------------------------------
 
@@ -289,7 +318,7 @@ CREATE TABLE `vendor_items_view` (
 --
 DROP TABLE IF EXISTS `vendor_items_view`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `vendor_items_view`  AS  select `item`.`item_code` AS `item_code`,`item`.`item_name` AS `item_name`,`item`.`item_category` AS `item_category`,`item`.`item_price` AS `item_price`,`item`.`qty_slab` AS `qty_slab`,`vendor`.`location_code` AS `location_code`,`vendor`.`vendor_code` AS `vendor_code`,`vendor_item`.`status` AS `status` from ((`items` `item` join `vendors` `vendor`) join `vendor_items` `vendor_item`) where ((`item`.`item_code` = `vendor_item`.`item_code`) and (`vendor`.`vendor_code` = `vendor_item`.`vendor_code`)) order by `item`.`item_code`,`vendor`.`location_code` ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `vendor_items_view`  AS  select `item`.`item_code` AS `item_code`,`item`.`item_name` AS `item_name`,`item`.`item_category` AS `item_category`,`item`.`item_price` AS `item_price`,`item`.`qty_slab` AS `qty_slab`,`vendor`.`location_code` AS `location_code`,`vendor`.`vendor_code` AS `vendor_code`,`vendor_item`.`status` AS `status` from ((`items` `item` join `vendors` `vendor`) join `vendor_items` `vendor_item`) where ((`item`.`item_code` = `vendor_item`.`item_code`) and (`vendor`.`vendor_code` = `vendor_item`.`vendor_code`)) order by `item`.`item_code`,`vendor`.`vendor_code` ;
 
 --
 -- Indexes for dumped tables
@@ -352,7 +381,8 @@ ALTER TABLE `users`
 -- Indexes for table `user_address`
 --
 ALTER TABLE `user_address`
-  ADD PRIMARY KEY (`user_address_id`);
+  ADD PRIMARY KEY (`user_address_id`),
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `user_credentials`
@@ -385,12 +415,12 @@ ALTER TABLE `vendor_items`
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `locations`
 --
 ALTER TABLE `locations`
-  MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `orders`
 --
@@ -410,7 +440,7 @@ ALTER TABLE `order_items`
 -- AUTO_INCREMENT for table `tokens`
 --
 ALTER TABLE `tokens`
-  MODIFY `token_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `token_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 --
 -- AUTO_INCREMENT for table `users`
 --
@@ -420,7 +450,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `user_address`
 --
 ALTER TABLE `user_address`
-  MODIFY `user_address_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `user_credentials`
 --
@@ -435,7 +465,7 @@ ALTER TABLE `vendors`
 -- AUTO_INCREMENT for table `vendor_items`
 --
 ALTER TABLE `vendor_items`
-  MODIFY `vendor_item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `vendor_item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 --
 -- Constraints for dumped tables
 --
@@ -465,6 +495,12 @@ ALTER TABLE `order_items`
 --
 ALTER TABLE `tokens`
   ADD CONSTRAINT `tokens_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+
+--
+-- Constraints for table `user_address`
+--
+ALTER TABLE `user_address`
+  ADD CONSTRAINT `user_address_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
 
 --
 -- Constraints for table `user_credentials`
