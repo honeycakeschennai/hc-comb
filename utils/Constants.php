@@ -12,7 +12,7 @@
 	define('QUERY', 'QUERY: ');
 	define('QUERY_RESULT', 'QUERY RESULT: ');
 	define('INCORRECT_PASSWORD', 'Incorrect password. Check your password.');
-	define('USER_DOES_NOT_EXIST', 'Entered user does not exist. Check email/mobile.');
+	define('USER_DOES_NOT_EXIST', 'Entered user does not exist. Please check the email.');
 	define('INVALID_REQUEST', 'Invalid request.');
 	define('UNAUTH_ACCESS', 'unauthorized_access');
 	define('UNAUTH_1', 'UNAUTH_1');
@@ -22,5 +22,7 @@
 	define('H_LINE', '*************************************************');
 	define('EQUALS', '=');
 	define('UNDERSCORE', '_');
+	define('VALID','valid');
+	define('INVALID','invalid');
 
 ?>

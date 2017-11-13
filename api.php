@@ -53,6 +53,9 @@
 	if( $token != '' && isTokenValid($token) ){
 		/** determines the case and executes the corresponding method */
 		switch ($case) {
+			case CASE_VALIDATE_TOKEN:
+			  	$response = validateToken();
+			  	break;
 		  	case CASE_USER:
 			  	$response = executeUserCase();
 			  	break;
@@ -123,6 +126,18 @@
 	}
 
 	/**
+	 * validateToken method checks if the token is valid by calling isTokenValid method.
+	 * 
+	 * @return response
+	 */
+	function validateToken(){
+		$isValid = isTokenValid($_GET['token']);
+		if($isValid){
+			return array('status' => VALID);
+		}
+	}
+
+	/**
 	 * getUserId method fetches userId based on the token given.
 	 * 
 	 * @param token
@@ -143,7 +158,8 @@
 		global $method, $data;
 		$response = array();
 		if($method == 'POST'){
-			$auth = new Authenticator($data['loginId'], $data['password']);
+			$auth = new Authenticator($data['email'], $data['password']);
+		file_put_contents("testlog.log", "\n".print_r($data['email'].' '.$data['password'], true), FILE_APPEND | LOCK_EX);
 			if($auth->checkIfUserExists()){
 				if($auth->comparePassword()){
 					$userId = $auth->getUserId();
