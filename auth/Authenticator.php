@@ -57,10 +57,9 @@
 			$query = "SELECT uc.password FROM " . USERS . " u, " . USER_CREDENTIALS . " uc WHERE (u.email='$loginId' OR u.mobile='$loginId') AND u.user_id=uc.user_id";
 			$db = $this->db;
 			$resultMap = $db->selectOperation($query);
-			if($resultMap['result_data'][0]['password'] == $utils->generateSafeString($userInputPassword)){
+			if(password_verify($userInputPassword, $resultMap['result_data'][0]['password'])){
 				$isMatching = true;
 			}
-			// file_put_contents("testlog.log", "\n".print_r($resultMap, true), FILE_APPEND | LOCK_EX);
 			return $isMatching;
 		}
 

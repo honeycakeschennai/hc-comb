@@ -159,7 +159,6 @@
 		$response = array();
 		if($method == 'POST'){
 			$auth = new Authenticator($data['email'], $data['password']);
-		file_put_contents("testlog.log", "\n".print_r($data['email'].' '.$data['password'], true), FILE_APPEND | LOCK_EX);
 			if($auth->checkIfUserExists()){
 				if($auth->comparePassword()){
 					$userId = $auth->getUserId();
