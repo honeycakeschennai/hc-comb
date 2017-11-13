@@ -23,6 +23,7 @@
 
 		/**
 		 * generateToken method generates a new token for a given user.
+		 * tokens are valid for one year - 8760 hours
 		 * 
 		 * @return token
 		 */
@@ -38,7 +39,7 @@
 			$safeTimeStamp = $utils->generateSafeString($currentTimeStamp);
 			$token = $safeRandomNumber . $safeEmailMobileStr . $safeTimeStamp;
 			$token = str_replace(EQUALS, UNDERSCORE, $token);
-			$validTillTime = date("Y-m-d H:i:s", strtotime('+48 hours'));
+			$validTillTime = date("Y-m-d H:i:s", strtotime('+8760 hours'));
 			$dbDataMap['user_id'] = $userId;
 			$dbDataMap['token'] = $token;
 			$dbDataMap['valid_till'] = $validTillTime;
