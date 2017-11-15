@@ -2,6 +2,7 @@
 
 	require_once 'Honey.php';
 	require_once __DIR__ . '/../dao/UserDao.php';
+	require_once __DIR__ . '/../utils/Constants.php';
 
 	/**
 	 * @author Ramu Ramasamy
@@ -66,6 +67,7 @@
 
 		/**
 		 * createUser method is used to create a new user by using DAO.
+		 * It calls generateOtp method for generating OTP.
 		 * 
 		 * @return $response;
 		 */
@@ -74,8 +76,43 @@
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
 			$userDao = new UserDao();
 			$response = $userDao->createUser($this->inputDataMap);
+			if($response['status'] == SUCCESS){
+				$dataMap = $this->inputDataMap;
+				$password = $dataMap['password'];
+				$this->generateHashedPassword($response['userId'], $password);
+				$this->generateOtp($response['userId'], EMAIL);
+				$this->generateOtp($response['userId'], MOBILE);
+			}
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
 			return $response;
+		}
+
+		/**
+		 * hashPassword method is used to encrypt the user entered password.
+		 * 
+		 * @param userId
+		 * @param password
+		 */
+		private function generateHashedPassword($userId, $password){
+			$options = [
+			    'cost' => 10,
+			];
+			$hashedPassword = password_hash($password, PASSWORD_BCRYPT, $options);
+			$userDao = new UserDao();
+			$userDao->savePassword($userId, $hashedPassword);
+		}
+
+		/**
+		 * generateOtp method is used to generate a 6 digit OTP.
+		 * It send the OTP to user also saves the OTP in DB for verfication.
+		 * 
+		 * @param userId
+		 * @param otpFor
+		 */
+		private function generateOtp($userId, $otpFor){
+			$otpValue = mt_rand(100000, 999999);
+			$userDao = new UserDao();
+			$userDao->saveOtp($userId, $otpFor, $otpValue);
 		}
 
 		/**

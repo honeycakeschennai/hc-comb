@@ -45,6 +45,7 @@
 
 		/**
 		 * createUser method is used to create a new user.
+		 * it saves the password, generates OTP for email and mobile 
 		 * 
 		 * @param inputDataMap
 		 * @return $response
@@ -59,12 +60,12 @@
 			$dbDataMap['date_of_birth'] = $inputDataMap['dob'];
 			$db = $this->db;
 			$resultMap = $db->insertOperation($this->tableName, $dbDataMap);
-			// db connection not to be closed here as the savePassword method will be called.
+			$this->closeConnection();
 			$result['status'] = $resultMap['status'];
 			if($resultMap['status'] == SUCCESS){
 				$result['userId'] = $resultMap['last_insert_id'];
 				$result['affectedRows'] = $resultMap['affected_rows'];
-				$this->savePassword($result['lastCreatedUserId'], $inputDataMap['password']);
+				//$this->savePassword($result['userId'], $inputDataMap['password']);
 			} else {
 				$result['errorDetails'] = $resultMap['error_details'];
 				$result['affectedRows'] = $resultMap['affected_rows'];
@@ -80,11 +81,11 @@
 		 * @param userId
 		 * @param password
 		 */
-		private function savePassword($userId, $password){
+		public function savePassword($userId, $password){
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
 			$dbDataMap = array();
 			$dbDataMap['user_id'] = $userId;
-			$dbDataMap['password'] = $this->hashPassword($password);
+			$dbDataMap['password'] = $password;
 			$db = $this->db;
 			$resultMap = $db->noEscapeInsertOperation(USER_CREDENTIALS, $dbDataMap);
 			$this->log->debug(QUERY_RESULT . NEW_LINE . print_r($resultMap, true));	
@@ -93,17 +94,23 @@
 		}
 
 		/**
-		 * hashPassword method is used to encrypt the user entered password.
+		 * saveOtp method is used to save OTP to otp table.
 		 * 
-		 * @param password
-		 * @return hashedPassword
+		 * @param userId
+		 * @param otpFor
+		 * @param otpValue
 		 */
-		private function hashPassword($password){
-			$options = [
-			    'cost' => 10,
-			];
-			$hashedPassword = password_hash($password, PASSWORD_BCRYPT, $options);
-			return $hashedPassword;
+		public function saveOtp($userId, $otpFor, $otpValue){
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
+			$dbDataMap = array();
+			$dbDataMap['user_id'] = $userId;
+			$dbDataMap['otp_for'] = $otpFor;
+			$dbDataMap['otp_value'] = $otpValue;
+			$db = $this->db;
+			$resultMap = $db->insertOperation(OTP, $dbDataMap);
+			$this->log->debug(QUERY_RESULT . NEW_LINE . print_r($resultMap, true));	
+			$this->closeConnection();
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
 		}
 
 		/**

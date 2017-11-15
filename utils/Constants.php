@@ -24,5 +24,7 @@
 	define('UNDERSCORE', '_');
 	define('VALID','valid');
 	define('INVALID','invalid');
+	define('MOBILE','mobile');
+	define('EMAIL','email');
 
 ?>
