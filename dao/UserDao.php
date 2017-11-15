@@ -59,7 +59,7 @@
 			$dbDataMap['date_of_birth'] = $inputDataMap['dob'];
 			$db = $this->db;
 			$resultMap = $db->insertOperation($this->tableName, $dbDataMap);
-			$this->closeConnection();
+			// db connection not to be closed here as the savePassword method will be called.
 			$result['status'] = $resultMap['status'];
 			if($resultMap['status'] == SUCCESS){
 				$result['lastCreatedUserId'] = $resultMap['last_insert_id'];
@@ -86,7 +86,7 @@
 			$dbDataMap['user_id'] = $userId;
 			$dbDataMap['password'] = $this->hashPassword($password);
 			$db = $this->db;
-			$resultMap = $db->insertOperation(USER_CREDENTIALS, $dbDataMap);
+			$resultMap = $db->noEscapeInsertOperation(USER_CREDENTIALS, $dbDataMap);
 			$this->log->debug(QUERY_RESULT . NEW_LINE . print_r($resultMap, true));	
 			$this->closeConnection();
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
