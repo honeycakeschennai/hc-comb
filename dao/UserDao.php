@@ -62,7 +62,7 @@
 			// db connection not to be closed here as the savePassword method will be called.
 			$result['status'] = $resultMap['status'];
 			if($resultMap['status'] == SUCCESS){
-				$result['lastCreatedUserId'] = $resultMap['last_insert_id'];
+				$result['userId'] = $resultMap['last_insert_id'];
 				$result['affectedRows'] = $resultMap['affected_rows'];
 				$this->savePassword($result['lastCreatedUserId'], $inputDataMap['password']);
 			} else {
