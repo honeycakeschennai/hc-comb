@@ -61,8 +61,41 @@
 	            $output = array("status" => SUCCESS, "last_insert_id" => $last_insert_id, "affected_rows" => mysqli_affected_rows($this->db));
 	        }else{
 	            $output = array("status" => FAILURE, "error_details" => mysqli_error($this->db), "affected_rows" => mysqli_affected_rows($this->db));
+	        }	        
+	        $this->log->debug(QUERY_RESULT . NEW_LINE . print_r($output, true));
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
+	        return $output;
+	    }
+
+	    /**
+		 * noEscapeInsertOperation method is used to insert data that includes special 
+		 * characters
+		 * 
+		 * @param $tableName
+		 * @param $inputData
+		 * @return $result;
+		 */
+		public function noEscapeInsertOperation($tableName, $inputData, $spl = ''){
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
+	        $output = array();
+	    	$query = "INSERT INTO $tableName ";
+	    	$ipDataCopy = array_keys($inputData);
+
+	    	$tablecolumns = implode(',', $ipDataCopy);
+	        foreach ($inputData as $key => $value) {
+	            $inputData[$key] = $value;
 	        }
-	        //file_put_contents("testlog.log", "\n".$query."\nOutput : ".print_r($output, true), FILE_APPEND | LOCK_EX);
+	    	$tablevalues = implode("','", $inputData);
+	    	$query .= "( ".$tablecolumns." ) VALUES ( '".$tablevalues."')";
+			$this->log->debug(QUERY . NEW_LINE . $query);
+	    	
+	        if(mysqli_query($this->db, $query)){
+	            $last_insert_id = mysqli_insert_id($this->db);
+	            $output = array("status" => SUCCESS, "last_insert_id" => $last_insert_id, "affected_rows" => mysqli_affected_rows($this->db));
+	        }else{
+	            $output = array("status" => FAILURE, "error_details" => mysqli_error($this->db), "affected_rows" => mysqli_affected_rows($this->db));
+	        }
+	        file_put_contents("testlog.log", "\n".$query."\nOutput : ".print_r($output, true), FILE_APPEND | LOCK_EX);
 	        
 	        $this->log->debug(QUERY_RESULT . NEW_LINE . print_r($output, true));
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
