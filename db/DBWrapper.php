@@ -95,7 +95,7 @@
 	        }else{
 	            $output = array("status" => FAILURE, "error_details" => mysqli_error($this->db), "affected_rows" => mysqli_affected_rows($this->db));
 	        }
-	        file_put_contents("testlog.log", "\n".$query."\nOutput : ".print_r($output, true), FILE_APPEND | LOCK_EX);
+	        //file_put_contents("testlog.log", "\n".$query."\nOutput : ".print_r($output, true), FILE_APPEND | LOCK_EX);
 	        
 	        $this->log->debug(QUERY_RESULT . NEW_LINE . print_r($output, true));
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
