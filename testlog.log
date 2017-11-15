@@ -1,16 +1,9 @@
 
-INSERT INTO user_credentials ( user_id,password ) VALUES ( '31','$2y$10$QYQI2O4rlG5avqLtMGFIpOBCMjPCS.0II9upMGL6tbzsWz0IgkCSa')
+
+UPDATE user_otp SET mobile_status = 'VERIFIED'  WHERE user_id = '46'
 Output : Array
 (
     [status] => failure
-    [error_details] => 
-    [affected_rows] => 
-)
-
-INSERT INTO user_credentials ( user_id,password ) VALUES ( '32','$2y$10$3Vzs1tGS4xy6dzqq8EqbxOVaHFnaGOg8ltX8/JDg2w5UVmV4bqe7O')
-Output : Array
-(
-    [status] => success
-    [last_insert_id] => 4
-    [affected_rows] => 1
+    [error_details] => Unknown column 'mobile_status' in 'field list'
+    [affected_rows] => -1
 )
