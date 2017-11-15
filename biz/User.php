@@ -113,6 +113,51 @@
 			$otpValue = mt_rand(100000, 999999);
 			$userDao = new UserDao();
 			$userDao->saveOtp($userId, $otpFor, $otpValue);
+			if($otpFor == MOBILE){
+				// send mobile otp
+			} else if($otpFor == EMAIL){
+				// send email otp
+			}
+		}
+
+		/**
+		 * verifyOtp method is used to verify the user entered OTP with that of the one 
+		 * available in the DB.
+		 * 
+		 * @return response
+		 */
+		public function verifyOtp(){
+			$this->log->info(H_LINE);
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
+			$dataMap = $this->inputDataMap;
+			$userId = $dataMap['userId'];
+			$userOtp = $dataMap['userOtp'];
+			$otpFor = $dataMap['otpFor'];
+			$userDao = new UserDao();
+			$otpResponse = $userDao->getOtp($userId, $otpFor);
+			$otp = $otpResponse['resultData'][0]['otp'];
+			if($userOtp == $otp){
+ 				$this->updateStatusVerified($userId, $otpFor);
+ 				$response['status'] = SUCCESS;
+			} else {
+				$response['status'] = FAILURE;
+			}
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
+			return $response;
+		}
+
+		/**
+		 * updateUserMobileStatusVerified method is used to update verfication status.
+		 * 
+		 * @param userId
+		 * @param for
+		 */
+		private function updateStatusVerified($userId, $for){
+			$this->log->info(H_LINE);
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
+			$userDao = new UserDao();
+			$userDao->updateStatusVerified($userId, $for);
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
 		}
 
 		/**

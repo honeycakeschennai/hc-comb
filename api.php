@@ -59,6 +59,9 @@
 		  	case CASE_USER: // this case is for user credential changes and fetch user informations after logingin
 			  	$response = executeUserCase();
 			  	break;
+			case CASE_VERIFY_OTP: // this case is for user credential changes
+			  	$response = verifyUserOtp();
+			  	break;
 		  	case CASE_CAKES:
 			  	$response = executeCakeCase();
 			  	break;
@@ -75,6 +78,9 @@
 	} else if($case == CASE_USER){
 		//this case is for user signup
 		$response = executeUserCase();
+	} else if($case == CASE_VERIFY_OTP){
+		//this case is for user signup
+		$response = verifyUserOtp();
 	} else if($case != CASE_LOGIN){
 		$response = array();
 		$response['status'] = UNAUTH_ACCESS;
@@ -194,6 +200,21 @@
 	  	$response = $user->executeAction();
 		// file_put_contents("testlog.log", "\n".print_r($response, true), FILE_APPEND | LOCK_EX);
 		return $response;
+	}
+
+	/** 
+	 * verifyUserOtp method instantiates User object and verifies the OTP. 
+	 * this method works only on POST request
+	 *  
+	 * @return $response
+	 */
+	function verifyUserOtp(){
+		global $method, $data, $caseId;
+		if($method == POST){
+			$user = new User($caseId, $method, $data);
+		  	$response = $user->verifyOtp();
+			return $response;
+		}
 	}
 
 	/** 

@@ -94,7 +94,7 @@
 		}
 
 		/**
-		 * saveOtp method is used to save OTP to otp table.
+		 * saveOtp method is used to save OTP to user_otp table.
 		 * 
 		 * @param userId
 		 * @param otpFor
@@ -111,6 +111,52 @@
 			$this->log->debug(QUERY_RESULT . NEW_LINE . print_r($resultMap, true));	
 			$this->closeConnection();
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
+		}
+
+		/**
+		 * getOtp method is used get the OTP value from the DB for the specified userId
+		 * 
+		 * @param userId
+		 * @param otpFor
+		 * @return response
+		 */
+		public function getOtp($userId, $otpFor){
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
+			$db = $this->db;
+			$query = 'SELECT otp_value FROM ' . OTP . ' WHERE user_id="' . $userId . '" AND otp_for="' . $otpFor . '"';
+			$resultMap = $db->selectOperation($query);
+			$this->closeConnection();
+			$result['resultData'][0]['otp'] = $resultMap['result_data'][0]['otp_value'];
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
+			return $result;
+		}
+
+		/**
+		 * updateStatusVerified method is used update the verification status of mobile
+		 * or email respectively given a specific userId
+		 * 
+		 * @param userId
+		 * @param for
+		 * @return response
+		 */
+		public function updateStatusVerified($userId, $for){
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
+			$dbDataMap = array();
+			if($for == MOBILE){
+				$dbDataMap['mobile_status'] = VERIFIED;
+			} else if($for == EMAIL){
+				$dbDataMap['email_status'] = VERIFIED;
+			}
+
+			$conditionMap = array();
+			$conditionMap['user_id'] = $userId;
+			$db = $this->db;
+			$resultMap = $db->updateOperation(USERS, $dbDataMap, $conditionMap);
+			$this->closeConnection();
+			$result['status'] = $resultMap['status'];
+			$result['affectedRows'] = $resultMap['affected_rows'];
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
+			return $result;
 		}
 
 		/**

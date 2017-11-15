@@ -26,5 +26,6 @@
 	define('INVALID','invalid');
 	define('MOBILE','mobile');
 	define('EMAIL','email');
+	define('VERIFIED','VERIFIED');
 
 ?>
