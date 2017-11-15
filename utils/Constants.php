@@ -27,5 +27,9 @@
 	define('MOBILE','mobile');
 	define('EMAIL','email');
 	define('VERIFIED','VERIFIED');
+	define('MBL_OTP_SUCCESS','Mobile number verified successfully.');
+	define('MBL_OTP_FAILURE','Mobile number verification failed.');
+	define('EML_OTP_SUCCESS','Email verified successfully.');
+	define('EML_OTP_FAILURE','Email verification failed.');
 
 ?>

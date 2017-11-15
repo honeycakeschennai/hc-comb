@@ -139,8 +139,18 @@
 			if($userOtp == $otp){
  				$this->updateStatusVerified($userId, $otpFor);
  				$response['status'] = SUCCESS;
+ 				if($otpFor == 'mobile'){
+ 					$response['message'] = MBL_OTP_SUCCESS;
+ 				} else {
+ 					$response['message'] = EML_OTP_SUCCESS;
+ 				}
 			} else {
 				$response['status'] = FAILURE;
+				if($otpFor == 'mobile'){
+ 					$response['message'] = MBL_OTP_FAILURE;
+ 				} else {
+ 					$response['message'] = EML_OTP_FAILURE;
+ 				}
 			}
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
 			return $response;
