@@ -56,7 +56,7 @@
 			case CASE_VALIDATE_TOKEN:
 			  	$response = validateToken();
 			  	break;
-		  	case CASE_USER:
+		  	case CASE_USER: // this case is for user credential changes and fetch user informations after logingin
 			  	$response = executeUserCase();
 			  	break;
 		  	case CASE_CAKES:
@@ -72,6 +72,9 @@
 				$response = executeAddressCase();
 				break;
 		}
+	} else if($case == CASE_USER){
+		//this case is for user signup
+		$response = executeUserCase();
 	} else if($case != CASE_LOGIN){
 		$response = array();
 		$response['status'] = UNAUTH_ACCESS;
