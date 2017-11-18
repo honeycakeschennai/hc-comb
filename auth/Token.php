@@ -47,7 +47,32 @@
 			$resultMap = $db->insertOperation(TOKENS, $dbDataMap);
 			$result['status'] = $resultMap['status'];
 			$result['token'] = $token;
+			$result['userData'] = $this->getUserData($userId);
 			return $result;
+		}
+
+		/**
+		 * getUserData method all the user data - email, mobile & their verification statuses.
+		 * 
+		 * @param tokuserIden
+		 * @return userData
+		 */
+		public function getUserData($userId){
+			$query = "SELECT * FROM " . USERS . " WHERE user_id='$userId'";
+			$db = $this->db;
+			$resultMap = $db->selectOperation($query);
+			$result = $resultMap['result_data'][0];
+			unset($result['date_of_birth']);
+			unset($result['created_time']);
+			$response = array();
+			$response['userId'] = $result['user_id'];
+			$response['firstName'] = $result['first_name'];
+			$response['lastName'] = $result['last_name'];
+			$response['email'] = $result['email'];
+			$response['mobile'] = $result['mobile'];
+			$response['emailStatus'] = $result['email_status'];
+			$response['mobileStatus'] = $result['mobile_status'];
+			return $response;
 		}
 
 		/**
