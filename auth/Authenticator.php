@@ -27,11 +27,11 @@
 		}
 
 		/**
-		 * checkIfUserExists method checks if the provided user exists.
+		 * isUserAvailable method checks if the provided user exists.
 		 * 
 		 * @return isAvailable
 		 */
-		public function checkIfUserExists(){
+		public function isUserAvailable(){
 			$loginId = $this->loginId;
 			$isAvailable = false;
 			$query = "SELECT count(*) as 'count' FROM " . USERS . " WHERE email='$loginId' OR mobile='$loginId'";

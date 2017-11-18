@@ -168,7 +168,7 @@
 		$response = array();
 		if($method == 'POST'){
 			$auth = new Authenticator($data['email'], $data['password']);
-			if($auth->checkIfUserExists()){
+			if($auth->isUserAvailable()){
 				if($auth->isPasswordMatching()){
 					$userId = $auth->getUserId();
 					$tokenObj = new Token();
