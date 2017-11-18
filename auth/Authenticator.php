@@ -44,12 +44,12 @@
 		}
 
 		/**
-		 * comparePassword method compares the password provied by the user and the password
+		 * isPasswordMatching method compares the password provied by the user and the password
 		 * available in the DB.
 		 * 
 		 * @return isMatching
 		 */
-		public function comparePassword() {
+		public function isPasswordMatching() {
 			$loginId = $this->loginId;
 			$userInputPassword = $this->userInputPassword;
 			$isMatching = false;

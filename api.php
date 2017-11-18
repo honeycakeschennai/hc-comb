@@ -169,7 +169,7 @@
 		if($method == 'POST'){
 			$auth = new Authenticator($data['email'], $data['password']);
 			if($auth->checkIfUserExists()){
-				if($auth->comparePassword()){
+				if($auth->isPasswordMatching()){
 					$userId = $auth->getUserId();
 					$tokenObj = new Token();
 					$response = $tokenObj->generateToken($userId);
