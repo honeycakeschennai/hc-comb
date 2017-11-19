@@ -2231,3 +2231,784 @@ Array
 2017-11-19T10:56:12+05:30 [UserDao] closeConnection execution ends
 2017-11-19T10:56:12+05:30 [UserDao] saveOtp execution ends
 2017-11-19T10:56:12+05:30 [User] createUser execution ends
+2017-11-19T11:54:03+05:30 [User] *************************************************
+2017-11-19T11:54:03+05:30 [User] createUser execution starts
+2017-11-19T11:54:03+05:30 [UserDao] createUser execution starts
+2017-11-19T11:54:03+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T11:54:03+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'r','r','r','788996656','r')
+2017-11-19T11:54:03+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => failure
+    [error_details] => Duplicate entry 'r' for key 'email'
+    [affected_rows] => -1
+)
+
+2017-11-19T11:54:03+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T11:54:03+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:54:03+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:54:03+05:30 [UserDao] createUser execution ends
+2017-11-19T11:54:03+05:30 [User] createUser execution ends
+2017-11-19T11:54:56+05:30 [User] *************************************************
+2017-11-19T11:54:56+05:30 [User] createUser execution starts
+2017-11-19T11:54:56+05:30 [UserDao] createUser execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'q','q','op','123456781122','q')
+2017-11-19T11:54:56+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 61
+    [affected_rows] => 1
+)
+
+2017-11-19T11:54:56+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:54:56+05:30 [UserDao] createUser execution ends
+2017-11-19T11:54:56+05:30 [UserDao] savePassword execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] noEscapeInsertOperation execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_credentials ( user_id,password ) VALUES ( '61','$2y$10$UXxrQkP6T6SEz2vZXc2WkejzM314aLifp13Z8YpDnG7Cc8JRHHT/2')
+2017-11-19T11:54:56+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 15
+    [affected_rows] => 1
+)
+
+2017-11-19T11:54:56+05:30 [DBWrapper] noEscapeInsertOperation execution ends
+2017-11-19T11:54:56+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 15
+    [affected_rows] => 1
+)
+
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:54:56+05:30 [UserDao] savePassword execution ends
+2017-11-19T11:54:56+05:30 [UserDao] saveOtp execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '61','email','740286')
+2017-11-19T11:54:56+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 21
+    [affected_rows] => 1
+)
+
+2017-11-19T11:54:56+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T11:54:56+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 21
+    [affected_rows] => 1
+)
+
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:54:56+05:30 [UserDao] saveOtp execution ends
+2017-11-19T11:54:56+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="61"
+2017-11-19T11:54:56+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:54:56+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T11:54:56+05:30 [UserDao] saveOtp execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '61','mobile','919845')
+2017-11-19T11:54:56+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 22
+    [affected_rows] => 1
+)
+
+2017-11-19T11:54:56+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T11:54:56+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 22
+    [affected_rows] => 1
+)
+
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:54:56+05:30 [UserDao] saveOtp execution ends
+2017-11-19T11:54:56+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T11:54:56+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="61"
+2017-11-19T11:54:56+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:54:56+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:54:56+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T11:54:56+05:30 [User] createUser execution ends
+2017-11-19T11:56:45+05:30 [User] *************************************************
+2017-11-19T11:56:45+05:30 [User] createUser execution starts
+2017-11-19T11:56:45+05:30 [UserDao] createUser execution starts
+2017-11-19T11:56:45+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T11:56:45+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'q','q','op','123456781122','q')
+2017-11-19T11:56:45+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => failure
+    [error_details] => Duplicate entry 'op' for key 'email'
+    [affected_rows] => -1
+)
+
+2017-11-19T11:56:45+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T11:56:45+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:56:45+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:56:45+05:30 [UserDao] createUser execution ends
+2017-11-19T11:56:45+05:30 [User] createUser execution ends
+2017-11-19T11:57:18+05:30 [User] *************************************************
+2017-11-19T11:57:18+05:30 [User] createUser execution starts
+2017-11-19T11:57:18+05:30 [UserDao] createUser execution starts
+2017-11-19T11:57:18+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T11:57:18+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'q','q','op','123456781122','q')
+2017-11-19T11:57:18+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => failure
+    [error_details] => Duplicate entry 'op' for key 'email'
+    [affected_rows] => -1
+)
+
+2017-11-19T11:57:18+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T11:57:18+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:57:18+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:57:18+05:30 [UserDao] createUser execution ends
+2017-11-19T11:57:18+05:30 [User] createUser execution ends
+2017-11-19T11:58:19+05:30 [User] *************************************************
+2017-11-19T11:58:19+05:30 [User] createUser execution starts
+2017-11-19T11:58:19+05:30 [UserDao] createUser execution starts
+2017-11-19T11:58:19+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T11:58:19+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'q','q','op','123456781122','q')
+2017-11-19T11:58:19+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 64
+    [affected_rows] => 1
+)
+
+2017-11-19T11:58:19+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T11:58:19+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:58:19+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:58:19+05:30 [UserDao] createUser execution ends
+2017-11-19T11:58:20+05:30 [UserDao] savePassword execution starts
+2017-11-19T11:58:20+05:30 [DBWrapper] noEscapeInsertOperation execution starts
+2017-11-19T11:58:20+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_credentials ( user_id,password ) VALUES ( '64','$2y$10$zjdE8oyryetygppTP/kEyu8c/SST9aqD5tEAxYS4Qo79bJ.GHR6/u')
+2017-11-19T11:58:20+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 16
+    [affected_rows] => 1
+)
+
+2017-11-19T11:58:20+05:30 [DBWrapper] noEscapeInsertOperation execution ends
+2017-11-19T11:58:20+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 16
+    [affected_rows] => 1
+)
+
+2017-11-19T11:58:20+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:58:20+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:58:20+05:30 [UserDao] savePassword execution ends
+2017-11-19T11:58:20+05:30 [UserDao] saveOtp execution starts
+2017-11-19T11:58:20+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T11:58:20+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '64','email','834519')
+2017-11-19T11:58:20+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 23
+    [affected_rows] => 1
+)
+
+2017-11-19T11:58:20+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T11:58:20+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 23
+    [affected_rows] => 1
+)
+
+2017-11-19T11:58:20+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:58:20+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:58:20+05:30 [UserDao] saveOtp execution ends
+2017-11-19T11:58:20+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T11:58:20+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T11:58:20+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="64"
+2017-11-19T11:58:20+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T11:58:20+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:58:20+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:58:20+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T11:58:20+05:30 [UserDao] saveOtp execution starts
+2017-11-19T11:58:20+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T11:58:20+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '64','mobile','439124')
+2017-11-19T11:58:20+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 24
+    [affected_rows] => 1
+)
+
+2017-11-19T11:58:20+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T11:58:20+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 24
+    [affected_rows] => 1
+)
+
+2017-11-19T11:58:20+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:58:20+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:58:20+05:30 [UserDao] saveOtp execution ends
+2017-11-19T11:58:20+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T11:58:20+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T11:58:20+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="64"
+2017-11-19T11:58:20+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T11:58:20+05:30 [UserDao] closeConnection execution starts
+2017-11-19T11:58:20+05:30 [UserDao] closeConnection execution ends
+2017-11-19T11:58:20+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T11:58:20+05:30 [User] createUser execution ends
+2017-11-19T12:03:10+05:30 [User] *************************************************
+2017-11-19T12:03:10+05:30 [User] createUser execution starts
+2017-11-19T12:03:10+05:30 [UserDao] createUser execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'q','q','op','123456781122','q')
+2017-11-19T12:03:10+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 65
+    [affected_rows] => 1
+)
+
+2017-11-19T12:03:10+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:03:10+05:30 [UserDao] createUser execution ends
+2017-11-19T12:03:10+05:30 [UserDao] savePassword execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] noEscapeInsertOperation execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_credentials ( user_id,password ) VALUES ( '65','$2y$10$kpZyzmxojKREwJgyoNDwEeV1pQloziLiRU9btuPTBM3FiYKrGH6Bi')
+2017-11-19T12:03:10+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 17
+    [affected_rows] => 1
+)
+
+2017-11-19T12:03:10+05:30 [DBWrapper] noEscapeInsertOperation execution ends
+2017-11-19T12:03:10+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 17
+    [affected_rows] => 1
+)
+
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:03:10+05:30 [UserDao] savePassword execution ends
+2017-11-19T12:03:10+05:30 [UserDao] saveOtp execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '65','email','878661')
+2017-11-19T12:03:10+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 25
+    [affected_rows] => 1
+)
+
+2017-11-19T12:03:10+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:03:10+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 25
+    [affected_rows] => 1
+)
+
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:03:10+05:30 [UserDao] saveOtp execution ends
+2017-11-19T12:03:10+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="65"
+2017-11-19T12:03:10+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:03:10+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T12:03:10+05:30 [UserDao] saveOtp execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '65','mobile','112547')
+2017-11-19T12:03:10+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 26
+    [affected_rows] => 1
+)
+
+2017-11-19T12:03:10+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:03:10+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 26
+    [affected_rows] => 1
+)
+
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:03:10+05:30 [UserDao] saveOtp execution ends
+2017-11-19T12:03:10+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T12:03:10+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="65"
+2017-11-19T12:03:10+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:03:10+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:03:10+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T12:03:10+05:30 [User] createUser execution ends
+2017-11-19T12:06:15+05:30 [User] *************************************************
+2017-11-19T12:06:15+05:30 [User] createUser execution starts
+2017-11-19T12:06:15+05:30 [UserDao] createUser execution starts
+2017-11-19T12:06:15+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:06:15+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'l','l','l@l.com','23468900','l')
+2017-11-19T12:06:15+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 66
+    [affected_rows] => 1
+)
+
+2017-11-19T12:06:15+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:06:15+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:06:15+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:06:15+05:30 [UserDao] createUser execution ends
+2017-11-19T12:06:15+05:30 [UserDao] savePassword execution starts
+2017-11-19T12:06:15+05:30 [DBWrapper] noEscapeInsertOperation execution starts
+2017-11-19T12:06:15+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_credentials ( user_id,password ) VALUES ( '66','$2y$10$xESexPMo/M.HeSb8p.Q.dOe9Sf.UOlOYQkjiEwYbwfTh0PFlv1qZe')
+2017-11-19T12:06:15+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 18
+    [affected_rows] => 1
+)
+
+2017-11-19T12:06:15+05:30 [DBWrapper] noEscapeInsertOperation execution ends
+2017-11-19T12:06:15+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 18
+    [affected_rows] => 1
+)
+
+2017-11-19T12:06:15+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:06:15+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:06:15+05:30 [UserDao] savePassword execution ends
+2017-11-19T12:06:15+05:30 [UserDao] saveOtp execution starts
+2017-11-19T12:06:15+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:06:15+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '66','email','129097')
+2017-11-19T12:06:15+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 27
+    [affected_rows] => 1
+)
+
+2017-11-19T12:06:15+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:06:15+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 27
+    [affected_rows] => 1
+)
+
+2017-11-19T12:06:15+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:06:15+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:06:15+05:30 [UserDao] saveOtp execution ends
+2017-11-19T12:06:15+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T12:06:15+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T12:06:15+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="66"
+2017-11-19T12:06:15+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T12:06:15+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:06:15+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:06:15+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T12:06:39+05:30 [User] *************************************************
+2017-11-19T12:06:39+05:30 [User] createUser execution starts
+2017-11-19T12:06:39+05:30 [UserDao] createUser execution starts
+2017-11-19T12:06:39+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:06:39+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'l','l','l@l.com','23468900','l')
+2017-11-19T12:06:39+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => failure
+    [error_details] => Duplicate entry 'l@l.com' for key 'email'
+    [affected_rows] => -1
+)
+
+2017-11-19T12:06:39+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:06:39+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:06:39+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:06:39+05:30 [UserDao] createUser execution ends
+2017-11-19T12:06:39+05:30 [User] createUser execution ends
+2017-11-19T12:07:16+05:30 [User] *************************************************
+2017-11-19T12:07:16+05:30 [User] createUser execution starts
+2017-11-19T12:07:16+05:30 [UserDao] createUser execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'l','l','l@l.com','23468900','l')
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 68
+    [affected_rows] => 1
+)
+
+2017-11-19T12:07:16+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:07:16+05:30 [UserDao] createUser execution ends
+2017-11-19T12:07:16+05:30 [UserDao] savePassword execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] noEscapeInsertOperation execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_credentials ( user_id,password ) VALUES ( '68','$2y$10$l1cvAvd5FnGfzMsL8XvmUuD89IM/sBBqD3jaAX8Undlci.v7HPn3m')
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 19
+    [affected_rows] => 1
+)
+
+2017-11-19T12:07:16+05:30 [DBWrapper] noEscapeInsertOperation execution ends
+2017-11-19T12:07:16+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 19
+    [affected_rows] => 1
+)
+
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:07:16+05:30 [UserDao] savePassword execution ends
+2017-11-19T12:07:16+05:30 [UserDao] saveOtp execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '68','email','338856')
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 28
+    [affected_rows] => 1
+)
+
+2017-11-19T12:07:16+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:07:16+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 28
+    [affected_rows] => 1
+)
+
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:07:16+05:30 [UserDao] saveOtp execution ends
+2017-11-19T12:07:16+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="68"
+2017-11-19T12:07:16+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:07:16+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T12:07:16+05:30 [DBConnector] saveNotificationDataToDb execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_notifications ( user_id,message_type,delivery_to,message_content ) VALUES ( '68','OTP','l@l.com','Your OTP for Honeycakes signup is 338856. Please do not share this with anyone.')
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 1
+    [affected_rows] => 1
+)
+
+2017-11-19T12:07:16+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:07:16+05:30 [DBConnector] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 1
+    [affected_rows] => 1
+)
+
+2017-11-19T12:07:16+05:30 [DBConnector] closeConnection execution starts
+2017-11-19T12:07:16+05:30 [DBConnector] closeConnection execution ends
+2017-11-19T12:07:16+05:30 [DBConnector] saveNotificationDataToDb execution ends
+2017-11-19T12:07:16+05:30 [UserDao] saveOtp execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '68','mobile','620455')
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 29
+    [affected_rows] => 1
+)
+
+2017-11-19T12:07:16+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:07:16+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 29
+    [affected_rows] => 1
+)
+
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:07:16+05:30 [UserDao] saveOtp execution ends
+2017-11-19T12:07:16+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="68"
+2017-11-19T12:07:16+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:07:16+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:07:16+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T12:07:16+05:30 [DBConnector] saveNotificationDataToDb execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_notifications ( user_id,message_type,delivery_to,message_content ) VALUES ( '68','OTP','','Your OTP for Honeycakes signup is 620455. Please do not share this with anyone.')
+2017-11-19T12:07:16+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 2
+    [affected_rows] => 1
+)
+
+2017-11-19T12:07:16+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:07:16+05:30 [DBConnector] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 2
+    [affected_rows] => 1
+)
+
+2017-11-19T12:07:16+05:30 [DBConnector] closeConnection execution starts
+2017-11-19T12:07:16+05:30 [DBConnector] closeConnection execution ends
+2017-11-19T12:07:16+05:30 [DBConnector] saveNotificationDataToDb execution ends
+2017-11-19T12:07:16+05:30 [User] createUser execution ends
+2017-11-19T12:08:54+05:30 [User] *************************************************
+2017-11-19T12:08:54+05:30 [User] createUser execution starts
+2017-11-19T12:08:54+05:30 [UserDao] createUser execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'l','l','l@l.com','23468900','l')
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 69
+    [affected_rows] => 1
+)
+
+2017-11-19T12:08:54+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:08:54+05:30 [UserDao] createUser execution ends
+2017-11-19T12:08:54+05:30 [UserDao] savePassword execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] noEscapeInsertOperation execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_credentials ( user_id,password ) VALUES ( '69','$2y$10$yLP1wxYAEsTsqpLnoy/WqO2xKKw1Fybz0hziDrxs.SXJ9X5wS0rn6')
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 20
+    [affected_rows] => 1
+)
+
+2017-11-19T12:08:54+05:30 [DBWrapper] noEscapeInsertOperation execution ends
+2017-11-19T12:08:54+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 20
+    [affected_rows] => 1
+)
+
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:08:54+05:30 [UserDao] savePassword execution ends
+2017-11-19T12:08:54+05:30 [UserDao] saveOtp execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '69','email','375454')
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 30
+    [affected_rows] => 1
+)
+
+2017-11-19T12:08:54+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:08:54+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 30
+    [affected_rows] => 1
+)
+
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:08:54+05:30 [UserDao] saveOtp execution ends
+2017-11-19T12:08:54+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="69"
+2017-11-19T12:08:54+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:08:54+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T12:08:54+05:30 [DBConnector] saveNotificationDataToDb execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_notifications ( user_id,message_type,delivery_to,message_content ) VALUES ( '69','OTP','l@l.com','Your OTP for Honeycakes signup is 375454. Please do not share this with anyone.')
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 3
+    [affected_rows] => 1
+)
+
+2017-11-19T12:08:54+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:08:54+05:30 [DBConnector] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 3
+    [affected_rows] => 1
+)
+
+2017-11-19T12:08:54+05:30 [DBConnector] closeConnection execution starts
+2017-11-19T12:08:54+05:30 [DBConnector] closeConnection execution ends
+2017-11-19T12:08:54+05:30 [DBConnector] saveNotificationDataToDb execution ends
+2017-11-19T12:08:54+05:30 [UserDao] saveOtp execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '69','mobile','791973')
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 31
+    [affected_rows] => 1
+)
+
+2017-11-19T12:08:54+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:08:54+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 31
+    [affected_rows] => 1
+)
+
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:08:54+05:30 [UserDao] saveOtp execution ends
+2017-11-19T12:08:54+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="69"
+2017-11-19T12:08:54+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution starts
+2017-11-19T12:08:54+05:30 [UserDao] closeConnection execution ends
+2017-11-19T12:08:54+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T12:08:54+05:30 [DBConnector] saveNotificationDataToDb execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_notifications ( user_id,message_type,delivery_to,message_content ) VALUES ( '69','OTP','23468900','Your OTP for Honeycakes signup is 791973. Please do not share this with anyone.')
+2017-11-19T12:08:54+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 4
+    [affected_rows] => 1
+)
+
+2017-11-19T12:08:54+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T12:08:54+05:30 [DBConnector] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 4
+    [affected_rows] => 1
+)
+
+2017-11-19T12:08:54+05:30 [DBConnector] closeConnection execution starts
+2017-11-19T12:08:54+05:30 [DBConnector] closeConnection execution ends
+2017-11-19T12:08:54+05:30 [DBConnector] saveNotificationDataToDb execution ends
+2017-11-19T12:08:54+05:30 [User] createUser execution ends

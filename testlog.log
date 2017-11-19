@@ -1,9 +1,15 @@
-
-
-UPDATE user_otp SET mobile_status = 'VERIFIED'  WHERE user_id = '46'
-Output : Array
+Array
 (
-    [status] => failure
-    [error_details] => Unknown column 'mobile_status' in 'field list'
-    [affected_rows] => -1
+    [resultData] => Array
+        (
+            [0] => Array
+                (
+                    [email] => op
+                    [emailStatus] => NOT_VERIFIED
+                    [mobile] => 1234567811
+                    [mobileStatus] => NOT_VERIFIED
+                )
+
+        )
+
 )

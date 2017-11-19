@@ -183,6 +183,20 @@
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
 			return $result;
 		}
+
+		public function getUserContactDetails($userId){
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
+			$db = $this->db;
+			$query = 'SELECT email, email_status, mobile, mobile_status FROM ' . USERS . ' WHERE user_id="' . $userId . '"';
+			$resultMap = $db->selectOperation($query);
+			$this->closeConnection();
+			$result['resultData'][0]['email'] = $resultMap['result_data'][0]['email'];
+			$result['resultData'][0]['emailStatus'] = $resultMap['result_data'][0]['email_status'];
+			$result['resultData'][0]['mobile'] = $resultMap['result_data'][0]['mobile'];
+			$result['resultData'][0]['mobileStatus'] = $resultMap['result_data'][0]['mobile_status'];
+			$this->log->info(__FUNCTION__ . SPACE . METHOD_ENDS);
+			return $result;
+		}
 		
 	}
 	

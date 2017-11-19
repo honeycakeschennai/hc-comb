@@ -3,6 +3,7 @@
 	require_once 'Honey.php';
 	require_once __DIR__ . '/../dao/UserDao.php';
 	require_once __DIR__ . '/../utils/Constants.php';
+	require_once __DIR__ . '/../notifications/NotificationService.php';
 
 	/**
 	 * @author Ramu Ramasamy
@@ -108,16 +109,34 @@
 		 * 
 		 * @param userId
 		 * @param otpFor
+		 * @param deliveryTo
 		 */
 		private function generateOtp($userId, $otpFor){
 			$otpValue = mt_rand(100000, 999999);
+			$messageContent = 'Your OTP for Honeycakes signup is ' . $otpValue . '. Please do not share this with anyone.';
 			$userDao = new UserDao();
 			$userDao->saveOtp($userId, $otpFor, $otpValue);
+			$userContactDetails = $this->getUserContactDetails($userId);
+			// file_put_contents('testlog.log', print_r($userContactDetails, true));
+			$mobile = $userContactDetails['resultData'][0]['mobile'];
+			$email = $userContactDetails['resultData'][0]['email'];
+			$notification = new NotificationService();
 			if($otpFor == MOBILE){
-				// send mobile otp
+				$notification->sendSms($userId, MSG_TYPE_OTP, $mobile, $messageContent);
 			} else if($otpFor == EMAIL){
-				// send email otp
+				$notification->sendEmail($userId, MSG_TYPE_OTP, $email, $messageContent);
 			}
+		}
+
+		/**
+		 * getUserContactDetails method is used to fetch user contact details - mobile & email.
+		 * 
+		 * @param userId
+		 */
+		private function getUserContactDetails($userId){
+			$userDao = new UserDao();
+			$contactDetails = $userDao->getUserContactDetails($userId);
+			return $contactDetails;
 		}
 
 		/**
