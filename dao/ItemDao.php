@@ -3,7 +3,6 @@
 	require_once __DIR__ . '/../db/DBConnector.php';
 	require_once __DIR__ . '/../db/DBWrapper.php';
 	require_once __DIR__ . '/../utils/TableNameConstants.php';
-	require_once __DIR__ . '/../utils/TableColumnConstants.php';
 
 	/**
 	 * @author Ramu Ramasamy
