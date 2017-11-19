@@ -1538,3 +1538,696 @@ Array
 2017-11-16T00:21:29+05:30 [UserDao] updateStatusVerified execution ends
 2017-11-16T00:21:29+05:30 [User] updateStatusVerified execution ends
 2017-11-16T00:21:29+05:30 [User] verifyOtp execution ends
+2017-11-18T20:57:03+05:30 [User] *************************************************
+2017-11-18T20:57:03+05:30 [User] createUser execution starts
+2017-11-18T20:57:03+05:30 [UserDao] createUser execution starts
+2017-11-18T20:57:03+05:30 [DBWrapper] insertOperation execution starts
+2017-11-18T20:57:03+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'rams','rams','r@q.com','8190912852','02-10-2017')
+2017-11-18T20:57:03+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 58
+    [affected_rows] => 1
+)
+
+2017-11-18T20:57:03+05:30 [DBWrapper] insertOperation execution ends
+2017-11-18T20:57:03+05:30 [UserDao] closeConnection execution starts
+2017-11-18T20:57:03+05:30 [UserDao] closeConnection execution ends
+2017-11-18T20:57:03+05:30 [UserDao] createUser execution ends
+2017-11-18T20:57:03+05:30 [UserDao] savePassword execution starts
+2017-11-18T20:57:03+05:30 [DBWrapper] noEscapeInsertOperation execution starts
+2017-11-18T20:57:03+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_credentials ( user_id,password ) VALUES ( '58','$2y$10$j5CxMduZ3D4Bt1ZvC1sVe.64W0Emkdc/F8knA39/PpT0j4O7uUnou')
+2017-11-18T20:57:03+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 13
+    [affected_rows] => 1
+)
+
+2017-11-18T20:57:03+05:30 [DBWrapper] noEscapeInsertOperation execution ends
+2017-11-18T20:57:03+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 13
+    [affected_rows] => 1
+)
+
+2017-11-18T20:57:03+05:30 [UserDao] closeConnection execution starts
+2017-11-18T20:57:03+05:30 [UserDao] closeConnection execution ends
+2017-11-18T20:57:03+05:30 [UserDao] savePassword execution ends
+2017-11-18T20:57:03+05:30 [UserDao] saveOtp execution starts
+2017-11-18T20:57:03+05:30 [DBWrapper] insertOperation execution starts
+2017-11-18T20:57:03+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '58','email','700454')
+2017-11-18T20:57:03+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 17
+    [affected_rows] => 1
+)
+
+2017-11-18T20:57:03+05:30 [DBWrapper] insertOperation execution ends
+2017-11-18T20:57:03+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 17
+    [affected_rows] => 1
+)
+
+2017-11-18T20:57:03+05:30 [UserDao] closeConnection execution starts
+2017-11-18T20:57:03+05:30 [UserDao] closeConnection execution ends
+2017-11-18T20:57:03+05:30 [UserDao] saveOtp execution ends
+2017-11-18T20:57:03+05:30 [UserDao] saveOtp execution starts
+2017-11-18T20:57:03+05:30 [DBWrapper] insertOperation execution starts
+2017-11-18T20:57:03+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '58','mobile','288034')
+2017-11-18T20:57:03+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 18
+    [affected_rows] => 1
+)
+
+2017-11-18T20:57:03+05:30 [DBWrapper] insertOperation execution ends
+2017-11-18T20:57:03+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 18
+    [affected_rows] => 1
+)
+
+2017-11-18T20:57:03+05:30 [UserDao] closeConnection execution starts
+2017-11-18T20:57:03+05:30 [UserDao] closeConnection execution ends
+2017-11-18T20:57:03+05:30 [UserDao] saveOtp execution ends
+2017-11-18T20:57:03+05:30 [User] createUser execution ends
+2017-11-18T20:57:33+05:30 [User] *************************************************
+2017-11-18T20:57:33+05:30 [User] verifyOtp execution starts
+2017-11-18T20:57:33+05:30 [UserDao] getOtp execution starts
+2017-11-18T20:57:33+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:57:33+05:30 [DBWrapper] QUERY: 
+SELECT otp_value FROM user_otp WHERE user_id="58" AND otp_for="mobile"
+2017-11-18T20:57:33+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:57:33+05:30 [UserDao] closeConnection execution starts
+2017-11-18T20:57:33+05:30 [UserDao] closeConnection execution ends
+2017-11-18T20:57:33+05:30 [UserDao] getOtp execution ends
+2017-11-18T20:57:33+05:30 [User] *************************************************
+2017-11-18T20:57:33+05:30 [User] updateStatusVerified execution starts
+2017-11-18T20:57:33+05:30 [UserDao] updateStatusVerified execution starts
+2017-11-18T20:57:33+05:30 [DBWrapper] updateOperation execution starts
+2017-11-18T20:57:33+05:30 [DBWrapper] QUERY: 
+UPDATE users SET mobile_status = 'VERIFIED'  WHERE user_id = '58'
+2017-11-18T20:57:33+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [affected_rows] => 1
+)
+
+2017-11-18T20:57:33+05:30 [DBWrapper] updateOperation execution ends
+2017-11-18T20:57:33+05:30 [UserDao] closeConnection execution starts
+2017-11-18T20:57:33+05:30 [UserDao] closeConnection execution ends
+2017-11-18T20:57:33+05:30 [UserDao] updateStatusVerified execution ends
+2017-11-18T20:57:33+05:30 [User] updateStatusVerified execution ends
+2017-11-18T20:57:33+05:30 [User] verifyOtp execution ends
+2017-11-18T20:58:03+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:58:03+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='r@q.com' OR mobile='r@q.com'
+2017-11-18T20:58:03+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:58:03+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:58:03+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='r@q.com' OR u.mobile='r@q.com') AND u.user_id=uc.user_id
+2017-11-18T20:58:03+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:58:03+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:58:03+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='r@q.com' OR mobile='r@q.com'
+2017-11-18T20:58:03+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:58:03+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:58:03+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='58'
+2017-11-18T20:58:03+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:58:03+05:30 [DBWrapper] insertOperation execution starts
+2017-11-18T20:58:03+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '58','ZDM3MTY5NzA5NGE3MzU3NzA3NGMxMGZiNjY4OGYyZmY_MTYyMTFiMjc0NmM0NzIxMzcwYjExNmJiYTI2YjQ5ZTk_MTI1ZDZkNjg2NmMwYjkwZGI3YmUwMjlhOWZkYjI4ZmM_','2018-11-18 20:58:03')
+2017-11-18T20:58:03+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 84
+    [affected_rows] => 1
+)
+
+2017-11-18T20:58:03+05:30 [DBWrapper] insertOperation execution ends
+2017-11-18T20:58:03+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:58:03+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='58'
+2017-11-18T20:58:03+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:58:03+05:30 [DBConnector] closeConnection execution starts
+2017-11-18T20:58:03+05:30 [DBConnector] closeConnection execution ends
+2017-11-18T20:58:04+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:58:04+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZDM3MTY5NzA5NGE3MzU3NzA3NGMxMGZiNjY4OGYyZmY_MTYyMTFiMjc0NmM0NzIxMzcwYjExNmJiYTI2YjQ5ZTk_MTI1ZDZkNjg2NmMwYjkwZGI3YmUwMjlhOWZkYjI4ZmM_'
+2017-11-18T20:58:04+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:58:04+05:30 [Location] *************************************************
+2017-11-18T20:58:04+05:30 [Location] getLocationsList execution starts
+2017-11-18T20:58:04+05:30 [LocationDao] getLocationsList execution starts
+2017-11-18T20:58:04+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:58:04+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-18T20:58:04+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:58:04+05:30 [LocationDao] closeConnection execution starts
+2017-11-18T20:58:04+05:30 [LocationDao] closeConnection execution ends
+2017-11-18T20:58:04+05:30 [LocationDao] getLocationsList execution ends
+2017-11-18T20:58:04+05:30 [Location] getLocationsList execution ends
+2017-11-18T20:58:39+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:58:39+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZDM3MTY5NzA5NGE3MzU3NzA3NGMxMGZiNjY4OGYyZmY_MTYyMTFiMjc0NmM0NzIxMzcwYjExNmJiYTI2YjQ5ZTk_MTI1ZDZkNjg2NmMwYjkwZGI3YmUwMjlhOWZkYjI4ZmM_'
+2017-11-18T20:58:39+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:58:39+05:30 [Item] *************************************************
+2017-11-18T20:58:39+05:30 [Item] getItems execution starts
+2017-11-18T20:58:39+05:30 [ItemDao] getItems execution starts
+2017-11-18T20:58:39+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:58:39+05:30 [DBWrapper] QUERY: 
+SELECT items_view.item_code, items_view.item_name, items_view.item_category, items_view.item_price, items_view.qty_slab, items_view.vendor_code, items_view.location_code, items_view.status FROM vendor_items_view items_view, locations loc WHERE loc.delivery_vendor=items_view.vendor_code AND loc.location_code="LN003"
+2017-11-18T20:58:39+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:58:39+05:30 [ItemDao] closeConnection execution starts
+2017-11-18T20:58:39+05:30 [ItemDao] closeConnection execution ends
+2017-11-18T20:58:39+05:30 [ItemDao] getItems execution ends
+2017-11-18T20:58:39+05:30 [Item] getItems execution ends
+2017-11-18T20:59:03+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:03+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZDM3MTY5NzA5NGE3MzU3NzA3NGMxMGZiNjY4OGYyZmY_MTYyMTFiMjc0NmM0NzIxMzcwYjExNmJiYTI2YjQ5ZTk_MTI1ZDZkNjg2NmMwYjkwZGI3YmUwMjlhOWZkYjI4ZmM_'
+2017-11-18T20:59:03+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:03+05:30 [Item] *************************************************
+2017-11-18T20:59:03+05:30 [Item] getItems execution starts
+2017-11-18T20:59:03+05:30 [ItemDao] getItems execution starts
+2017-11-18T20:59:03+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:03+05:30 [DBWrapper] QUERY: 
+SELECT items_view.item_code, items_view.item_name, items_view.item_category, items_view.item_price, items_view.qty_slab, items_view.vendor_code, items_view.location_code, items_view.status FROM vendor_items_view items_view, locations loc WHERE loc.delivery_vendor=items_view.vendor_code AND loc.location_code="LN004"
+2017-11-18T20:59:03+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:03+05:30 [ItemDao] closeConnection execution starts
+2017-11-18T20:59:03+05:30 [ItemDao] closeConnection execution ends
+2017-11-18T20:59:03+05:30 [ItemDao] getItems execution ends
+2017-11-18T20:59:03+05:30 [Item] getItems execution ends
+2017-11-18T20:59:16+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:16+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZDM3MTY5NzA5NGE3MzU3NzA3NGMxMGZiNjY4OGYyZmY_MTYyMTFiMjc0NmM0NzIxMzcwYjExNmJiYTI2YjQ5ZTk_MTI1ZDZkNjg2NmMwYjkwZGI3YmUwMjlhOWZkYjI4ZmM_'
+2017-11-18T20:59:16+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:16+05:30 [UserAddress] *************************************************
+2017-11-18T20:59:16+05:30 [UserAddress] getAddress execution starts
+2017-11-18T20:59:16+05:30 [UserAddressDao] getAddress execution starts
+2017-11-18T20:59:16+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:16+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM tokens WHERE token='ZDM3MTY5NzA5NGE3MzU3NzA3NGMxMGZiNjY4OGYyZmY_MTYyMTFiMjc0NmM0NzIxMzcwYjExNmJiYTI2YjQ5ZTk_MTI1ZDZkNjg2NmMwYjkwZGI3YmUwMjlhOWZkYjI4ZmM_'
+2017-11-18T20:59:16+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:16+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:16+05:30 [DBWrapper] QUERY: 
+SELECT * FROM user_address WHERE user_id="58"
+2017-11-18T20:59:16+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:16+05:30 [UserAddressDao] closeConnection execution starts
+2017-11-18T20:59:16+05:30 [UserAddressDao] closeConnection execution ends
+2017-11-18T20:59:16+05:30 [UserAddressDao] getAddress execution ends
+2017-11-18T20:59:16+05:30 [UserAddress] getAddress execution ends
+2017-11-18T20:59:47+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:47+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-18T20:59:47+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:47+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:47+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-11-18T20:59:47+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:47+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:47+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-18T20:59:47+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:47+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:47+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-11-18T20:59:47+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:47+05:30 [DBWrapper] insertOperation execution starts
+2017-11-18T20:59:47+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','YzFjMjllZTYzODM2YWVkZTM3ZGRkZDZmOTZlYWY3YzY_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YWI5Nzg5NjJkMWU2M2YyNWVkNWNkYTkxZTM3OWI5NzE_','2018-11-18 20:59:47')
+2017-11-18T20:59:47+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 85
+    [affected_rows] => 1
+)
+
+2017-11-18T20:59:47+05:30 [DBWrapper] insertOperation execution ends
+2017-11-18T20:59:47+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:47+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-11-18T20:59:47+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:47+05:30 [DBConnector] closeConnection execution starts
+2017-11-18T20:59:47+05:30 [DBConnector] closeConnection execution ends
+2017-11-18T20:59:48+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:48+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='YzFjMjllZTYzODM2YWVkZTM3ZGRkZDZmOTZlYWY3YzY_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YWI5Nzg5NjJkMWU2M2YyNWVkNWNkYTkxZTM3OWI5NzE_'
+2017-11-18T20:59:48+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:48+05:30 [Location] *************************************************
+2017-11-18T20:59:48+05:30 [Location] getLocationsList execution starts
+2017-11-18T20:59:48+05:30 [LocationDao] getLocationsList execution starts
+2017-11-18T20:59:48+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:48+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-18T20:59:48+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:48+05:30 [LocationDao] closeConnection execution starts
+2017-11-18T20:59:48+05:30 [LocationDao] closeConnection execution ends
+2017-11-18T20:59:48+05:30 [LocationDao] getLocationsList execution ends
+2017-11-18T20:59:48+05:30 [Location] getLocationsList execution ends
+2017-11-18T20:59:52+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:52+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='YzFjMjllZTYzODM2YWVkZTM3ZGRkZDZmOTZlYWY3YzY_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YWI5Nzg5NjJkMWU2M2YyNWVkNWNkYTkxZTM3OWI5NzE_'
+2017-11-18T20:59:52+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:52+05:30 [Item] *************************************************
+2017-11-18T20:59:52+05:30 [Item] getItems execution starts
+2017-11-18T20:59:52+05:30 [ItemDao] getItems execution starts
+2017-11-18T20:59:52+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:52+05:30 [DBWrapper] QUERY: 
+SELECT items_view.item_code, items_view.item_name, items_view.item_category, items_view.item_price, items_view.qty_slab, items_view.vendor_code, items_view.location_code, items_view.status FROM vendor_items_view items_view, locations loc WHERE loc.delivery_vendor=items_view.vendor_code AND loc.location_code="LN003"
+2017-11-18T20:59:52+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:52+05:30 [ItemDao] closeConnection execution starts
+2017-11-18T20:59:52+05:30 [ItemDao] closeConnection execution ends
+2017-11-18T20:59:52+05:30 [ItemDao] getItems execution ends
+2017-11-18T20:59:52+05:30 [Item] getItems execution ends
+2017-11-18T20:59:59+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:59+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='YzFjMjllZTYzODM2YWVkZTM3ZGRkZDZmOTZlYWY3YzY_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YWI5Nzg5NjJkMWU2M2YyNWVkNWNkYTkxZTM3OWI5NzE_'
+2017-11-18T20:59:59+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:59+05:30 [UserAddress] *************************************************
+2017-11-18T20:59:59+05:30 [UserAddress] getAddress execution starts
+2017-11-18T20:59:59+05:30 [UserAddressDao] getAddress execution starts
+2017-11-18T20:59:59+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:59+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM tokens WHERE token='YzFjMjllZTYzODM2YWVkZTM3ZGRkZDZmOTZlYWY3YzY_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YWI5Nzg5NjJkMWU2M2YyNWVkNWNkYTkxZTM3OWI5NzE_'
+2017-11-18T20:59:59+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:59+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T20:59:59+05:30 [DBWrapper] QUERY: 
+SELECT * FROM user_address WHERE user_id="1"
+2017-11-18T20:59:59+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T20:59:59+05:30 [UserAddressDao] closeConnection execution starts
+2017-11-18T20:59:59+05:30 [UserAddressDao] closeConnection execution ends
+2017-11-18T20:59:59+05:30 [UserAddressDao] getAddress execution ends
+2017-11-18T20:59:59+05:30 [UserAddress] getAddress execution ends
+2017-11-18T21:07:13+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:07:13+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='YzFjMjllZTYzODM2YWVkZTM3ZGRkZDZmOTZlYWY3YzY_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YWI5Nzg5NjJkMWU2M2YyNWVkNWNkYTkxZTM3OWI5NzE_'
+2017-11-18T21:07:13+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:07:13+05:30 [Location] *************************************************
+2017-11-18T21:07:13+05:30 [Location] getLocationsList execution starts
+2017-11-18T21:07:13+05:30 [LocationDao] getLocationsList execution starts
+2017-11-18T21:07:13+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:07:13+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-18T21:07:13+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:07:13+05:30 [LocationDao] closeConnection execution starts
+2017-11-18T21:07:13+05:30 [LocationDao] closeConnection execution ends
+2017-11-18T21:07:13+05:30 [LocationDao] getLocationsList execution ends
+2017-11-18T21:07:13+05:30 [Location] getLocationsList execution ends
+2017-11-18T21:08:26+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:08:26+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-18T21:08:26+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:08:26+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:08:26+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-11-18T21:08:26+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:08:26+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:08:26+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-18T21:08:26+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:08:26+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:08:26+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-11-18T21:08:26+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:08:26+05:30 [DBWrapper] insertOperation execution starts
+2017-11-18T21:08:26+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','ZDk3ZDg5NTFkOWQ2MDFiMzI4ZDRiYjIzMTc5OWFhNGI_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NzNlYmY3Mjk2ODQ4MmU1MGRmYTNjYzVjM2Y3MjUxOGQ_','2018-11-18 21:08:26')
+2017-11-18T21:08:26+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 86
+    [affected_rows] => 1
+)
+
+2017-11-18T21:08:26+05:30 [DBWrapper] insertOperation execution ends
+2017-11-18T21:08:26+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:08:26+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-11-18T21:08:26+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:08:26+05:30 [DBConnector] closeConnection execution starts
+2017-11-18T21:08:26+05:30 [DBConnector] closeConnection execution ends
+2017-11-18T21:08:28+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:08:28+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZDk3ZDg5NTFkOWQ2MDFiMzI4ZDRiYjIzMTc5OWFhNGI_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NzNlYmY3Mjk2ODQ4MmU1MGRmYTNjYzVjM2Y3MjUxOGQ_'
+2017-11-18T21:08:28+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:08:28+05:30 [Location] *************************************************
+2017-11-18T21:08:28+05:30 [Location] getLocationsList execution starts
+2017-11-18T21:08:28+05:30 [LocationDao] getLocationsList execution starts
+2017-11-18T21:08:28+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:08:28+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-18T21:08:28+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:08:28+05:30 [LocationDao] closeConnection execution starts
+2017-11-18T21:08:28+05:30 [LocationDao] closeConnection execution ends
+2017-11-18T21:08:28+05:30 [LocationDao] getLocationsList execution ends
+2017-11-18T21:08:28+05:30 [Location] getLocationsList execution ends
+2017-11-18T21:11:15+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:11:15+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZDk3ZDg5NTFkOWQ2MDFiMzI4ZDRiYjIzMTc5OWFhNGI_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NzNlYmY3Mjk2ODQ4MmU1MGRmYTNjYzVjM2Y3MjUxOGQ_'
+2017-11-18T21:11:15+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:11:15+05:30 [Location] *************************************************
+2017-11-18T21:11:15+05:30 [Location] getLocationsList execution starts
+2017-11-18T21:11:15+05:30 [LocationDao] getLocationsList execution starts
+2017-11-18T21:11:15+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:11:15+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-18T21:11:15+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:11:15+05:30 [LocationDao] closeConnection execution starts
+2017-11-18T21:11:15+05:30 [LocationDao] closeConnection execution ends
+2017-11-18T21:11:15+05:30 [LocationDao] getLocationsList execution ends
+2017-11-18T21:11:15+05:30 [Location] getLocationsList execution ends
+2017-11-18T21:11:18+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:11:18+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZDk3ZDg5NTFkOWQ2MDFiMzI4ZDRiYjIzMTc5OWFhNGI_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NzNlYmY3Mjk2ODQ4MmU1MGRmYTNjYzVjM2Y3MjUxOGQ_'
+2017-11-18T21:11:18+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:11:18+05:30 [Item] *************************************************
+2017-11-18T21:11:18+05:30 [Item] getItems execution starts
+2017-11-18T21:11:18+05:30 [ItemDao] getItems execution starts
+2017-11-18T21:11:18+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:11:18+05:30 [DBWrapper] QUERY: 
+SELECT items_view.item_code, items_view.item_name, items_view.item_category, items_view.item_price, items_view.qty_slab, items_view.vendor_code, items_view.location_code, items_view.status FROM vendor_items_view items_view, locations loc WHERE loc.delivery_vendor=items_view.vendor_code AND loc.location_code="LN001"
+2017-11-18T21:11:18+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:11:18+05:30 [ItemDao] closeConnection execution starts
+2017-11-18T21:11:18+05:30 [ItemDao] closeConnection execution ends
+2017-11-18T21:11:18+05:30 [ItemDao] getItems execution ends
+2017-11-18T21:11:18+05:30 [Item] getItems execution ends
+2017-11-18T21:11:30+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:11:30+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZDk3ZDg5NTFkOWQ2MDFiMzI4ZDRiYjIzMTc5OWFhNGI_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NzNlYmY3Mjk2ODQ4MmU1MGRmYTNjYzVjM2Y3MjUxOGQ_'
+2017-11-18T21:11:30+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:11:30+05:30 [UserAddress] *************************************************
+2017-11-18T21:11:30+05:30 [UserAddress] getAddress execution starts
+2017-11-18T21:11:30+05:30 [UserAddressDao] getAddress execution starts
+2017-11-18T21:11:30+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:11:30+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM tokens WHERE token='ZDk3ZDg5NTFkOWQ2MDFiMzI4ZDRiYjIzMTc5OWFhNGI_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NzNlYmY3Mjk2ODQ4MmU1MGRmYTNjYzVjM2Y3MjUxOGQ_'
+2017-11-18T21:11:30+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:11:30+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:11:30+05:30 [DBWrapper] QUERY: 
+SELECT * FROM user_address WHERE user_id="1"
+2017-11-18T21:11:30+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:11:30+05:30 [UserAddressDao] closeConnection execution starts
+2017-11-18T21:11:30+05:30 [UserAddressDao] closeConnection execution ends
+2017-11-18T21:11:30+05:30 [UserAddressDao] getAddress execution ends
+2017-11-18T21:11:30+05:30 [UserAddress] getAddress execution ends
+2017-11-18T21:25:29+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:25:29+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZDk3ZDg5NTFkOWQ2MDFiMzI4ZDRiYjIzMTc5OWFhNGI_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NzNlYmY3Mjk2ODQ4MmU1MGRmYTNjYzVjM2Y3MjUxOGQ_'
+2017-11-18T21:25:29+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:25:29+05:30 [Location] *************************************************
+2017-11-18T21:25:29+05:30 [Location] getLocationsList execution starts
+2017-11-18T21:25:29+05:30 [LocationDao] getLocationsList execution starts
+2017-11-18T21:25:29+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T21:25:29+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-18T21:25:29+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T21:25:29+05:30 [LocationDao] closeConnection execution starts
+2017-11-18T21:25:29+05:30 [LocationDao] closeConnection execution ends
+2017-11-18T21:25:29+05:30 [LocationDao] getLocationsList execution ends
+2017-11-18T21:25:29+05:30 [Location] getLocationsList execution ends
+2017-11-18T22:09:08+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:09:08+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-18T22:09:08+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:09:08+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:09:08+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rram.ramasamy@gmail.com' OR u.mobile='rram.ramasamy@gmail.com') AND u.user_id=uc.user_id
+2017-11-18T22:09:08+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:09:08+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:09:08+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rram.ramasamy@gmail.com' OR mobile='rram.ramasamy@gmail.com'
+2017-11-18T22:09:08+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:09:08+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:09:08+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-11-18T22:09:08+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:09:08+05:30 [DBWrapper] insertOperation execution starts
+2017-11-18T22:09:08+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '1','YTE2OWVhYTliY2I2YzA1NWRkZjdhZjdjN2MyODljZWU_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NTIwMTNlZDg1NTgzNzNkOWRjMDlhODFiYjMwMjE4MWM_','2018-11-18 22:09:08')
+2017-11-18T22:09:08+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 87
+    [affected_rows] => 1
+)
+
+2017-11-18T22:09:08+05:30 [DBWrapper] insertOperation execution ends
+2017-11-18T22:09:08+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:09:08+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='1'
+2017-11-18T22:09:08+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:09:08+05:30 [DBConnector] closeConnection execution starts
+2017-11-18T22:09:08+05:30 [DBConnector] closeConnection execution ends
+2017-11-18T22:09:09+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:09:09+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='YTE2OWVhYTliY2I2YzA1NWRkZjdhZjdjN2MyODljZWU_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NTIwMTNlZDg1NTgzNzNkOWRjMDlhODFiYjMwMjE4MWM_'
+2017-11-18T22:09:09+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:09:09+05:30 [Location] *************************************************
+2017-11-18T22:09:09+05:30 [Location] getLocationsList execution starts
+2017-11-18T22:09:09+05:30 [LocationDao] getLocationsList execution starts
+2017-11-18T22:09:09+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:09:09+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-18T22:09:09+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:09:09+05:30 [LocationDao] closeConnection execution starts
+2017-11-18T22:09:09+05:30 [LocationDao] closeConnection execution ends
+2017-11-18T22:09:09+05:30 [LocationDao] getLocationsList execution ends
+2017-11-18T22:09:09+05:30 [Location] getLocationsList execution ends
+2017-11-18T22:10:08+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:10:08+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='YTE2OWVhYTliY2I2YzA1NWRkZjdhZjdjN2MyODljZWU_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NTIwMTNlZDg1NTgzNzNkOWRjMDlhODFiYjMwMjE4MWM_'
+2017-11-18T22:10:08+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:10:08+05:30 [Location] *************************************************
+2017-11-18T22:10:08+05:30 [Location] getLocationsList execution starts
+2017-11-18T22:10:08+05:30 [LocationDao] getLocationsList execution starts
+2017-11-18T22:10:08+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:10:08+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-18T22:10:08+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:10:08+05:30 [LocationDao] closeConnection execution starts
+2017-11-18T22:10:08+05:30 [LocationDao] closeConnection execution ends
+2017-11-18T22:10:08+05:30 [LocationDao] getLocationsList execution ends
+2017-11-18T22:10:08+05:30 [Location] getLocationsList execution ends
+2017-11-18T22:11:56+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:11:56+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='YTE2OWVhYTliY2I2YzA1NWRkZjdhZjdjN2MyODljZWU_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NTIwMTNlZDg1NTgzNzNkOWRjMDlhODFiYjMwMjE4MWM_'
+2017-11-18T22:11:56+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:11:56+05:30 [Location] *************************************************
+2017-11-18T22:11:56+05:30 [Location] getLocationsList execution starts
+2017-11-18T22:11:56+05:30 [LocationDao] getLocationsList execution starts
+2017-11-18T22:11:56+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:11:56+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-18T22:11:56+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:11:56+05:30 [LocationDao] closeConnection execution starts
+2017-11-18T22:11:56+05:30 [LocationDao] closeConnection execution ends
+2017-11-18T22:11:56+05:30 [LocationDao] getLocationsList execution ends
+2017-11-18T22:11:56+05:30 [Location] getLocationsList execution ends
+2017-11-18T22:12:51+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:12:51+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='YTE2OWVhYTliY2I2YzA1NWRkZjdhZjdjN2MyODljZWU_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NTIwMTNlZDg1NTgzNzNkOWRjMDlhODFiYjMwMjE4MWM_'
+2017-11-18T22:12:51+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:12:51+05:30 [Location] *************************************************
+2017-11-18T22:12:51+05:30 [Location] getLocationsList execution starts
+2017-11-18T22:12:51+05:30 [LocationDao] getLocationsList execution starts
+2017-11-18T22:12:51+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:12:51+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-18T22:12:51+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:12:51+05:30 [LocationDao] closeConnection execution starts
+2017-11-18T22:12:51+05:30 [LocationDao] closeConnection execution ends
+2017-11-18T22:12:51+05:30 [LocationDao] getLocationsList execution ends
+2017-11-18T22:12:51+05:30 [Location] getLocationsList execution ends
+2017-11-18T22:13:27+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:13:27+05:30 [DBWrapper] QUERY: 
+SELECT count(*) as 'count' FROM users WHERE email='rakshanakr@gmail.com' OR mobile='rakshanakr@gmail.com'
+2017-11-18T22:13:27+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:13:27+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:13:27+05:30 [DBWrapper] QUERY: 
+SELECT uc.password FROM users u, user_credentials uc WHERE (u.email='rakshanakr@gmail.com' OR u.mobile='rakshanakr@gmail.com') AND u.user_id=uc.user_id
+2017-11-18T22:13:27+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:13:27+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:13:27+05:30 [DBWrapper] QUERY: 
+SELECT user_id FROM users WHERE email='rakshanakr@gmail.com' OR mobile='rakshanakr@gmail.com'
+2017-11-18T22:13:27+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:13:27+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:13:27+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='2'
+2017-11-18T22:13:27+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:13:27+05:30 [DBWrapper] insertOperation execution starts
+2017-11-18T22:13:27+05:30 [DBWrapper] QUERY: 
+INSERT INTO tokens ( user_id,token,valid_till ) VALUES ( '2','ZGNmNGEyMjVlNTJhOTQ0ZjYwZmU1ODg3YzEwZDZjMDI_MWQ0NWE4Mzc4YjcwYjk5MWJlMDVjZTUxZjVmMzg3MmM_NWY3YTE0OGVjZGZlNDMxOTc4ZDVlYzRmYWQyM2UzNmU_','2018-11-18 22:13:27')
+2017-11-18T22:13:27+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 88
+    [affected_rows] => 1
+)
+
+2017-11-18T22:13:27+05:30 [DBWrapper] insertOperation execution ends
+2017-11-18T22:13:27+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:13:27+05:30 [DBWrapper] QUERY: 
+SELECT * FROM users WHERE user_id='2'
+2017-11-18T22:13:27+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:13:27+05:30 [DBConnector] closeConnection execution starts
+2017-11-18T22:13:27+05:30 [DBConnector] closeConnection execution ends
+2017-11-18T22:13:28+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:13:28+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZGNmNGEyMjVlNTJhOTQ0ZjYwZmU1ODg3YzEwZDZjMDI_MWQ0NWE4Mzc4YjcwYjk5MWJlMDVjZTUxZjVmMzg3MmM_NWY3YTE0OGVjZGZlNDMxOTc4ZDVlYzRmYWQyM2UzNmU_'
+2017-11-18T22:13:28+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:13:28+05:30 [Location] *************************************************
+2017-11-18T22:13:28+05:30 [Location] getLocationsList execution starts
+2017-11-18T22:13:28+05:30 [LocationDao] getLocationsList execution starts
+2017-11-18T22:13:28+05:30 [DBWrapper] selectOperation execution starts
+2017-11-18T22:13:28+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-18T22:13:28+05:30 [DBWrapper] selectOperation execution ends
+2017-11-18T22:13:28+05:30 [LocationDao] closeConnection execution starts
+2017-11-18T22:13:28+05:30 [LocationDao] closeConnection execution ends
+2017-11-18T22:13:28+05:30 [LocationDao] getLocationsList execution ends
+2017-11-18T22:13:28+05:30 [Location] getLocationsList execution ends
+2017-11-19T10:05:51+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T10:05:51+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='NzMwOTBiOTA4MGIzNDk5ZjNhYzUwNDJlNmU1NmJmMGM_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NjQ2NmY0YzI3NDhjYTk4ZTZiZGZkNmRmZmIwNGI2ZWM_'
+2017-11-19T10:05:51+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T10:05:51+05:30 [Item] *************************************************
+2017-11-19T10:05:51+05:30 [Item] getItems execution starts
+2017-11-19T10:05:51+05:30 [ItemDao] getItems execution starts
+2017-11-19T10:05:51+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T10:05:51+05:30 [DBWrapper] QUERY: 
+SELECT items_view.item_code, items_view.item_name, items_view.item_category, items_view.item_price, items_view.qty_slab, items_view.vendor_code, items_view.location_code, items_view.status FROM vendor_items_view items_view, locations loc WHERE loc.delivery_vendor=items_view.vendor_code AND loc.location_code="LN001"
+2017-11-19T10:05:51+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T10:05:51+05:30 [ItemDao] closeConnection execution starts
+2017-11-19T10:05:51+05:30 [ItemDao] closeConnection execution ends
+2017-11-19T10:05:51+05:30 [ItemDao] getItems execution ends
+2017-11-19T10:05:51+05:30 [Item] getItems execution ends
+2017-11-19T10:55:35+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T10:55:35+05:30 [DBWrapper] QUERY: 
+SELECT * FROM tokens WHERE token='ZGNmNGEyMjVlNTJhOTQ0ZjYwZmU1ODg3YzEwZDZjMDI_MWQ0NWE4Mzc4YjcwYjk5MWJlMDVjZTUxZjVmMzg3MmM_NWY3YTE0OGVjZGZlNDMxOTc4ZDVlYzRmYWQyM2UzNmU_'
+2017-11-19T10:55:35+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T10:55:35+05:30 [Location] *************************************************
+2017-11-19T10:55:35+05:30 [Location] getLocationsList execution starts
+2017-11-19T10:55:35+05:30 [LocationDao] getLocationsList execution starts
+2017-11-19T10:55:35+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T10:55:35+05:30 [DBWrapper] QUERY: 
+SELECT * FROM locations
+2017-11-19T10:55:35+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T10:55:35+05:30 [LocationDao] closeConnection execution starts
+2017-11-19T10:55:35+05:30 [LocationDao] closeConnection execution ends
+2017-11-19T10:55:35+05:30 [LocationDao] getLocationsList execution ends
+2017-11-19T10:55:35+05:30 [Location] getLocationsList execution ends
+2017-11-19T10:56:11+05:30 [User] *************************************************
+2017-11-19T10:56:11+05:30 [User] createUser execution starts
+2017-11-19T10:56:11+05:30 [UserDao] createUser execution starts
+2017-11-19T10:56:11+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T10:56:11+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'r','r','r','788996656','r')
+2017-11-19T10:56:11+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 59
+    [affected_rows] => 1
+)
+
+2017-11-19T10:56:11+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T10:56:11+05:30 [UserDao] closeConnection execution starts
+2017-11-19T10:56:11+05:30 [UserDao] closeConnection execution ends
+2017-11-19T10:56:11+05:30 [UserDao] createUser execution ends
+2017-11-19T10:56:12+05:30 [UserDao] savePassword execution starts
+2017-11-19T10:56:12+05:30 [DBWrapper] noEscapeInsertOperation execution starts
+2017-11-19T10:56:12+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_credentials ( user_id,password ) VALUES ( '59','$2y$10$amWxnP.QT.zmvEb7J7x.2.Ju2vpE00rGp7oHErh6PAp27gz7mXxNC')
+2017-11-19T10:56:12+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 14
+    [affected_rows] => 1
+)
+
+2017-11-19T10:56:12+05:30 [DBWrapper] noEscapeInsertOperation execution ends
+2017-11-19T10:56:12+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 14
+    [affected_rows] => 1
+)
+
+2017-11-19T10:56:12+05:30 [UserDao] closeConnection execution starts
+2017-11-19T10:56:12+05:30 [UserDao] closeConnection execution ends
+2017-11-19T10:56:12+05:30 [UserDao] savePassword execution ends
+2017-11-19T10:56:12+05:30 [UserDao] saveOtp execution starts
+2017-11-19T10:56:12+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T10:56:12+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '59','email','664304')
+2017-11-19T10:56:12+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 19
+    [affected_rows] => 1
+)
+
+2017-11-19T10:56:12+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T10:56:12+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 19
+    [affected_rows] => 1
+)
+
+2017-11-19T10:56:12+05:30 [UserDao] closeConnection execution starts
+2017-11-19T10:56:12+05:30 [UserDao] closeConnection execution ends
+2017-11-19T10:56:12+05:30 [UserDao] saveOtp execution ends
+2017-11-19T10:56:12+05:30 [UserDao] saveOtp execution starts
+2017-11-19T10:56:12+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T10:56:12+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '59','mobile','939733')
+2017-11-19T10:56:12+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 20
+    [affected_rows] => 1
+)
+
+2017-11-19T10:56:12+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T10:56:12+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 20
+    [affected_rows] => 1
+)
+
+2017-11-19T10:56:12+05:30 [UserDao] closeConnection execution starts
+2017-11-19T10:56:12+05:30 [UserDao] closeConnection execution ends
+2017-11-19T10:56:12+05:30 [UserDao] saveOtp execution ends
+2017-11-19T10:56:12+05:30 [User] createUser execution ends
