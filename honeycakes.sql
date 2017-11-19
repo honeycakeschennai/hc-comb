@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 15, 2017 at 07:49 PM
+-- Generation Time: Nov 19, 2017 at 09:12 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.1
 
@@ -200,7 +200,36 @@ INSERT INTO `tokens` (`token_id`, `user_id`, `generated_time`, `token`, `valid_t
 (56, 32, '2017-11-15 14:26:41', 'NzNlMTg4YzI1Mzg0YzJmOTE3MWYzZDE1ZWMyNTFhNzI_NmRiMDhkZmJlMDYyMDg3ZDVjNGFlYzRmMDBhOTJiM2M_YWI1MjE1NGJhZjQ5ZGRjYWM0NTNkMjVhYWVmNTQ5MzQ_', '2018-11-15 19:56:41'),
 (57, 49, '2017-11-15 18:32:31', 'Yzg1ZjY3MTFiMmY2ODBhOTBmMDk4ODE0OTczN2UxOWQ_ZWM1YmFkNzQzYTY3ODkxZjhhODI5Y2VhZjA0NDEzYjI_NmM1ZjZjODMwZWM4MGI2NDY0ODE2N2IzMWM4OWE2NTM_', '2018-11-16 00:02:31'),
 (58, 49, '2017-11-15 18:32:53', 'MWRjYTg0Y2FkOWE3NjUyYWM4N2JmMmFkOTM1N2NlZWM_ZWM1YmFkNzQzYTY3ODkxZjhhODI5Y2VhZjA0NDEzYjI_OGJjNmRiZTQxOTgzZWIzZWNmNWE0ZGZjZjcxZTFiYTU_', '2018-11-16 00:02:53'),
-(59, 54, '2017-11-15 18:47:42', 'NGFmMmRkMjM1N2QzZDAyMDI5YTgxNGZiOWY3NzU3NDY_Y2I0MjdkYmY2MjQ3NmM4ZGU3NTllOWZiZTgzYTUwOGU_Yzk5ZTdlMTM4ODc4MDc5YTRjNTI2OWM3ZDYyMDI3OGI_', '2018-11-16 00:17:42');
+(59, 54, '2017-11-15 18:47:42', 'NGFmMmRkMjM1N2QzZDAyMDI5YTgxNGZiOWY3NzU3NDY_Y2I0MjdkYmY2MjQ3NmM4ZGU3NTllOWZiZTgzYTUwOGU_Yzk5ZTdlMTM4ODc4MDc5YTRjNTI2OWM3ZDYyMDI3OGI_', '2018-11-16 00:17:42'),
+(60, 55, '2017-11-15 19:16:17', 'M2MwMmU3ZTljMmIwNjRlZTNlOTZlODNiOTc3N2RkZTQ_MTgyOTNkMTQ0NDAwZmY0ZjE1ZTAxN2YzMTA4OWZhODc_YjZhODg4OWE1ZjQ5YjFhNzUzNTE3YzJjYmVlOWJhYmI_', '2018-11-16 00:46:17'),
+(61, 54, '2017-11-18 04:59:03', 'NGZiYzliZDNjNmJjYjAxZmZiNjU0OTQ3ZGQ0MGRiMjE_Y2I0MjdkYmY2MjQ3NmM4ZGU3NTllOWZiZTgzYTUwOGU_MGJkOWVhNTNhNWIyMjVmNGQxZDY4YmMyNjVhMDdiOTc_', '2018-11-18 10:29:03'),
+(62, 54, '2017-11-18 05:00:20', 'M2FhYWJhYWE0OWU3M2EwNjM4MGJkNjA5ODg1MjFhNDE_Y2I0MjdkYmY2MjQ3NmM4ZGU3NTllOWZiZTgzYTUwOGU_M2U2MGUxYjYyNTc5NjJlMGY3MjIyYjBhZDAwMTJkOGE_', '2018-11-18 10:30:20'),
+(63, 1, '2017-11-18 05:18:19', 'MTA3NTliOTNlODQwN2Q0NmI0ZDcxNjY1N2M3NDZjNWE_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_ZDRmOWU3NWNmYzIzMmM0N2I0OWM2Mzg3NDk5M2Y1Nzg_', '2018-11-18 10:48:19'),
+(64, 1, '2017-11-18 05:27:10', 'Mjk4YWU5MTI5NDZkZmY2ZjRkZDMzODQ3MDI2YTViNDg_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_MWQyNmQwZDk4YzBlNTE4NzU5NDVkYWEwMDRjZDMzNGQ_', '2018-11-18 10:57:10'),
+(65, 1, '2017-11-18 05:27:12', 'NDkwYmUzY2Q4ODY4NzI4MDY0ZTJkMmVmYjNlMjc1YWU_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NWE3M2M2NGU4YjQ2YWFmYTczOGFjNGM4YTNmOWRkYzc_', '2018-11-18 10:57:12'),
+(66, 1, '2017-11-18 05:27:13', 'NjczMzVkMjg1MjFjZTc0NjA1NjRkNmUwZWQ1MDhjYWM_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_MzQ5OTNjYjZjY2MzMDk2OGNiZDNjMmJlZGY0MThjOTc_', '2018-11-18 10:57:13'),
+(67, 1, '2017-11-18 05:27:13', 'OWM0Mjk0MmZhMGRlODg5Yjc1NzIzMmFhN2I0MTI3YjE_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_MzQ5OTNjYjZjY2MzMDk2OGNiZDNjMmJlZGY0MThjOTc_', '2018-11-18 10:57:13'),
+(68, 1, '2017-11-18 05:27:13', 'NTFkNDg4ZDRkZWZhMGUxZjk4OWRkMmUyYzQ1YzdlYmE_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_MzQ5OTNjYjZjY2MzMDk2OGNiZDNjMmJlZGY0MThjOTc_', '2018-11-18 10:57:13'),
+(69, 1, '2017-11-18 05:27:13', 'MWIzZDZiZjRkYzUzMTRhZmJlODRmZjRiMzYzNWRlNDc_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_MzQ5OTNjYjZjY2MzMDk2OGNiZDNjMmJlZGY0MThjOTc_', '2018-11-18 10:57:13'),
+(70, 1, '2017-11-18 05:27:13', 'ZjI5ZTc0ZjBhNDJiZjhlMDYyZjI3NzVmYzhlOGIzZTQ_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_MzQ5OTNjYjZjY2MzMDk2OGNiZDNjMmJlZGY0MThjOTc_', '2018-11-18 10:57:13'),
+(71, 1, '2017-11-18 05:29:05', 'Nzc0NDQ2ZDdmZjNhYzYxZDI3ODM0ZGUwYzc0OWIyMDE_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NWY2MmJkNWI1MjIxYThmYzE0NDc2YmE1YWNhYTVjNDA_', '2018-11-18 10:59:05'),
+(72, 1, '2017-11-18 05:29:07', 'YmQzYTgyMzNkMTBjM2VlYmY2NDgyYmJkZDEwN2EzOGM_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_OWU1YzVhZGMzMmIzODcwMmVjMGFiNzcxOGFjNjdjMGE_', '2018-11-18 10:59:07'),
+(73, 1, '2017-11-18 05:40:22', 'NmE5NWFmOGI3M2I1ZGE1YmY5YWY1NDI3MDhiYjJlYzc_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NjQ0Yzc0ODU4N2IyMGE5ODU5M2IwZmFjNTA5YjAyZWM_', '2018-11-18 11:10:22'),
+(74, 1, '2017-11-18 05:42:17', 'N2YxZjI5ZTY5MmJhMDEwMzc4YTk4NjFkYWI4NmNhNTI_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YWJkMjAxYTc0NzUxMzFjMDkyZWU5NjRmOGFkZjZmMWE_', '2018-11-18 11:12:17'),
+(75, 1, '2017-11-18 05:44:17', 'ZTEzNzZiODVlNGE4ZTMzMTJhMzUxNjFkZmUxZTZkMmY_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_OTBiMjk1MzMwZjg5ZjUwN2ZhY2ExOTAwZGViMjI1MDQ_', '2018-11-18 11:14:17'),
+(76, 1, '2017-11-18 05:44:44', 'NjM3YzVjZjYxNjBiNWZiZTczYjA4NTUxNTQxYzYxOWE_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_ODJlNTFiYjI5MTIzYTRhNzg0MTY5ZWViNTVjYmI2MjI_', '2018-11-18 11:14:44'),
+(77, 1, '2017-11-18 05:45:07', 'MTE2OWU1YWNiYzBkN2VkNDYzYjgzYWYxMGNmZDgzMjc_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_MmNlZWMzNDVmNzhjMGViNWQwNThjZDkwODMyODdhZGE_', '2018-11-18 11:15:07'),
+(78, 1, '2017-11-18 05:54:50', 'MGMzMDdjYTAzZWQ4MmVkZWRmYjVhM2UzNzk5MGQxODc_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_ZWIzNjhiODdjZDU1NmViYjJjZTdhOWJiYTM0YjUwNDE_', '2018-11-18 11:24:50'),
+(79, 1, '2017-11-18 05:59:19', 'YjdhNWMxMWEzYTU5ZWNiZTNlODcwOTEwZjJjZDE2ZDU_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YmFlODc0YTdmNjQ0ZjkzMTlmNjhiMWJlY2JmZTM1ZGQ_', '2018-11-18 11:29:19'),
+(80, 54, '2017-11-18 06:00:55', 'MWUxZjg0NWE0NDNiMjA4YTg5MmQwNGZkNmM0YjU4MTA_Y2I0MjdkYmY2MjQ3NmM4ZGU3NTllOWZiZTgzYTUwOGU_Y2I5OTljMDVlNjc0NzE1ZDIwZjUzNjk1N2Y4MjQwN2I_', '2018-11-18 11:30:55'),
+(81, 1, '2017-11-18 06:01:52', 'NmQ4NWJkNDYwNjA0YjJiNTc0YjY3YWU5NTVmMDFlZTk_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YjYzY2ZkNDFkZGE1NjYxMzNlMzE0ZGE5MmNjODVhODY_', '2018-11-18 11:31:52'),
+(82, 57, '2017-11-18 06:04:30', 'YmUwMWE1NjA1MDJhYjcwYjg5NmQxODViN2U5NjYyMTg_ZGE2YzEwNmI4NDY0Y2Q4NTdmYzJlMGYwYTRiMDE3MDY_NmIwY2E2OWEzZDAxNzc4OTZiYmM2OTRjYjllYzg3Yzk_', '2018-11-18 11:34:30'),
+(83, 54, '2017-11-18 06:12:20', 'ODIwYjg2YzMwMjBkZWYxZTE2OTg5NWYyMzA2ZTgzMzU_Y2I0MjdkYmY2MjQ3NmM4ZGU3NTllOWZiZTgzYTUwOGU_MTFiZjEzMTNlY2VmMjdiNWNlMjQyODc2MDFiYTQzODE_', '2018-11-18 11:42:20'),
+(84, 58, '2017-11-18 15:28:03', 'ZDM3MTY5NzA5NGE3MzU3NzA3NGMxMGZiNjY4OGYyZmY_MTYyMTFiMjc0NmM0NzIxMzcwYjExNmJiYTI2YjQ5ZTk_MTI1ZDZkNjg2NmMwYjkwZGI3YmUwMjlhOWZkYjI4ZmM_', '2018-11-18 20:58:03'),
+(85, 1, '2017-11-18 15:29:47', 'YzFjMjllZTYzODM2YWVkZTM3ZGRkZDZmOTZlYWY3YzY_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YWI5Nzg5NjJkMWU2M2YyNWVkNWNkYTkxZTM3OWI5NzE_', '2018-11-18 20:59:47'),
+(86, 1, '2017-11-18 15:38:26', 'ZDk3ZDg5NTFkOWQ2MDFiMzI4ZDRiYjIzMTc5OWFhNGI_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NzNlYmY3Mjk2ODQ4MmU1MGRmYTNjYzVjM2Y3MjUxOGQ_', '2018-11-18 21:08:26'),
+(87, 1, '2017-11-18 16:39:08', 'YTE2OWVhYTliY2I2YzA1NWRkZjdhZjdjN2MyODljZWU_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NTIwMTNlZDg1NTgzNzNkOWRjMDlhODFiYjMwMjE4MWM_', '2018-11-18 22:09:08'),
+(88, 2, '2017-11-18 16:43:27', 'ZGNmNGEyMjVlNTJhOTQ0ZjYwZmU1ODg3YzEwZDZjMDI_MWQ0NWE4Mzc4YjcwYjk5MWJlMDVjZTUxZjVmMzg3MmM_NWY3YTE0OGVjZGZlNDMxOTc4ZDVlYzRmYWQyM2UzNmU_', '2018-11-18 22:13:27');
 
 -- --------------------------------------------------------
 
@@ -232,7 +261,14 @@ INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `email`, `mobile`, `d
 (38, 'rams', 'rams', 'hr@honeycakes.in', '9894130825', '0000-00-00', 'NOT_VERIFIED', 'NOT_VERIFIED', '2017-11-15 14:54:16'),
 (46, 'Ramu', 'Ramasamy', 'rr@ymail.com', '9789413089', '0000-00-00', 'VERIFIED', 'VERIFIED', '2017-11-15 18:20:54'),
 (49, 'qwert', 'asddf', 'q@q.com', '789123456', '0000-00-00', 'NOT_VERIFIED', 'VERIFIED', '2017-11-15 18:31:49'),
-(54, 'q', 'q', 'q@w.com', '9894130820', '0000-00-00', 'NOT_VERIFIED', 'VERIFIED', '2017-11-15 18:47:30');
+(54, 'q', 'q', 'q@w.com', '9894130820', '0000-00-00', 'NOT_VERIFIED', 'VERIFIED', '2017-11-15 18:47:30'),
+(55, 'a', 'a', 'a@a.com', '3456789023', '0000-00-00', 'NOT_VERIFIED', 'VERIFIED', '2017-11-15 19:15:47'),
+(57, 'ramu', 'rams', 'r@r.com', '345678901', '0000-00-00', 'NOT_VERIFIED', 'VERIFIED', '2017-11-18 06:03:58'),
+(58, 'rams', 'rams', 'r@q.com', '8190912852', '0000-00-00', 'NOT_VERIFIED', 'VERIFIED', '2017-11-18 15:27:33'),
+(59, 'r', 'r', 'r', '788996656', '0000-00-00', 'NOT_VERIFIED', 'NOT_VERIFIED', '2017-11-19 05:26:11'),
+(65, 'q', 'q', 'op', '1234567811', '0000-00-00', 'NOT_VERIFIED', 'NOT_VERIFIED', '2017-11-19 06:33:10'),
+(69, 'l', 'l', 'l@l.com', '23468900', '0000-00-00', 'NOT_VERIFIED', 'NOT_VERIFIED', '2017-11-19 06:38:54'),
+(70, 'san', 'san', 'san@g.com', '8877665544', '0000-00-00', 'NOT_VERIFIED', 'NOT_VERIFIED', '2017-11-19 08:08:29');
 
 -- --------------------------------------------------------
 
@@ -277,7 +313,39 @@ INSERT INTO `user_credentials` (`user_login_id`, `user_id`, `password`) VALUES
 (4, 32, '$2y$10$3Vzs1tGS4xy6dzqq8EqbxOVaHFnaGOg8ltX8/JDg2w5UVmV4bqe7O'),
 (8, 46, '$2y$10$NRPw/cNXu0L2V2WThe1Fj.8Che7hv5bpHDLNd7At8DkwYSJmcC3u.'),
 (9, 49, '$2y$10$GkOHxEJ2bIfuDT4012e21OOWzdEXYLDXwgBMqC8L8tbJgT/1rmJAq'),
-(10, 54, '$2y$10$baxvdSefai91Lxp6EuX6nOYfdf1szKhHdQ.IX8/p3PP909P31k/Iy');
+(10, 54, '$2y$10$baxvdSefai91Lxp6EuX6nOYfdf1szKhHdQ.IX8/p3PP909P31k/Iy'),
+(11, 55, '$2y$10$8zyynk91NchPqwBFka3IX.Tn6g.aAk.v4naFkKmCI0yKx8wZP3w1y'),
+(12, 57, '$2y$10$KEnp4HDWtXzZWh/ZVaMFa.qVqXp1pvihSUAmsFRJIPjHqWcZSFv.q'),
+(13, 58, '$2y$10$j5CxMduZ3D4Bt1ZvC1sVe.64W0Emkdc/F8knA39/PpT0j4O7uUnou'),
+(17, 65, '$2y$10$kpZyzmxojKREwJgyoNDwEeV1pQloziLiRU9btuPTBM3FiYKrGH6Bi'),
+(20, 69, '$2y$10$yLP1wxYAEsTsqpLnoy/WqO2xKKw1Fybz0hziDrxs.SXJ9X5wS0rn6'),
+(21, 70, '$2y$10$D0lK9l1FkY9waQH5Rq7eT.JypAQGo2Pc48DFnQeYWpvGrU3eqfBbW');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_notifications`
+--
+
+CREATE TABLE `user_notifications` (
+  `notification_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `notification_type` varchar(5) NOT NULL,
+  `message_type` varchar(11) NOT NULL,
+  `delivery_to` varchar(50) NOT NULL,
+  `message_content` varchar(540) NOT NULL,
+  `date_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `user_notifications`
+--
+
+INSERT INTO `user_notifications` (`notification_id`, `user_id`, `notification_type`, `message_type`, `delivery_to`, `message_content`, `date_time`) VALUES
+(3, 69, '', 'OTP', 'l@l.com', 'Your OTP for Honeycakes signup is 375454. Please do not share this with anyone.', '2017-11-19 06:38:54'),
+(4, 69, '', 'OTP', '23468900', 'Your OTP for Honeycakes signup is 791973. Please do not share this with anyone.', '2017-11-19 06:38:54'),
+(5, 70, 'EMAIL', 'OTP', 'san@g.com', 'Your OTP for Honeycakes signup is 751051. Please do not share this with anyone.', '2017-11-19 08:08:30'),
+(6, 70, 'SMS', 'OTP', '8877665544', 'Your OTP for Honeycakes signup is 659676. Please do not share this with anyone.', '2017-11-19 08:08:30');
 
 -- --------------------------------------------------------
 
@@ -303,7 +371,17 @@ INSERT INTO `user_otp` (`otp_id`, `user_id`, `otp_for`, `otp_value`, `generated_
 (9, 49, 'email', '111934', '2017-11-15 18:31:05'),
 (10, 49, 'mobile', '278767', '2017-11-15 18:31:05'),
 (11, 54, 'email', '406884', '2017-11-15 18:47:09'),
-(12, 54, 'mobile', '100007', '2017-11-15 18:47:09');
+(12, 54, 'mobile', '100007', '2017-11-15 18:47:09'),
+(13, 55, 'email', '973151', '2017-11-15 19:15:20'),
+(14, 55, 'mobile', '230172', '2017-11-15 19:15:20'),
+(15, 57, 'email', '860635', '2017-11-18 06:03:22'),
+(16, 57, 'mobile', '480332', '2017-11-18 06:03:22'),
+(17, 58, 'email', '700454', '2017-11-18 15:27:03'),
+(18, 58, 'mobile', '288034', '2017-11-18 15:27:03'),
+(30, 69, 'email', '375454', '2017-11-19 06:38:54'),
+(31, 69, 'mobile', '791973', '2017-11-19 06:38:54'),
+(32, 70, 'email', '751051', '2017-11-19 08:08:30'),
+(33, 70, 'mobile', '659676', '2017-11-19 08:08:30');
 
 -- --------------------------------------------------------
 
@@ -492,6 +570,13 @@ ALTER TABLE `user_credentials`
   ADD KEY `user_id` (`user_id`);
 
 --
+-- Indexes for table `user_notifications`
+--
+ALTER TABLE `user_notifications`
+  ADD PRIMARY KEY (`notification_id`),
+  ADD KEY `user_id_notification` (`user_id`);
+
+--
 -- Indexes for table `user_otp`
 --
 ALTER TABLE `user_otp`
@@ -547,12 +632,12 @@ ALTER TABLE `order_items`
 -- AUTO_INCREMENT for table `tokens`
 --
 ALTER TABLE `tokens`
-  MODIFY `token_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `token_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 --
 -- AUTO_INCREMENT for table `user_address`
 --
@@ -562,12 +647,17 @@ ALTER TABLE `user_address`
 -- AUTO_INCREMENT for table `user_credentials`
 --
 ALTER TABLE `user_credentials`
-  MODIFY `user_login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `user_login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+--
+-- AUTO_INCREMENT for table `user_notifications`
+--
+ALTER TABLE `user_notifications`
+  MODIFY `notification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `user_otp`
 --
 ALTER TABLE `user_otp`
-  MODIFY `otp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `otp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 --
 -- AUTO_INCREMENT for table `vendors`
 --
@@ -619,6 +709,12 @@ ALTER TABLE `user_address`
 --
 ALTER TABLE `user_credentials`
   ADD CONSTRAINT `user_credentials_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+
+--
+-- Constraints for table `user_notifications`
+--
+ALTER TABLE `user_notifications`
+  ADD CONSTRAINT `user_id_notification` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
 
 --
 -- Constraints for table `user_otp`

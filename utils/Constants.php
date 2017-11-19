@@ -33,5 +33,8 @@
 	define('EML_OTP_FAILURE','Email verification failed.');
 	define('MSG_TYPE_OTP','OTP');
 	define('MSG_TYPE_TRANSACTION','TRANSACTION');
+	define('NOTIFICATION_TYPE_SMS','SMS');
+	define('NOTIFICATION_TYPE_EMAIL','EMAIL');
+	define('NOTIFICATION_TYPE_PUSH','PUSH');
 
 ?>

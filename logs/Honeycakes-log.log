@@ -3012,3 +3012,158 @@ Array
 2017-11-19T12:08:54+05:30 [DBConnector] closeConnection execution ends
 2017-11-19T12:08:54+05:30 [DBConnector] saveNotificationDataToDb execution ends
 2017-11-19T12:08:54+05:30 [User] createUser execution ends
+2017-11-19T13:38:29+05:30 [User] *************************************************
+2017-11-19T13:38:29+05:30 [User] createUser execution starts
+2017-11-19T13:38:29+05:30 [UserDao] createUser execution starts
+2017-11-19T13:38:29+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T13:38:29+05:30 [DBWrapper] QUERY: 
+INSERT INTO users ( first_name,last_name,email,mobile,date_of_birth ) VALUES ( 'san','san','san@g.com','88776655443','1234')
+2017-11-19T13:38:29+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 70
+    [affected_rows] => 1
+)
+
+2017-11-19T13:38:29+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T13:38:29+05:30 [UserDao] closeConnection execution starts
+2017-11-19T13:38:29+05:30 [UserDao] closeConnection execution ends
+2017-11-19T13:38:29+05:30 [UserDao] createUser execution ends
+2017-11-19T13:38:30+05:30 [UserDao] savePassword execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] noEscapeInsertOperation execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_credentials ( user_id,password ) VALUES ( '70','$2y$10$D0lK9l1FkY9waQH5Rq7eT.JypAQGo2Pc48DFnQeYWpvGrU3eqfBbW')
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 21
+    [affected_rows] => 1
+)
+
+2017-11-19T13:38:30+05:30 [DBWrapper] noEscapeInsertOperation execution ends
+2017-11-19T13:38:30+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 21
+    [affected_rows] => 1
+)
+
+2017-11-19T13:38:30+05:30 [UserDao] closeConnection execution starts
+2017-11-19T13:38:30+05:30 [UserDao] closeConnection execution ends
+2017-11-19T13:38:30+05:30 [UserDao] savePassword execution ends
+2017-11-19T13:38:30+05:30 [UserDao] saveOtp execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '70','email','751051')
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 32
+    [affected_rows] => 1
+)
+
+2017-11-19T13:38:30+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T13:38:30+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 32
+    [affected_rows] => 1
+)
+
+2017-11-19T13:38:30+05:30 [UserDao] closeConnection execution starts
+2017-11-19T13:38:30+05:30 [UserDao] closeConnection execution ends
+2017-11-19T13:38:30+05:30 [UserDao] saveOtp execution ends
+2017-11-19T13:38:30+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="70"
+2017-11-19T13:38:30+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T13:38:30+05:30 [UserDao] closeConnection execution starts
+2017-11-19T13:38:30+05:30 [UserDao] closeConnection execution ends
+2017-11-19T13:38:30+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T13:38:30+05:30 [DBConnector] saveNotificationDataToDb execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_notifications ( user_id,notification_type,message_type,delivery_to,message_content ) VALUES ( '70','EMAIL','OTP','san@g.com','Your OTP for Honeycakes signup is 751051. Please do not share this with anyone.')
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 5
+    [affected_rows] => 1
+)
+
+2017-11-19T13:38:30+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T13:38:30+05:30 [DBConnector] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 5
+    [affected_rows] => 1
+)
+
+2017-11-19T13:38:30+05:30 [DBConnector] closeConnection execution starts
+2017-11-19T13:38:30+05:30 [DBConnector] closeConnection execution ends
+2017-11-19T13:38:30+05:30 [DBConnector] saveNotificationDataToDb execution ends
+2017-11-19T13:38:30+05:30 [UserDao] saveOtp execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_otp ( user_id,otp_for,otp_value ) VALUES ( '70','mobile','659676')
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 33
+    [affected_rows] => 1
+)
+
+2017-11-19T13:38:30+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T13:38:30+05:30 [UserDao] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 33
+    [affected_rows] => 1
+)
+
+2017-11-19T13:38:30+05:30 [UserDao] closeConnection execution starts
+2017-11-19T13:38:30+05:30 [UserDao] closeConnection execution ends
+2017-11-19T13:38:30+05:30 [UserDao] saveOtp execution ends
+2017-11-19T13:38:30+05:30 [UserDao] getUserContactDetails execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] selectOperation execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY: 
+SELECT email, email_status, mobile, mobile_status FROM users WHERE user_id="70"
+2017-11-19T13:38:30+05:30 [DBWrapper] selectOperation execution ends
+2017-11-19T13:38:30+05:30 [UserDao] closeConnection execution starts
+2017-11-19T13:38:30+05:30 [UserDao] closeConnection execution ends
+2017-11-19T13:38:30+05:30 [UserDao] getUserContactDetails execution ends
+2017-11-19T13:38:30+05:30 [DBConnector] saveNotificationDataToDb execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] insertOperation execution starts
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY: 
+INSERT INTO user_notifications ( user_id,notification_type,message_type,delivery_to,message_content ) VALUES ( '70','SMS','OTP','8877665544','Your OTP for Honeycakes signup is 659676. Please do not share this with anyone.')
+2017-11-19T13:38:30+05:30 [DBWrapper] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 6
+    [affected_rows] => 1
+)
+
+2017-11-19T13:38:30+05:30 [DBWrapper] insertOperation execution ends
+2017-11-19T13:38:30+05:30 [DBConnector] QUERY RESULT: 
+Array
+(
+    [status] => success
+    [last_insert_id] => 6
+    [affected_rows] => 1
+)
+
+2017-11-19T13:38:30+05:30 [DBConnector] closeConnection execution starts
+2017-11-19T13:38:30+05:30 [DBConnector] closeConnection execution ends
+2017-11-19T13:38:30+05:30 [DBConnector] saveNotificationDataToDb execution ends
+2017-11-19T13:38:30+05:30 [User] createUser execution ends

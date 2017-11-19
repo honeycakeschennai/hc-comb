@@ -32,7 +32,7 @@
 		function sendSms($userId, $messageType, $mobileNumber, $messageContent){
 			//sms sending part 
 			// user NotificationConfig.php for flags
-			$this->saveNotificationDataToDb($userId, $messageType, $mobileNumber, $messageContent);
+			$this->saveNotificationDataToDb($userId, NOTIFICATION_TYPE_SMS, $messageType, $mobileNumber, $messageContent);
 		}
 
 		/**
@@ -46,7 +46,7 @@
 		function sendEmail($userId, $messageType, $email, $messageContent){
 			//php mailer part
 			// user NotificationConfig.php for flags
-			$this->saveNotificationDataToDb($userId, $messageType, $email, $messageContent);
+			$this->saveNotificationDataToDb($userId, NOTIFICATION_TYPE_EMAIL, $messageType, $email, $messageContent);
 		}
 
 		/**
@@ -57,10 +57,11 @@
 		 * @param mobileNumber
 		 * @param messageContent
 		 */
-		function saveNotificationDataToDb($userId, $messageType, $deliveryTo, $messageContent){
+		function saveNotificationDataToDb($userId, $notificationType, $messageType, $deliveryTo, $messageContent){
 			$this->log->info(__FUNCTION__ . SPACE . METHOD_STARTS);
 			$dbDataMap = array();
 			$dbDataMap['user_id'] = $userId;
+			$dbDataMap['notification_type'] = $notificationType;
 			$dbDataMap['message_type'] = $messageType;
 			$dbDataMap['delivery_to'] = $deliveryTo;
 			$dbDataMap['message_content'] = $messageContent;
