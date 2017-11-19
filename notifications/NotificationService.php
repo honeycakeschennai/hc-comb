@@ -30,7 +30,8 @@
 		 * @param messageContent
 		 */
 		function sendSms($userId, $messageType, $mobileNumber, $messageContent){
-			//sms sending part
+			//sms sending part 
+			// user NotificationConfig.php for flags
 			$this->saveNotificationDataToDb($userId, $messageType, $mobileNumber, $messageContent);
 		}
 
@@ -44,6 +45,7 @@
 		 */
 		function sendEmail($userId, $messageType, $email, $messageContent){
 			//php mailer part
+			// user NotificationConfig.php for flags
 			$this->saveNotificationDataToDb($userId, $messageType, $email, $messageContent);
 		}
 
