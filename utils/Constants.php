@@ -36,5 +36,13 @@
 	define('NOTIFICATION_TYPE_SMS','SMS');
 	define('NOTIFICATION_TYPE_EMAIL','EMAIL');
 	define('NOTIFICATION_TYPE_PUSH','PUSH');
+	define('ORDER_PLACED','0');
+	define('ORDER_CONFIRMED','1');
+	define('ORDER_SHIPPED','2');
+	define('ORDER_DELIVERED','3');
+	define('ORDER_FEEDBACK_SUBMITTED','4');
+	define('ORDER_CANCELLED','-1');
+	define('FLAVOUR_ITEM_CODE', 'flavourSelect');
+	define('FLAVOUR_ITEM_QTY', 'quantitySelect');
 
 ?>

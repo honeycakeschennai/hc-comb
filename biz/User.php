@@ -55,7 +55,7 @@
 		/**
 		 * getUser method is used to fetch the user based on the user ID by using DAO.
 		 * 
-		 * @return $response;
+		 * @return $response
 		 */
 		private function getUser(){
 			$this->log->info(H_LINE);
@@ -70,7 +70,7 @@
 		 * createUser method is used to create a new user by using DAO.
 		 * It calls generateOtp method for generating OTP.
 		 * 
-		 * @return $response;
+		 * @return $response
 		 */
 		private function createUser(){
 			$this->log->info(H_LINE);

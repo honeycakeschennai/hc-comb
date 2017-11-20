@@ -9,6 +9,7 @@
 	require_once 'biz/Location.php';
 	require_once 'biz/Item.php';
 	require_once 'biz/UserAddress.php';
+	require_once 'biz/Order.php';
 	
 	/**
 	 * Honeycakes REST API - handles all HTTP requests and responses.
@@ -46,6 +47,8 @@
 	} else {
 		if(isset($_GET['token'])){
 			$token = $_GET['token'];
+		} else {
+			$token = $data['token'];
 		}
 	}
 
@@ -73,6 +76,9 @@
 				break;
 			case CASE_ADDRESS:
 				$response = executeAddressCase();
+				break;
+			case CASE_ORDER:
+				$response = executeOrderCase();
 				break;
 		}
 	} else if($case == CASE_USER){
@@ -254,6 +260,18 @@
 		$data['token'] = $_GET['token'];
 		$userAddress = new UserAddress($caseId, $method, $data);
 		$response = $userAddress->executeAction();
+		return $response;
+	}
+
+	/** 
+	 * executeOrderCase method passes the order details required to place an order.   
+	 * 
+	 * @return $response
+	 */
+	function executeOrderCase(){
+		global $method, $data, $caseId;
+		$order = new Order($caseId, $method, $data);
+		$response = $order->executeAction();
 		return $response;
 	}
 ?>

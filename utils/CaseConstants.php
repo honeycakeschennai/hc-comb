@@ -8,5 +8,6 @@
 	define('CASE_ADDRESS', 'address');
 	define('CASE_VALIDATE_TOKEN', 'validateToken');
 	define('CASE_VERIFY_OTP', 'verifyOtp');
+	define('CASE_ORDER', 'order');
 
 ?>
