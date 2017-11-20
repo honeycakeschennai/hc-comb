@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 19, 2017 at 09:12 AM
+-- Generation Time: Nov 20, 2017 at 09:17 PM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.1
 
@@ -86,14 +86,34 @@ INSERT INTO `locations` (`location_id`, `location_code`, `location_name`, `deliv
 --
 
 CREATE TABLE `orders` (
-  `order_number` int(11) NOT NULL,
+  `order_id` int(11) NOT NULL COMMENT 'orderNumber',
   `user_id` int(11) NOT NULL,
   `vendor_code` varchar(10) NOT NULL,
   `deliver_to` varchar(200) NOT NULL COMMENT 'complete delivery address will be added up here for all historical references',
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `order_message` varchar(100) NOT NULL,
+  `delivery_time` varchar(7) NOT NULL,
+  `delivery_date` date NOT NULL,
   `total_amount` varchar(10) NOT NULL,
   `status` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`order_id`, `user_id`, `vendor_code`, `deliver_to`, `timestamp`, `order_message`, `delivery_time`, `delivery_date`, `total_amount`, `status`) VALUES
+(1, 1, 'VN003', 'D411, Vaikund Sundaram, Vendarasi Amman kovil stree, Karapakkam, Chennai - 97.', '2017-11-20 19:08:01', '', '', '0000-00-00', '1875', 0),
+(2, 1, 'VN003', 'D411, Vaikund Sundaram, Vendarasi Amman kovil stree, Karapakkam, Chennai - 97.', '2017-11-20 19:08:04', '', '', '0000-00-00', '1875', 0),
+(3, 1, 'VN003', 'D411, Vaikund Sundaram, Vendarasi Amman kovil stree, Karapakkam, Chennai - 97.', '2017-11-20 19:08:06', '', '', '0000-00-00', '1875', 0),
+(4, 1, 'VN003', 'D411, Vaikund Sundaram, Vendarasi Amman kovil stree, Karapakkam, Chennai - 97.', '2017-11-20 19:12:16', '', '', '0000-00-00', '1875', 0),
+(5, 1, 'VN003', 'D411, Vaikund Sundaram, Vendarasi Amman kovil stree, Karapakkam, Chennai - 97.', '2017-11-20 19:18:54', '', '', '0000-00-00', '1875', 0),
+(6, 1, 'VN003', 'D411, Vaikund Sundaram, Vendarasi Amman kovil stree, Karapakkam, Chennai - 97.', '2017-11-20 19:19:28', '', '', '0000-00-00', '1875', 0),
+(7, 1, 'VN003', 'D411, Vaikund Sundaram, Vendarasi Amman kovil stree, Karapakkam, Chennai - 97.', '2017-11-20 19:20:13', '', '', '0000-00-00', '1875', 0),
+(8, 1, 'VN004', 'D411, Vaikund Sundaram, Vendarasi Amman kovil stree, Karapakkam, Chennai - 97.', '2017-11-20 19:20:58', '', '', '0000-00-00', '1580', 0),
+(9, 1, 'VN004', 'D411, Vaikund Sundaram, Vendarasi Amman kovil stree, Karapakkam, Chennai - 97.', '2017-11-20 19:31:35', '', '', '0000-00-00', '1580', 0),
+(10, 1, 'VN004', 'D411, Vaikund Sundaram, Vendarasi Amman kovil stree, Karapakkam, Chennai - 97.', '2017-11-20 19:33:19', '', '', '0000-00-00', '1010', 0),
+(11, 1, 'VN004', 'D411, Vaikund Sundaram, Vendarasi Amman kovil stree, Karapakkam, Chennai - 97.', '2017-11-20 19:38:57', '112334', '', '0000-00-00', '1560', 0);
 
 -- --------------------------------------------------------
 
@@ -117,11 +137,32 @@ CREATE TABLE `order_feedback` (
 
 CREATE TABLE `order_items` (
   `order_item_id` int(11) NOT NULL,
-  `order_number` int(11) NOT NULL,
+  `order_id` int(11) NOT NULL COMMENT 'orderNumber',
   `item_code` varchar(10) NOT NULL,
   `qty` varchar(10) NOT NULL,
   `price` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `order_items`
+--
+
+INSERT INTO `order_items` (`order_item_id`, `order_id`, `item_code`, `qty`, `price`) VALUES
+(1, 7, 'PARTY01', '1', '10'),
+(2, 7, 'PARTY02', '1', '60'),
+(3, 7, 'PARTY03', '1', '100'),
+(4, 7, 'PARTY04', '1', '5'),
+(5, 7, 'IT002', '2', '1700'),
+(6, 8, 'PARTY02', '3', '180'),
+(7, 8, 'IT007', '2', '1400'),
+(8, 9, 'PARTY02', '3', '180'),
+(9, 9, 'IT007', '2', '1400'),
+(10, 10, 'PARTY02', '1', '60'),
+(11, 10, 'PARTY03', '1', '100'),
+(12, 10, 'IT001', '1', '850'),
+(13, 11, 'PARTY02', '1', '60'),
+(14, 11, 'PARTY03', '1', '100'),
+(15, 11, 'IT003', '2', '1400');
 
 -- --------------------------------------------------------
 
@@ -229,7 +270,9 @@ INSERT INTO `tokens` (`token_id`, `user_id`, `generated_time`, `token`, `valid_t
 (85, 1, '2017-11-18 15:29:47', 'YzFjMjllZTYzODM2YWVkZTM3ZGRkZDZmOTZlYWY3YzY_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_YWI5Nzg5NjJkMWU2M2YyNWVkNWNkYTkxZTM3OWI5NzE_', '2018-11-18 20:59:47'),
 (86, 1, '2017-11-18 15:38:26', 'ZDk3ZDg5NTFkOWQ2MDFiMzI4ZDRiYjIzMTc5OWFhNGI_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NzNlYmY3Mjk2ODQ4MmU1MGRmYTNjYzVjM2Y3MjUxOGQ_', '2018-11-18 21:08:26'),
 (87, 1, '2017-11-18 16:39:08', 'YTE2OWVhYTliY2I2YzA1NWRkZjdhZjdjN2MyODljZWU_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_NTIwMTNlZDg1NTgzNzNkOWRjMDlhODFiYjMwMjE4MWM_', '2018-11-18 22:09:08'),
-(88, 2, '2017-11-18 16:43:27', 'ZGNmNGEyMjVlNTJhOTQ0ZjYwZmU1ODg3YzEwZDZjMDI_MWQ0NWE4Mzc4YjcwYjk5MWJlMDVjZTUxZjVmMzg3MmM_NWY3YTE0OGVjZGZlNDMxOTc4ZDVlYzRmYWQyM2UzNmU_', '2018-11-18 22:13:27');
+(88, 2, '2017-11-18 16:43:27', 'ZGNmNGEyMjVlNTJhOTQ0ZjYwZmU1ODg3YzEwZDZjMDI_MWQ0NWE4Mzc4YjcwYjk5MWJlMDVjZTUxZjVmMzg3MmM_NWY3YTE0OGVjZGZlNDMxOTc4ZDVlYzRmYWQyM2UzNmU_', '2018-11-18 22:13:27'),
+(89, 1, '2017-11-20 02:51:46', 'MTFjZjRhNDQ1ZGUwMTEyNThiZGRmNTc3NDQ0Njk1ODc_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_OTI3MjBkNDEyZjJjMGQ5YWJkOThlZTc2M2YwYTAyYjI_', '2018-11-20 08:21:46'),
+(90, 1, '2017-11-20 15:46:19', 'YzNiZjg4ZGZhYTZmZmM4M2M4OGE2ZWJhMzNiM2E3YzY_MGQ4ZjQyOTMwZDFmMTYyOTdlOTQ2MDZmODhlMmU2ZGI_ODk2OWI4ZmM4NzBmZDRhZTFkZjAyMWVjNjZiZDA1OWE_', '2018-11-20 21:16:19');
 
 -- --------------------------------------------------------
 
@@ -520,7 +563,7 @@ ALTER TABLE `locations`
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`order_number`),
+  ADD PRIMARY KEY (`order_id`),
   ADD KEY `orders_users` (`user_id`),
   ADD KEY `orders_vendors` (`vendor_code`);
 
@@ -536,7 +579,7 @@ ALTER TABLE `order_feedback`
 --
 ALTER TABLE `order_items`
   ADD PRIMARY KEY (`order_item_id`),
-  ADD KEY `order_num_items` (`order_number`),
+  ADD KEY `order_num_items` (`order_id`),
   ADD KEY `order_item_code` (`item_code`);
 
 --
@@ -617,7 +660,7 @@ ALTER TABLE `locations`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_number` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'orderNumber', AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `order_feedback`
 --
@@ -627,12 +670,12 @@ ALTER TABLE `order_feedback`
 -- AUTO_INCREMENT for table `order_items`
 --
 ALTER TABLE `order_items`
-  MODIFY `order_item_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `order_item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `tokens`
 --
 ALTER TABLE `tokens`
-  MODIFY `token_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `token_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
 --
 -- AUTO_INCREMENT for table `users`
 --
@@ -683,14 +726,14 @@ ALTER TABLE `orders`
 -- Constraints for table `order_feedback`
 --
 ALTER TABLE `order_feedback`
-  ADD CONSTRAINT `order_num_feedback` FOREIGN KEY (`order_number`) REFERENCES `orders` (`order_number`);
+  ADD CONSTRAINT `order_num_feedback` FOREIGN KEY (`order_number`) REFERENCES `orders` (`order_id`);
 
 --
 -- Constraints for table `order_items`
 --
 ALTER TABLE `order_items`
   ADD CONSTRAINT `order_item_code` FOREIGN KEY (`item_code`) REFERENCES `Items` (`item_code`),
-  ADD CONSTRAINT `order_num_items` FOREIGN KEY (`order_number`) REFERENCES `orders` (`order_number`);
+  ADD CONSTRAINT `order_num_items` FOREIGN KEY (`order_id`) REFERENCES `orders` (`order_id`);
 
 --
 -- Constraints for table `tokens`
